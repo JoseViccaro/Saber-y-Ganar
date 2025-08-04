@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kahoot_flutter_app/host_app.dart';
-import 'package:kahoot_flutter_app/player_app.dart';
+import 'package:saber_y_ganar/host_app.dart';
+import 'package:saber_y_ganar/player_app.dart';
 
 void main() {
   runApp(const MyApp());
