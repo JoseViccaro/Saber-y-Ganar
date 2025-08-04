@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+
+# Archivos de IDE y sistema operativo
+.idea/
+.vscode/
+*.iml
+*.DS_Store
+/windows/runner/Debug/
+/windows/runner/Release/
+/windows/runner/Profile/

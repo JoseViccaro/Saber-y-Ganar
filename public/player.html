@@ -1,0 +1,84 @@
+<!-- player.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber y Ganar - Jugador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/player.css">
+    <style>
+        #confetti-canvas, #incorrect-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="join-screen" class="screen">
+        <h1 id="game-title">Saber y Ganar</h1>
+        <h2>Unirse al Juego</h2>
+        <input type="number" id="pin-input" placeholder="PIN del Juego" autocomplete="off">
+        <input type="text" id="name-input" placeholder="Tu Nombre" autocomplete="off">
+        <button id="join-btn" class="btn btn-join">¡Unirse!</button>
+        <p id="error-message" style="color: red; font-weight: bold;"></p>
+    </div>
+    <div id="waiting-screen" class="screen hidden">
+        <h2>¡Estás dentro!</h2>
+        <p>Espera a que el anfitrión comience el juego...</p>
+    </div>
+    <div id="ready-go-screen" class="screen hidden">
+        <h2 id="ready-go-text"></h2>
+    </div>
+    <div id="question-screen" class="screen hidden">
+        <div id="player-timer-container">
+            <div id="player-timer"></div>
+            <div id="player-timer-bar"></div>
+        </div>
+        <div id="player-question-header">
+            <h2 id="player-question-text"></h2>
+        </div>
+        <div id="question-info-bar">
+            <div id="question-progress">Pregunta 0 de 0</div>
+            <div id="player-score">Puntos: 0</div>
+            <div id="answer-streak" class="hidden">Racha: 0</div>
+        </div>
+        <div id="answer-grid"></div>
+        <div id="powerups-container">
+            <button id="powerup-fifty-fifty" class="btn powerup-btn" disabled>50/50</button>
+            <button id="powerup-double-points" class="btn powerup-btn" disabled>2x Puntos</button>
+        </div>
+    </div>
+    <div id="end-game-screen" class="screen hidden">
+         <h2>¡Juego Terminado!</h2>
+         <p>Mira la pantalla principal para ver los resultados.</p>
+    </div>
+    <div id="feedback-screen" class="full-screen-feedback hidden">
+        <h2 id="feedback-text"></h2>
+        <div id="points-gained" class="hidden">+0</div>
+    </div>
+</div>
+<div id="celebration-container" class="full-screen-overlay hidden"></div>
+<div id="lightning-round-screen" class="full-screen-overlay hidden">
+    <div class="lightning-content">
+        <h1 class="lightning-title">¡RONDA RELÁMPAGO!</h1>
+        <div class="lightning-effect"></div>
+    </div>
+</div>
+<audio id="correct-sound" src="/audio/correct.mp3" preload="auto"></audio>
+<audio id="incorrect-sound" src="/audio/incorrect.mp3" preload="auto"></audio>
+<audio id="timer-tick-sound" src="/audio/timer-tick.mp3" preload="auto" loop></audio>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/confetti.js"></script>
+<script src="/js/incorrect-animation.js"></script>
+<script src="/js/player.js"></script>
+</body>
+</html>
