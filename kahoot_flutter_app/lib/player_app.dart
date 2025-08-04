@@ -43,7 +43,7 @@ class _PlayerAppState extends State<PlayerApp> {
   }
 
   void _connectSocket() {
-    socket = IO.io('https://saber-y-ganar-production.up.railway.app', <String, dynamic>{
+    socket = IO.io('https://saber-y-ganar.onrender.com', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': false,
     });
