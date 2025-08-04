@@ -21,6 +21,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'host.html'));
 });
 
+// Ruta para servir la página del jugador
+app.get('/player', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'player.html'));
+});
+
 // --- INICIALIZACIÓN DE SOCKETS ---
 initializeSocket(io);
 
