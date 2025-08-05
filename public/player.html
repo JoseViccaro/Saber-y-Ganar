@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/player.css">
     <style>
-        #confetti-canvas, #incorrect-canvas {
+        #incorrect-canvas {
             position: fixed;
             top: 0;
             left: 0;
@@ -66,13 +66,11 @@
         <div id="points-gained" class="hidden">+0</div>
     </div>
 </div>
-<div id="celebration-container" class="full-screen-overlay hidden"></div>
 
 <audio id="correct-sound" src="/audio/correct.mp3" preload="auto"></audio>
 <audio id="incorrect-sound" src="/audio/incorrect.mp3" preload="auto"></audio>
 <audio id="timer-tick-sound" src="/audio/timer-tick.mp3" preload="auto" loop></audio>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/js/confetti.js"></script>
 <script src="/js/incorrect-animation.js"></script>
 <script src="/js/player.js"></script>
 </body>

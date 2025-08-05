@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const playerTimer = document.getElementById('player-timer');
     const playerTimerBar = document.getElementById('player-timer-bar');
     const readyGoText = document.getElementById('ready-go-text');
-    const celebrationContainer = document.getElementById('celebration-container');
+    
     const playerScoreElement = document.getElementById('player-score');
     const answerStreakElement = document.getElementById('answer-streak');
     const pointsGainedElement = document.getElementById('points-gained');
@@ -44,22 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function createConfetti() {
-        const colors = ['#f00', '#0f0', '#00f', '#ff0', '#0ff', '#f0f'];
-        for (let i = 0; i < 150; i++) { // Aumentamos la cantidad de confeti
-            const confetti = document.createElement('div');
-            confetti.classList.add('confetti');
-            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-            confetti.style.left = `${Math.random() * 100}vw`;
-            confetti.style.animationDuration = `${Math.random() * 3 + 2}s`; // Duración más variada
-            confetti.style.animationDelay = `${Math.random() * 1}s`;
-            celebrationContainer.appendChild(confetti);
-
-            confetti.addEventListener('animationend', () => {
-                confetti.remove();
-            });
-        }
-    }
+    
 
     joinButton.addEventListener('click', () => {
         // --- SOLUCIÓN DE AUDIO MEJORADA ---
@@ -170,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (correct) {
             correctSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
             if (selectedButton) selectedButton.classList.add('correct');
-            window.triggerConfetti(); // Lanza el confeti
+            
         } else {
             incorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
             if (selectedButton) selectedButton.classList.add('incorrect');
@@ -215,22 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     socket.on('game-over', (winnerName) => {
-        // Ocultar todas las pantallas para dar paso a la celebración
-        for (let key in screens) {
-            screens[key].classList.add('hidden');
-        }
-
-        // Mostrar la celebración
-        celebrationContainer.classList.remove('hidden');
-        celebrationContainer.innerHTML = `<h1 class="winner-announcement">¡GANADOR!</h1><h2 class="winner-name">${winnerName}</h2>`;
-        createConfetti(); // Lanza el confeti para el ganador
-
-        // Después de 8 segundos, mostrar la pantalla final de resultados
-        setTimeout(() => {
-            celebrationContainer.classList.add('hidden');
-            celebrationContainer.innerHTML = '';
-            showScreen('end');
-        }, 10000);
+        showScreen('end');
     });
 
     socket.on('game-cancelled', () => { alert("El anfitrión ha cancelado el juego."); location.reload(); });

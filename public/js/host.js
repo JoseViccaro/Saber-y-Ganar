@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lobby: document.getElementById('lobby-screen'), 
         quiz: document.getElementById('quiz-screen'), 
         questionSummary: document.getElementById('question-summary-screen'), // Nueva pantalla
-        leaderboard: document.getElementById('leaderboard-screen'), 
-        final: document.getElementById('final-screen'),
+        leaderboard: document.getElementById('leaderboard-screen'),
         
     };
 
@@ -65,10 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         socket.emit('host-create-game');
     });
 
-    document.getElementById('play-again-btn').addEventListener('click', () => {
-        unlockAudio();
-        socket.emit('host-create-game');
-    });
+    
 
     document.getElementById('start-game-btn').addEventListener('click', () => socket.emit('host-start-game', gamePin));
 
@@ -210,21 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextQuestionBtn.classList.remove('hidden');
     });
 
-    socket.on('game-over', (finalLeaderboard) => {
-        clearInterval(timerInterval);
-        let leaderboardHTML = '<ol>';
-        finalLeaderboard.forEach((p, i) => {
-            leaderboardHTML += `<li><span>#${i + 1} ${p.name}</span> <span>${p.score} pts</span></li>`;
-        });
-        leaderboardHTML += '</ol>';
-        document.getElementById('final-leaderboard').innerHTML = leaderboardHTML;
-        // Muestra la pantalla final y el overlay
-        showScreen('final');
-        const finalOverlay = document.querySelector('#final-screen .announcement-overlay');
-        if (finalOverlay) {
-            finalOverlay.classList.remove('hidden');
-        }
-    });
+    
 
     socket.on('game-cancelled', () => { alert("El anfitrión ha cancelado el juego."); location.reload(); });
 
