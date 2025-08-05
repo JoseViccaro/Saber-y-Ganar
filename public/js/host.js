@@ -218,7 +218,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         leaderboardHTML += '</ol>';
         document.getElementById('final-leaderboard').innerHTML = leaderboardHTML;
+        // Muestra la pantalla final y el overlay
         showScreen('final');
+        const finalOverlay = document.querySelector('#final-screen .announcement-overlay');
+        if (finalOverlay) {
+            finalOverlay.classList.remove('hidden');
+        }
     });
 
     socket.on('game-cancelled', () => { alert("El anfitrión ha cancelado el juego."); location.reload(); });
