@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         question: document.getElementById('question-screen'),
         end: document.getElementById('end-game-screen'),
         feedback: document.getElementById('feedback-screen'),
-        
+        rondaRelampago: document.getElementById('ronda-relampago-announcement'),
     };
     const correctSound = document.getElementById('correct-sound');
     const incorrectSound = document.getElementById('incorrect-sound');
@@ -137,7 +137,15 @@ document.addEventListener('DOMContentLoaded', () => {
              
         }
 
-        showScreen('question');
+        // Show Ronda Relampago announcement
+        if (data.questionIndex + 1 >= 20 && data.questionIndex + 1 <= 24) {
+            showScreen('rondaRelampago');
+            setTimeout(() => {
+                showScreen('question');
+            }, 3000); // Show for 3 seconds
+        } else {
+            showScreen('question');
+        }
     });
 
     socket.on('answer-result', (data) => {
