@@ -11,7 +11,7 @@ class HostApp extends StatefulWidget {
 class _HostAppState extends State<HostApp> {
   late IO.Socket socket;
   String _gamePin = '';
-  String _currentScreen = 'setup'; // 'setup', 'lobby', 'quiz', 'summary', 'leaderboard', 'final', 'lightningRound'
+  String _currentScreen = 'setup'; // 'setup', 'lobby', 'quiz', 'summary', 'leaderboard', 'final'
   Map<String, dynamic> _players = {};
 
   // Quiz Screen State
@@ -124,11 +124,7 @@ class _HostAppState extends State<HostApp> {
       });
     });
 
-    socket.on('lightning-round-start', (_) {
-      setState(() {
-        _currentScreen = 'lightningRound';
-      });
-    });
+    
 
     socket.on('game-cancelled', (_) {
       // Handle game cancelled, e.g., show alert and navigate to setup
@@ -569,20 +565,7 @@ class _HostAppState extends State<HostApp> {
     );
   }
 
-  Widget _buildLightningRoundScreen() {
-    return const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          '¡RONDA RELÁMPAGO!',
-          style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold, color: Colors.amberAccent),
-          textAlign: TextAlign.center,
-        ),
-        SizedBox(height: 20),
-        CircularProgressIndicator(),
-      ],
-    );
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -609,8 +592,7 @@ class _HostAppState extends State<HostApp> {
                   return _buildLeaderboardScreen();
                 case 'final':
                   return _buildFinalScreen();
-                case 'lightningRound':
-                  return _buildLightningRoundScreen();
+                
                 default:
                   return const Text('Pantalla no implementada aún');
               }

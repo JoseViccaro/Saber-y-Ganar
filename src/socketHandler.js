@@ -91,7 +91,7 @@ function sendQuestion(io, pin) {
     game.timeElapsed = 0;
 
     if (game.currentQuestion === 20) {
-        io.to(pin).emit('lightning-round-start');
+        
         setTimeout(() => sendActualQuestion(io, pin), 2000);
     } else {
         sendActualQuestion(io, pin);

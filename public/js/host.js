@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         questionSummary: document.getElementById('question-summary-screen'), // Nueva pantalla
         leaderboard: document.getElementById('leaderboard-screen'), 
         final: document.getElementById('final-screen'),
-        lightningRound: document.getElementById('lightning-round-screen')
+        
     };
 
     const hostTimerCountdown = document.getElementById('host-timer-countdown');
@@ -228,20 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('game-cancelled', () => { alert("El anfitrión ha cancelado el juego."); location.reload(); });
 
-    socket.on('lightning-round-start', () => {
-        showScreen('lightningRound');
-        // Reset animation
-        const lightningText = document.querySelector('.lightning-text');
-        const lightningBolt = document.querySelector('.lightning-bolt');
-        if (lightningText && lightningBolt) {
-            lightningText.style.animation = 'none';
-            lightningBolt.style.animation = 'none';
-            void lightningText.offsetWidth; // Trigger reflow
-            void lightningBolt.offsetWidth; // Trigger reflow
-            lightningText.style.animation = '';
-            lightningBolt.style.animation = '';
-        }
-    });
+    
 
     socket.on('error-creating-game', (message) => {
         alert(`Error al crear el juego: ${message}`);

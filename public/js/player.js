@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         question: document.getElementById('question-screen'),
         end: document.getElementById('end-game-screen'),
         feedback: document.getElementById('feedback-screen'),
-        lightningRound: document.getElementById('lightning-round-screen')
+        
     };
     const correctSound = document.getElementById('correct-sound');
     const incorrectSound = document.getElementById('incorrect-sound');
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answerStreakElement.classList.remove('hidden');
             if (streak > 0 && streak % 3 === 0) {
                 const streakBonusEl = document.createElement('div');
-                streakBonusEl.className = 'streak-bonus-toast';
+                streakBonusEl.className = 'bonus-toast';
                 streakBonusEl.textContent = '¡Bonificación por racha! +300 puntos';
                 document.body.appendChild(streakBonusEl);
                 setTimeout(() => {
@@ -264,12 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     });
 
-    socket.on('lightning-round-start', () => {
-        showScreen('lightningRound');
-        setTimeout(() => {
-            // No hacer nada aquí, la nueva pregunta se enviará después
-        }, 5000);
-    });
+    
 
     // --- INICIALIZACIÓN ---
     showScreen('join');

@@ -13,7 +13,7 @@ class _PlayerAppState extends State<PlayerApp> {
   final TextEditingController _pinController = TextEditingController();
   final TextEditingController _nameController = TextEditingController();
   String _errorMessage = '';
-  String _currentScreen = 'join'; // 'join', 'waiting', 'readyGo', 'question', 'feedback', 'end', 'lightningRound'
+  String _currentScreen = 'join'; // 'join', 'waiting', 'readyGo', 'question', 'feedback', 'end'
 
   // Question Screen State
   String _questionText = '';
@@ -145,12 +145,7 @@ class _PlayerAppState extends State<PlayerApp> {
       });
     });
 
-    socket.on('lightning-round-start', (_) {
-      setState(() {
-        _currentScreen = 'lightningRound';
-      });
-      // The actual question will be sent after a delay from the host side
-    });
+    
 
     socket.on('game-cancelled', (_) {
       showDialog(
@@ -450,20 +445,7 @@ class _PlayerAppState extends State<PlayerApp> {
     );
   }
 
-  Widget _buildLightningRoundScreen() {
-    return const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          '¡RONDA RELÁMPAGO!',
-          style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold, color: Colors.amberAccent),
-          textAlign: TextAlign.center,
-        ),
-        SizedBox(height: 20),
-        CircularProgressIndicator(),
-      ],
-    );
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -490,8 +472,7 @@ class _PlayerAppState extends State<PlayerApp> {
                   return _buildFeedbackScreen();
                 case 'end':
                   return _buildEndScreen();
-                case 'lightningRound':
-                  return _buildLightningRoundScreen();
+                
                 default:
                   return const Text('Pantalla no implementada aún');
               }
