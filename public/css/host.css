@@ -309,22 +309,51 @@ body {
     pointer-events: auto; /* But allow interaction with children */
 }
 
-.lightning-text {
-    font-size: 6em;
-    color: #FFD700;
-    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FF8C00, 0 0 40px #FF8C00;
-    animation: flicker 1.5s infinite alternate;
+/* Lightning Round New Styles */
+.lightning-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow: 
-            0 0 10px #FFD700, 
-            0 0 20px #FFD700, 
-            0 0 30px #FF8C00, 
-            0 0 40px #FF8C00;
-    }
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }
+.lightning-text {
+    font-size: 5em; /* Reduced font size */
+    color: #FFD700;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FF8C00, 0 0 40px #FF8C00;
+    animation: flicker 1.5s infinite alternate, text-reveal 2s forwards;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.lightning-bolt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 100%;
+    background-color: white;
+    transform: translate(-50%, -50%) skewX(-20deg);
+    animation: lightning-strike 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes lightning-strike {
+    0% { opacity: 0; height: 0; }
+    10% { opacity: 1; height: 100%; }
+    20% { opacity: 0; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    50% { opacity: 1; height: 100%; }
+    100% { opacity: 0; height: 100%; }
+}
+
+@keyframes text-reveal {
+    50% { transform: scale(0); opacity: 0; }
+    51% { transform: scale(1.2); opacity: 1; }
+    60% { transform: scale(0.9); }
+    70% { transform: scale(1.1); }
+    80% { transform: scale(0.95); }
+    90% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
 }
