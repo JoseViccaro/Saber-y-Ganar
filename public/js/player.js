@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         end: document.getElementById('end-game-screen'),
         feedback: document.getElementById('feedback-screen'),
         rondaRelampago: document.getElementById('ronda-relampago-announcement'),
+        winnerAnnouncement: document.getElementById('winner-announcement'),
     };
     const correctSound = document.getElementById('correct-sound');
     const incorrectSound = document.getElementById('incorrect-sound');
@@ -208,7 +209,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     socket.on('game-over', (winnerName) => {
-        showScreen('end');
+        document.getElementById('winner-name').textContent = winnerName;
+        showScreen('winnerAnnouncement');
     });
 
     socket.on('game-cancelled', () => { alert("El anfitrión ha cancelado el juego."); location.reload(); });
