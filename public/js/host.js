@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         quiz: document.getElementById('quiz-screen'), 
         questionSummary: document.getElementById('question-summary-screen'), // Nueva pantalla
         leaderboard: document.getElementById('leaderboard-screen'),
-        
+        rondaRelampago: document.getElementById('ronda-relampago-announcement'),
     };
 
     const hostTimerCountdown = document.getElementById('host-timer-countdown');
@@ -144,7 +144,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('answer-counts-container').children[3].classList.remove('hidden');
         }
 
-        showScreen('quiz');
+        // Show Ronda Relampago announcement
+        if (data.questionIndex + 1 >= 20 && data.questionIndex + 1 <= 24) {
+            showScreen('rondaRelampago');
+            setTimeout(() => {
+                showScreen('quiz');
+            }, 3000); // Show for 3 seconds
+        } else {
+            showScreen('quiz');
+        }
     });
 
     socket.on('update-timer', (timeLeft, totalTime) => {
