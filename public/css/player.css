@@ -236,17 +236,34 @@ input[type="text"]:focus, input[type="number"]:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     color: white;
-    font-size: 3em;
+    font-size: 4em; /* Larger font size */
     font-weight: bold;
-    text-shadow: 0 0 20px #00BFFF, 0 0 30px #00BFFF, 0 0 40px #00BFFF;
-    animation: pulse 1.5s infinite alternate;
+    text-shadow: 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 50px #00BFFF; /* More intense glow */
+    animation: pulse 1s infinite alternate, scaleIn 0.5s ease-out; /* Faster pulse, added scaleIn */
+    transform: scale(1); /* Start at normal scale */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#ronda-relampago-announcement.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); } /* More pronounced pulse */
 }
 
 #ronda-relampago-announcement h1 {

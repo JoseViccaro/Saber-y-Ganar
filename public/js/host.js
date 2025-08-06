@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const socket = io();
     let gamePin;
     let timerInterval;
+    let rondaRelampagoAnunciada = false; // Flag to show announcement only once
     const screens = { 
         setup: document.getElementById('setup-screen'), 
         lobby: document.getElementById('lobby-screen'), 
@@ -171,8 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('answer-counts-container').children[3].classList.remove('hidden');
         }
 
-        // Show Ronda Relampago announcement
-        if (data.questionIndex + 1 >= 20 && data.questionIndex + 1 <= 24) {
+        // Show Ronda Relampago announcement only once
+        if (data.questionIndex === 19 && !rondaRelampagoAnunciada) {
+            rondaRelampagoAnunciada = true;
             showScreen('rondaRelampago');
             setTimeout(() => {
                 showScreen('quiz');

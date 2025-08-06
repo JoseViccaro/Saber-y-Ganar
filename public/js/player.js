@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentScore = 0;
     let answerStreak = 0;
     let lastAnswerIndex; // Para guardar la última respuesta del jugador
+    let rondaRelampagoAnunciada = false; // Flag to show announcement only once
 
     const screens = {
         join: document.getElementById('join-screen'),
@@ -31,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const pointsGainedElement = document.getElementById('points-gained');
     const powerupFiftyFiftyBtn = document.getElementById('powerup-fifty-fifty');
     const powerupDoublePointsBtn = document.getElementById('powerup-double-points');
-     
+    const confettiCanvas = document.getElementById('confetti-canvas');
+    const customConfetti = confetti.create(confettiCanvas, { resize: true });
 
     function showScreen(screenName) {
         for (let key in screens) {
@@ -43,6 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (screens[screenName]) {
             screens[screenName].classList.remove('hidden');
         }
+    }
+
+    function triggerConfetti() {
+        customConfetti({
+            particleCount: 150,
+            spread: 180,
+            origin: { y: 0.6 },
+            colors: ['#ff4500', '#ff6347', '#ffd700', '#32cd32', '#1e90ff']
+        });
     }
 
     
@@ -138,8 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
              
         }
 
-        // Show Ronda Relampago announcement
-        if (data.questionIndex + 1 >= 20 && data.questionIndex + 1 <= 24) {
+        // Show Ronda Relampago announcement only once
+        if (data.questionIndex === 19 && !rondaRelampagoAnunciada) {
+            rondaRelampagoAnunciada = true;
             showScreen('rondaRelampago');
             setTimeout(() => {
                 showScreen('question');
@@ -164,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (correct) {
             correctSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
             if (selectedButton) selectedButton.classList.add('correct');
+            triggerConfetti(); // ¡Lanzar confeti!
             
         } else {
             incorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
