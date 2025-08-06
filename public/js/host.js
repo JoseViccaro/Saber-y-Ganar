@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
     const showLeaderboardBtn = document.getElementById('show-leaderboard-btn');
     const nextQuestionBtn = document.getElementById('next-question-btn');
-    const nextQuestionLeaderboardBtn = document.getElementById('next-question-leaderboard-btn');
 
     function showScreen(screenName) {
         // Hide all screens first
@@ -101,10 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     nextQuestionBtn.addEventListener('click', () => {
-        socket.emit('host-next-question', gamePin);
-    });
-
-    nextQuestionLeaderboardBtn.addEventListener('click', () => {
         socket.emit('host-next-question', gamePin);
     });
 
@@ -173,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Show Ronda Relampago announcement only once
-        if (data.questionIndex === 19 && !rondaRelampagoAnunciada) {
+        if (data.questionIndex === 18 && !rondaRelampagoAnunciada) { // Changed from 19 to 18
             rondaRelampagoAnunciada = true;
             showScreen('rondaRelampago');
             setTimeout(() => {

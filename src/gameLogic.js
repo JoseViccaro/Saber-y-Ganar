@@ -24,11 +24,9 @@ function getGameQuestions() {
     // Shuffle answers for each question and update correct index
     gameQuestions.forEach(question => {
         const originalCorrectAnswerText = question.answers[question.correct];
-        const answersWithOriginalIndex = question.answers.map((answer, index) => ({ text: answer, originalIndex: index }));
-        const shuffledAnswersWithOriginalIndex = shuffle(answersWithOriginalIndex);
-
-        question.answers = shuffledAnswersWithOriginalIndex.map(item => item.text);
-        question.correct = shuffledAnswersWithOriginalIndex.findIndex(item => item.originalIndex === question.correct);
+        const shuffledAnswers = shuffle([...question.answers]);
+        question.answers = shuffledAnswers;
+        question.correct = shuffledAnswers.findIndex(answer => answer === originalCorrectAnswerText);
     });
 
     return gameQuestions;

@@ -243,7 +243,6 @@ input[type="text"]:focus, input[type="number"]:focus {
     align-items: center;
     z-index: 1000;
     color: white;
-    font-size: 4em; /* Larger font size */
     font-weight: bold;
     text-shadow: 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 50px #00BFFF; /* More intense glow */
     animation: pulse 1s infinite alternate, scaleIn 0.5s ease-out; /* Faster pulse, added scaleIn */
@@ -256,28 +255,18 @@ input[type="text"]:focus, input[type="number"]:focus {
     pointer-events: none;
 }
 
-@keyframes scaleIn {
-    from { transform: scale(0.5); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
 @keyframes pulse {
-    from { transform: scale(1); }
-    to { transform: scale(1.08); } /* More pronounced pulse */
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(1.08); opacity: 0.9; } /* More pronounced pulse */
 }
 
 #ronda-relampago-announcement h1 {
-    font-size: 2em;
+    font-size: 4em;
     margin-bottom: 20px;
 }
 
 #ronda-relampago-announcement p {
-    font-size: 0.5em;
-}
-
-@keyframes pulse {
-    from { transform: scale(1); opacity: 1; }
-    to { transform: scale(1.05); opacity: 0.9; }
+    font-size: 1.5em;
 }
 
 #winner-announcement {

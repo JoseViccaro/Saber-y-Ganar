@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gamePin = document.getElementById('pin-input').value;
         const name = document.getElementById('name-input').value.trim();
         if (gamePin && name) {
+            console.log(`Intentando unirse al juego con PIN: ${gamePin} y nombre: ${name}`);
             socket.emit('player-join-game', { pin: gamePin, name: name });
         } else {
             document.getElementById('error-message').textContent = 'Debes introducir un PIN y un nombre.';
@@ -86,8 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
      
 
-    socket.on('join-success', () => showScreen('waiting'));
-    socket.on('join-error', (message) => document.getElementById('error-message').textContent = message);
+    socket.on('join-success', () => {
+        console.log('¡Unión exitosa!');
+        showScreen('waiting');
+    });
+    socket.on('join-error', (message) => {
+        console.error(`Error al unirse: ${message}`);
+        document.getElementById('error-message').textContent = message;
+    });
 
     socket.on('new-question', (data) => {
         clearInterval(timerInterval);
@@ -149,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Show Ronda Relampago announcement only once
-        if (data.questionIndex === 19 && !rondaRelampagoAnunciada) {
+        if (data.questionIndex === 18 && !rondaRelampagoAnunciada) { // Changed from 19 to 18
             rondaRelampagoAnunciada = true;
             showScreen('rondaRelampago');
             setTimeout(() => {
@@ -241,10 +248,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (timeLeft <= 5 && timeLeft > 0) {
-            timerTickSound.play();
+            // timerTickSound.play();
         } else {
-            timerTickSound.pause();
-            timerTickSound.currentTime = 0;
+            // timerTickSound.pause();
+            // timerTickSound.currentTime = 0;
         }
     });
 

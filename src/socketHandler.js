@@ -1,7 +1,7 @@
 const { games, createGame, addPlayer, handleAnswer, removePlayer, usePowerup, shuffle } = require('./gameLogic');
 
 function sanitize(str) {
-    return decodeURIComponent(String(str).replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+    return decodeURIComponent(String(str)).replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
 function initializeSocket(io) {
