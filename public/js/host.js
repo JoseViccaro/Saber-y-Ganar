@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hostIncorrectSound = document.getElementById('host-incorrect-sound');
     const lobbyMusic = document.getElementById('lobby-music');
     const timerTickSound = document.getElementById('timer-tick-sound');
+    const backgroundMusic = document.getElementById('background-music');
 
     const answerCountElements = [
         document.getElementById('answer-count-0'),
@@ -43,12 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let key in screens) { screens[key].classList.add('hidden'); }
         screens[screenName].classList.remove('hidden');
 
-        if (screenName === 'lobby') {
+        // --- Music Control ---
+        const playLobby = screenName === 'lobby';
+        const playBackground = ['quiz', 'questionSummary', 'leaderboard', 'rondaRelampago'].includes(screenName);
+
+        if (playLobby) {
             lobbyMusic.volume = 0.3;
-            lobbyMusic.play().catch(e => console.log("La reproducción automática de la música del lobby fue bloqueada por el navegador."));
+            lobbyMusic.play().catch(e => console.log("Lobby music autoplay blocked."));
         } else {
             lobbyMusic.pause();
             lobbyMusic.currentTime = 0;
+        }
+
+        if (playBackground) {
+            backgroundMusic.volume = 0.2;
+            backgroundMusic.play().catch(e => console.log("Background music autoplay blocked."));
+        } else {
+            backgroundMusic.pause();
+            backgroundMusic.currentTime = 0;
         }
     }
 
@@ -57,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hostIncorrectSound.play().then(() => hostIncorrectSound.pause()).catch(() => {});
         lobbyMusic.play().then(() => lobbyMusic.pause()).catch(() => {});
         timerTickSound.play().then(() => timerTickSound.pause()).catch(() => {});
+        backgroundMusic.play().then(() => backgroundMusic.pause()).catch(() => {});
     }
 
     document.getElementById('create-game-btn').addEventListener('click', () => {
