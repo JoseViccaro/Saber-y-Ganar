@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let gamePin;
     let timerInterval;
     let rondaRelampagoAnunciada = false; // Flag to show announcement only once
+    const RONDA_RELAMPAGO_QUESTION_INDEX = 18; // Define constant for Ronda Relampago question index
     const screens = { 
         setup: document.getElementById('setup-screen'), 
         lobby: document.getElementById('lobby-screen'), 
@@ -88,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('create-game-btn').addEventListener('click', () => {
         unlockAudio();
-        socket.emit('host-create-game');
+        socket.emit('host-create-game', { hostName: 'Anfitrión' });
     });
 
     

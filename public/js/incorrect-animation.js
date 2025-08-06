@@ -6,14 +6,17 @@ document.body.appendChild(incorrectContainer);
 const incorrectCtx = incorrectContainer.getContext('2d');
 let incorrectParticles = [];
 
+const INCORRECT_PARTICLE_COUNT = 100;
+const INCORRECT_ANIMATION_DURATION = 2000; // 2 seconds
+
 function resizeIncorrectCanvas() {
     incorrectContainer.width = window.innerWidth;
     incorrectContainer.height = window.innerHeight;
 }
 
 function createIncorrectAnimation() {
-    const count = 100;
-    const duration = 2000; // 2 seconds
+    const count = INCORRECT_PARTICLE_COUNT;
+    const duration = INCORRECT_ANIMATION_DURATION;
 
     for (let i = 0; i < count; i++) {
         incorrectParticles.push({

@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastAnswerIndex; // Para guardar la última respuesta del jugador
     let rondaRelampagoAnunciada = false; // Flag to show announcement only once
 
+    // Constants
+    const RONDA_RELAMPAGO_QUESTION_INDEX = 18;
+    const RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION = 3000;
+    const FEEDBACK_DISPLAY_DURATION = 2000;
+    const READY_GO_DISPLAY_DURATION = 1000;
+    const BONUS_TOAST_DISPLAY_DURATION = 3000;
+
     const screens = {
         join: document.getElementById('join-screen'),
         waiting: document.getElementById('waiting-screen'),
@@ -64,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Se interactúa con los sonidos en la primera acción del usuario.
         correctSound.play().then(() => correctSound.pause()).catch(() => {});
         incorrectSound.play().then(() => incorrectSound.pause()).catch(() => {});
-        timerTickSound.play().then(() => timerTickSound.pause()).catch(() => {});
+        // timerTickSound.play().then(() => timerTickSound.pause()).catch(() => {}); // Removed commented out audio logic
 
         gamePin = document.getElementById('pin-input').value;
         const name = document.getElementById('name-input').value.trim();
@@ -163,12 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Show Ronda Relampago announcement only once
-        if (data.questionIndex === 18 && !rondaRelampagoAnunciada) { // Changed from 19 to 18
+        if (data.questionIndex === RONDA_RELAMPAGO_QUESTION_INDEX && !rondaRelampagoAnunciada) {
             rondaRelampagoAnunciada = true;
             showScreen('rondaRelampago');
             setTimeout(() => {
                 showScreen('question');
-            }, 3000); // Show for 3 seconds
+            }, RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION);
         } else {
             showScreen('question');
         }
@@ -208,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
             screens.feedback.classList.add('hidden');
             screens.feedback.classList.remove('correct', 'incorrect');
             showScreen('waiting'); // Go back to waiting screen after feedback
-        }, 2000); // Show feedback for 2 seconds
+        }, FEEDBACK_DISPLAY_DURATION);
 
         playerScoreElement.textContent = `Puntos: ${currentScore}`;
         if (streak > 1) {
@@ -221,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.appendChild(streakBonusEl);
                 setTimeout(() => {
                     streakBonusEl.remove();
-                }, 3000);
+                }, BONUS_TOAST_DISPLAY_DURATION);
             }
         } else {
             answerStreakElement.classList.add('hidden');
@@ -250,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             screens.feedback.classList.add('hidden');
             showScreen('waiting'); // Go back to waiting screen after feedback
-        }, 2000); // Show feedback for 2 seconds
+        }, FEEDBACK_DISPLAY_DURATION);
     });
 
      
@@ -293,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showScreen('readyGo');
         setTimeout(() => {
             screens.readyGo.classList.add('hidden');
-        }, 1000);
+        }, READY_GO_DISPLAY_DURATION);
     });
 
     
