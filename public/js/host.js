@@ -41,8 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextQuestionLeaderboardBtn = document.getElementById('next-question-leaderboard-btn');
 
     function showScreen(screenName) {
-        for (let key in screens) { screens[key].classList.add('hidden'); }
+        // Hide all screens first
+        for (let key in screens) {
+            screens[key].classList.add('hidden');
+            // Specifically handle the epic announcement visibility
+            if (screens[key].classList.contains('epic-announcement')) {
+                screens[key].classList.remove('visible');
+            }
+        }
+
+        // Show the target screen
         screens[screenName].classList.remove('hidden');
+        if (screens[screenName].classList.contains('epic-announcement')) {
+            screens[screenName].classList.add('visible');
+        }
+
 
         // --- Music Control ---
         const playLobby = screenName === 'lobby';
