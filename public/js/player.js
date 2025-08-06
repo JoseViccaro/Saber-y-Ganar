@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pointsGainedElement = document.getElementById('points-gained');
     const powerupFiftyFiftyBtn = document.getElementById('powerup-fifty-fifty');
     const powerupDoublePointsBtn = document.getElementById('powerup-double-points');
+    const powerupSkipQuestionBtn = document.getElementById('powerup-skip-question');
     const confettiCanvas = document.getElementById('confetti-canvas');
     const customConfetti = confetti.create(confettiCanvas, { resize: true });
 
@@ -83,6 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
     powerupDoublePointsBtn.addEventListener('click', () => {
         socket.emit('player-use-powerup', { pin: gamePin, powerupType: 'doublePoints' });
         powerupDoublePointsBtn.disabled = true;
+    });
+
+    powerupSkipQuestionBtn.addEventListener('click', () => {
+        socket.emit('player-use-powerup', { pin: gamePin, powerupType: 'skipQuestion' });
+        powerupSkipQuestionBtn.disabled = true;
     });
 
      
@@ -153,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.powerups) {
             powerupFiftyFiftyBtn.disabled = !data.powerups.fiftyFifty;
             powerupDoublePointsBtn.disabled = !data.powerups.doublePoints;
+            powerupSkipQuestionBtn.disabled = !data.powerups.skipQuestion;
         }
 
         // Show Ronda Relampago announcement only once
@@ -183,12 +190,25 @@ document.addEventListener('DOMContentLoaded', () => {
             correctSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
             if (selectedButton) selectedButton.classList.add('correct');
             triggerConfetti(); // ¡Lanzar confeti!
-            
+            feedbackText.textContent = '¡Correcto!';
+            pointsGainedElement.textContent = `+${pointsGained}`;
+            pointsGainedElement.classList.remove('hidden');
+            screens.feedback.classList.add('correct');
         } else {
             incorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
             if (selectedButton) selectedButton.classList.add('incorrect');
             window.triggerIncorrectAnimation(); // Lanza la animación de "X"
+            feedbackText.textContent = '¡Incorrecto!';
+            pointsGainedElement.classList.add('hidden');
+            screens.feedback.classList.add('incorrect');
         }
+
+        showScreen('feedback');
+        setTimeout(() => {
+            screens.feedback.classList.add('hidden');
+            screens.feedback.classList.remove('correct', 'incorrect');
+            showScreen('waiting'); // Go back to waiting screen after feedback
+        }, 2000); // Show feedback for 2 seconds
 
         playerScoreElement.textContent = `Puntos: ${currentScore}`;
         if (streak > 1) {
@@ -218,6 +238,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('powerup-double-points-result', () => {
         powerupDoublePointsBtn.disabled = true; // Disable 2x Points button after use
+    });
+
+    socket.on('powerup-skip-question-result', () => {
+        powerupSkipQuestionBtn.disabled = true;
+        document.querySelectorAll('.answer-btn').forEach(btn => btn.disabled = true); // Disable answer buttons
+        feedbackText.textContent = '¡Pregunta Saltada!';
+        pointsGainedElement.classList.add('hidden');
+        screens.feedback.classList.remove('correct', 'incorrect'); // Ensure no color from previous feedback
+        showScreen('feedback');
+        setTimeout(() => {
+            screens.feedback.classList.add('hidden');
+            showScreen('waiting'); // Go back to waiting screen after feedback
+        }, 2000); // Show feedback for 2 seconds
     });
 
      

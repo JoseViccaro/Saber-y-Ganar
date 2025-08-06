@@ -3,6 +3,8 @@ let availableQuestions = [...MASTER_QUESTIONS];
 
 let games = {};
 
+let sendQuestionRef; // Will be set by socketHandler
+
 // --- FUNCIÓN PARA BARAJAR ---
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -59,7 +61,7 @@ function addPlayer(pin, socket, name) {
             name,
             score: 0,
             streak: 0,
-            powerups: { fiftyFifty: true, doublePoints: true },
+            powerups: { fiftyFifty: true, doublePoints: true, skipQuestion: true },
             extraTimeActive: false,
             doublePointsActive: false
         };
@@ -140,7 +142,11 @@ function usePowerup(pin, socket, powerupType, io) {
         player.powerups.doublePoints = false;
         player.doublePointsActive = true;
         socket.emit('powerup-double-points-result');
-    }  
+    } else if (powerupType === 'skipQuestion' && player.powerups.skipQuestion) {
+        player.powerups.skipQuestion = false;
+        player.lastAnswerIndex = -1; // Mark as skipped
+        socket.emit('powerup-skip-question-result');
+    }
 }
 
 function removePlayer(socket) {
@@ -164,5 +170,6 @@ module.exports = {
     addPlayer,
     handleAnswer,
     removePlayer,
-    usePowerup
+    usePowerup,
+    setSendQuestionRef: (fn) => { sendQuestionRef = fn; } // Export a setter for sendQuestion
 };

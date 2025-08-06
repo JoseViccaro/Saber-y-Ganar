@@ -107,6 +107,10 @@ input[type="text"]:focus, input[type="number"]:focus {
     background: linear-gradient(45deg, #FF1493, #9400D3);
 }
 
+#powerup-skip-question {
+    background: linear-gradient(45deg, #1ABC9C, #16A085); /* Turquoise */
+}
+
 
 
 
@@ -161,6 +165,11 @@ input[type="text"]:focus, input[type="number"]:focus {
     align-items: center;
     z-index: 100;
     transition: opacity 0.5s ease;
+}
+
+.full-screen-feedback.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .full-screen-feedback.correct {

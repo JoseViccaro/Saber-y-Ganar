@@ -1,10 +1,11 @@
-const { games, createGame, addPlayer, handleAnswer, removePlayer, usePowerup, shuffle } = require('./gameLogic');
+const { games, createGame, addPlayer, handleAnswer, removePlayer, usePowerup, shuffle, setSendQuestionRef } = require('./gameLogic');
 
 function sanitize(str) {
     return decodeURIComponent(String(str)).replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
 function initializeSocket(io) {
+    setSendQuestionRef(sendQuestion); // Pass sendQuestion to gameLogic
     io.on('connection', (socket) => {
         socket.on('host-create-game', async () => {
             const game = await createGame(socket);
