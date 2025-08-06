@@ -146,18 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.powerups) {
             powerupFiftyFiftyBtn.disabled = !data.powerups.fiftyFifty;
             powerupDoublePointsBtn.disabled = !data.powerups.doublePoints;
-             
-        }
-
-        // Show Ronda Relampago announcement only once
-        if (data.questionIndex === 19 && !rondaRelampagoAnunciada) {
-            rondaRelampagoAnunciada = true;
-            showScreen('rondaRelampago');
-            setTimeout(() => {
-                showScreen('question');
-            }, 3000); // Show for 3 seconds
-        } else {
-            showScreen('question');
         }
     });
 
