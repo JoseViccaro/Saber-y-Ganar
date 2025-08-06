@@ -90,12 +90,7 @@ function sendQuestion(io, pin) {
     game.answerCounts = [0, 0, 0, 0];
     game.timeElapsed = 0;
 
-    if (game.currentQuestion === 20) {
-        
-        setTimeout(() => sendActualQuestion(io, pin), 2000);
-    } else {
-        sendActualQuestion(io, pin);
-    }
+    sendActualQuestion(io, pin);
 }
 
 function sendActualQuestion(io, pin) {
@@ -113,7 +108,7 @@ function sendActualQuestion(io, pin) {
             image: question.image || null,
             type: question.type || 'multiple_choice'
         };
-        game.timeLimit = (game.currentQuestion >= 20 && game.currentQuestion <= 24) ? 6 : 12;
+        game.timeLimit = (game.currentQuestion >= 19 && game.currentQuestion <= 24) ? 6 : 12;
 
         io.to(game.hostId).emit('new-question', basePayload);
 
@@ -157,6 +152,7 @@ function showQuestionSummary(io, pin) {
     const summaryData = {
         questionText: currentQuestion.question,
         correctAnswer: currentQuestion.answers[currentQuestion.correct],
+        correctAnswerIndex: currentQuestion.correct,
         answerCounts: game.answerCounts
     };
     io.to(game.hostId).emit('show-question-summary', summaryData);

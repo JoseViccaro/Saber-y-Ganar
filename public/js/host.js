@@ -225,7 +225,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-        hostCorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+        if (data.answerCounts[data.correctAnswerIndex] > 0) {
+            confetti({ particleCount: 150, spread: 180 });
+            hostCorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+        } else {
+            hostIncorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+        }
         showScreen('questionSummary');
         showLeaderboardBtn.classList.remove('hidden');
         nextQuestionBtn.classList.add('hidden');
