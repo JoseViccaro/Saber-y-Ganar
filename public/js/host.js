@@ -196,6 +196,30 @@ document.addEventListener('DOMContentLoaded', () => {
         answerCountElements[answerIndex].textContent = currentCount + 1;
     });
 
+    socket.on('player-answer-feedback', (data) => {
+        const { playerName, correct, pointsGained } = data;
+        if (pointsGained > 0) { // Only show animation for positive points
+            const pointsDisplay = document.createElement('div');
+            pointsDisplay.className = `points-animation ${correct ? 'correct' : 'incorrect'}`;
+            pointsDisplay.textContent = `${pointsGained > 0 ? '+' : ''}${pointsGained}`;
+            document.body.appendChild(pointsDisplay);
+
+            setTimeout(() => {
+                pointsDisplay.remove();
+            }, 2000);
+        }
+
+        if (!correct) {
+            const incorrectAnimation = document.getElementById('incorrect-animation-overlay');
+            if (incorrectAnimation) {
+                incorrectAnimation.classList.add('flash');
+                setTimeout(() => {
+                    incorrectAnimation.classList.remove('flash');
+                }, 700);
+            }
+        }
+    });
+
     socket.on('show-question-summary', (data) => {
         summaryQuestionText.textContent = data.questionText;
         summaryCorrectAnswer.textContent = data.correctAnswer;

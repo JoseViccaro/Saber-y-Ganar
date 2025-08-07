@@ -53,6 +53,11 @@ function initializeSocket(io) {
 
             if (result) {
                 socket.emit('answer-result', result);
+                io.to(game.hostId).emit('player-answer-feedback', {
+                    playerName: game.players[socket.id].name,
+                    correct: result.correct,
+                    pointsGained: result.pointsGained
+                });
                 io.to(game.hostId).emit('player-responded', {
                     playerName: game.players[socket.id].name,
                     answerIndex: answerIndex

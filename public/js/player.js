@@ -206,7 +206,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (selectedButton) selectedButton.classList.add('incorrect');
             window.triggerIncorrectAnimation(); // Lanza la animación de "X"
             feedbackText.textContent = '¡Incorrecto!';
-            pointsGainedElement.classList.add('hidden');
+            pointsGainedElement.textContent = `${pointsGained}`;
+            pointsGainedElement.classList.remove('hidden');
             screens.feedback.classList.add('incorrect');
         }
 
