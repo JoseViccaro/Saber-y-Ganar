@@ -169,16 +169,16 @@ document.addEventListener('DOMContentLoaded', () => {
             powerupSkipQuestionBtn.disabled = !data.powerups.skipQuestion;
         }
 
-        // Show Ronda Relampago announcement only once
-        if (data.questionIndex === RONDA_RELAMPAGO_QUESTION_INDEX && !rondaRelampagoAnunciada) {
-            rondaRelampagoAnunciada = true;
-            showScreen('rondaRelampago');
-            setTimeout(() => {
-                showScreen('question');
-            }, RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION);
-        } else {
-            showScreen('question');
-        }
+        showScreen('question');
+    });
+
+    socket.on('ronda-relampago-announce', () => {
+        showScreen('rondaRelampago');
+        setTimeout(() => {
+            // The server will send the 'new-question' event after the announcement duration
+            // so we just hide the announcement screen here.
+            screens.rondaRelampago.classList.add('hidden');
+        }, RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION);
     });
 
     socket.on('answer-result', (data) => {

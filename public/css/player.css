@@ -99,6 +99,22 @@ input[type="text"]:focus, input[type="number"]:focus {
 }
 
 /* Power-up Buttons */
+#powerups-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.powerup-btn {
+    flex: 1 1 auto; /* Allow buttons to grow and shrink, and take up available space */
+    min-width: 100px; /* Minimum width for buttons */
+    max-width: 30%; /* Max width to allow wrapping */
+    padding: 12px 15px; /* Adjust padding for smaller screens */
+    font-size: 0.9em; /* Smaller font size for mobile */
+}
+
 #powerup-fifty-fifty {
     background: linear-gradient(45deg, #FF8C00, #FFD700);
 }
@@ -239,44 +255,7 @@ input[type="text"]:focus, input[type="number"]:focus {
     100% { transform: scale(1); opacity: 1; }
 }
 
-#ronda-relampago-announcement {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Darker background */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 50px #00BFFF; /* More intense glow */
-    animation: pulse 1s infinite alternate, scaleIn 0.5s ease-out; /* Faster pulse, added scaleIn */
-    transform: scale(1); /* Start at normal scale */
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
 
-#ronda-relampago-announcement.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-@keyframes pulse {
-    from { transform: scale(1); opacity: 1; }
-    to { transform: scale(1.08); opacity: 0.9; } /* More pronounced pulse */
-}
-
-#ronda-relampago-announcement h1 {
-    font-size: 4em;
-    margin-bottom: 20px;
-}
-
-#ronda-relampago-announcement p {
-    font-size: 1.5em;
-}
 
 #winner-announcement {
     position: fixed;
@@ -291,20 +270,28 @@ input[type="text"]:focus, input[type="number"]:focus {
     align-items: center;
     z-index: 1000;
     color: white;
-    font-size: 4em;
     font-weight: bold;
     text-shadow: 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700;
     animation: winner-pulse 2s infinite alternate;
 }
 
 #winner-announcement h1 {
-    font-size: 1.5em;
+    font-size: 3rem; /* Adjusted for mobile */
     margin-bottom: 20px;
 }
 
 #winner-announcement h2 {
-    font-size: 1em;
+    font-size: 2rem; /* Adjusted for mobile */
     color: #FFD700;
+}
+
+@media (max-width: 480px) {
+    #winner-announcement h1 {
+        font-size: 2.5rem;
+    }
+    #winner-announcement h2 {
+        font-size: 1.5rem;
+    }
 }
 
 @keyframes winner-pulse {

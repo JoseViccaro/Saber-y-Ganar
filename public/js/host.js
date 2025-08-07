@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const hostTimerCountdown = document.getElementById('host-timer-countdown');
-    const hostTimerBar = document.getElementById('host-timer-bar');
     const playersRespondedList = document.getElementById('players-responded-list');
 
     const hostCorrectSound = document.getElementById('host-correct-sound');
@@ -133,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
     socket.on('new-question', (data) => {
         clearInterval(timerInterval);
         hostTimerCountdown.textContent = ''; 
-        hostTimerBar.style.transform = 'scaleY(1)'; 
 
         document.getElementById('question-counter').textContent = `Pregunta ${data.questionIndex + 1} / ${data.totalQuestions}`;
         document.getElementById('question').textContent = data.question;
@@ -168,23 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('answer-counts-container').children[3].classList.remove('hidden');
         }
 
-        // Show Ronda Relampago announcement only once
-        if (data.questionIndex === 18 && !rondaRelampagoAnunciada) { // Changed from 19 to 18
-            rondaRelampagoAnunciada = true;
-            showScreen('rondaRelampago');
-            setTimeout(() => {
-                showScreen('quiz');
-            }, 3000); // Show for 3 seconds
-        } else {
-            showScreen('quiz');
-        }
+        showScreen('quiz');
+    });
+
+    socket.on('ronda-relampago-announce', () => {
+        showScreen('rondaRelampago');
     });
 
     socket.on('update-timer', (timeLeft, totalTime) => {
         hostTimerCountdown.textContent = timeLeft;
-        const percentage = timeLeft / totalTime;
-        hostTimerBar.style.transform = `scaleY(${percentage})`;
-        hostTimerBar.style.transitionDuration = '1s'; 
 
         if (timeLeft <= 5 && timeLeft > 0) {
             timerTickSound.play();

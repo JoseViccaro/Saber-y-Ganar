@@ -8,6 +8,7 @@ const TIME_LIMIT_SHORT = 6; // Time limit for questions 19-24
 const TIME_LIMIT_LONG = 12; // Time limit for other questions
 const SPECIAL_QUESTION_START = 19;
 const SPECIAL_QUESTION_END = 24;
+const RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION = 3000; // 3 seconds for announcement
 
 // --- FUNCIÓN PARA BARAJAR ---
 function shuffle(array) {
@@ -189,7 +190,15 @@ function sendQuestion(io, pin) {
     game.answerCounts = [0, 0, 0, 0];
     game.timeElapsed = 0;
 
-    sendActualQuestion(io, pin);
+    // Check for Ronda Relampago announcement
+    if (game.currentQuestion === SPECIAL_QUESTION_START -1) { // -1 because currentQuestion is already incremented
+        io.to(pin).emit('ronda-relampago-announce');
+        setTimeout(() => {
+            sendActualQuestion(io, pin);
+        }, RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION);
+    } else {
+        sendActualQuestion(io, pin);
+    }
 }
 
 function sendActualQuestion(io, pin) {

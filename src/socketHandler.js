@@ -15,8 +15,6 @@ function initializeSocket(io) {
             if (game) {
                 socket.join(game.pin);
                 socket.emit('game-created', game.pin);
-                // Automatically add the host as a player
-                addPlayer(game.pin, socket, hostName || 'Anfitrión');
                 io.to(game.hostId).emit('update-player-list', game.players);
             }
         });
