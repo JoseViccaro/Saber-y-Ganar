@@ -115,9 +115,11 @@ function handleAnswer(pin, socket, answerIndex) {
         }
     }
     else {
-        const pointsLost = - (250 + Math.round((game.timeElapsed / game.timeLimit) * 250));
-        pointsGained = pointsLost;
-        player.score += pointsGained;
+        if (player.score > 0) {
+            const pointsLost = - (250 + Math.round((game.timeElapsed / game.timeLimit) * 250));
+            pointsGained = pointsLost;
+            player.score += pointsGained;
+        }
         player.streak = 0;
     }
 

@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hostTimerCountdown = document.getElementById('host-timer-countdown');
     const playersRespondedList = document.getElementById('players-responded-list');
+    const correctPlayersList = document.getElementById('correct-players-list');
 
     const hostCorrectSound = document.getElementById('host-correct-sound');
     const hostIncorrectSound = document.getElementById('host-incorrect-sound');
@@ -111,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     socket.on('update-player-list', (players) => {
+        console.log('update-player-list event received:', players);
         const list = document.getElementById('players-list');
         list.innerHTML = '';
         Object.values(players).forEach(p => {
@@ -143,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             questionImageContainer.classList.add('hidden');
         }
         playersRespondedList.innerHTML = ''; // Limpiar la lista de respondedores
+        correctPlayersList.innerHTML = ''; // Limpiar la lista de respuestas correctas
 
         // Resetear contadores de respuestas
         answerCountElements.forEach(el => el.textContent = '0');
@@ -198,10 +201,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('player-answer-feedback', (data) => {
         const { playerName, correct, pointsGained } = data;
-        if (pointsGained > 0) { // Only show animation for positive points
+        if (correct) {
+            const correctPlayerTag = document.createElement('li');
+            correctPlayerTag.className = 'correct-player-tag';
+            correctPlayerTag.textContent = `${playerName} +${pointsGained}`;
+            correctPlayersList.appendChild(correctPlayerTag);
+        }
+
+        if (pointsGained !== 0) {
             const pointsDisplay = document.createElement('div');
             pointsDisplay.className = `points-animation ${correct ? 'correct' : 'incorrect'}`;
-            pointsDisplay.textContent = `${pointsGained > 0 ? '+' : ''}${pointsGained}`;
+            pointsDisplay.textContent = `${playerName} ${pointsGained > 0 ? '+' : ''}${pointsGained}`;
             document.body.appendChild(pointsDisplay);
 
             setTimeout(() => {
