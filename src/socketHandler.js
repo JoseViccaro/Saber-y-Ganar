@@ -19,17 +19,14 @@ function initializeSocket(io) {
             }
         });
 
-        socket.on('host-start-game', (pin) => {
+        function handleRequestQuestion(pin) {
             if (games[pin] && games[pin].hostId === socket.id) {
                 sendQuestion(io, pin);
             }
-        });
+        }
 
-        socket.on('host-next-question', (pin) => {
-            if (games[pin] && games[pin].hostId === socket.id) {
-                sendQuestion(io, pin);
-            }
-        });
+        socket.on('host-start-game', handleRequestQuestion);
+        socket.on('host-next-question', handleRequestQuestion);
 
         socket.on('player-join-game', (data) => {
             const { pin, name } = data;

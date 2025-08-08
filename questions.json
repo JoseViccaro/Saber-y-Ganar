@@ -1,5 +1,29 @@
 [
     {
+        "question": "¿Qué famoso monumento es este?",
+        "answers": [
+            "La Torre Eiffel",
+            "El Coliseo",
+            "La Estatua de la Libertad",
+            "El Big Ben"
+        ],
+        "correct": 0,
+        "image": "https://i.imgur.com/6L29zIm.jpeg",
+        "type": "multiple_choice"
+    },
+    {
+        "question": "¿Quién pintó este cuadro?",
+        "answers": [
+            "Vincent van Gogh",
+            "Pablo Picasso",
+            "Leonardo da Vinci",
+            "Claude Monet"
+        ],
+        "correct": 2,
+        "image": "https://i.imgur.com/O7f42d1.jpeg",
+        "type": "multiple_choice"
+    },
+    {
         "question": "¿Cuál es el río más largo del mundo?",
         "answers": [
             "Amazonas",
@@ -8,7 +32,25 @@
             "Yangtsé"
         ],
         "correct": 0,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Amazon_river_basin.png/800px-Amazon_river_basin.png"
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La capital de Francia es Roma.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 1,
+        "type": "true_false"
+    },
+    {
+        "question": "El agua hierve a 100 grados Celsius al nivel del mar.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
     },
     {
         "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
@@ -18,7 +60,8 @@
             "Homero",
             "Miguel de Cervantes"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué continente se encuentra Egipto?",
@@ -28,7 +71,8 @@
             "Europa",
             "Oceanía"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el océano más grande del mundo?",
@@ -38,7 +82,8 @@
             "Pacífico",
             "Ártico"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué planeta es conocido como el 'Planeta Rojo'?",
@@ -49,7 +94,7 @@
             "Saturno"
         ],
         "correct": 1,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/800px-OSIRIS_Mars_true_color.jpg"
+        "type": "multiple_choice"
     },
     {
         "question": "La Mona Lisa fue pintada por...",
@@ -60,7 +105,7 @@
             "Monet"
         ],
         "correct": 2,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Australia?",
@@ -70,7 +115,8 @@
             "Canberra",
             "Perth"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué gas es esencial para que respiremos?",
@@ -80,7 +126,8 @@
             "Hidrógeno",
             "Oxígeno"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue el primer hombre en pisar la Luna?",
@@ -90,7 +137,8 @@
             "Michael Collins",
             "Neil Armstrong"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
@@ -100,7 +148,8 @@
             "1945",
             "1929"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "La Gran Muralla China fue construida para protegerse de...",
@@ -110,7 +159,8 @@
             "Los rusos",
             "Los coreanos"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué instrumento musical tiene 88 teclas?",
@@ -120,7 +170,8 @@
             "Piano",
             "Batería"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el país con más habitantes del mundo?",
@@ -130,7 +181,8 @@
             "Estados Unidos",
             "Indonesia"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué animal es un mamífero y puede volar?",
@@ -140,7 +192,8 @@
             "Murciélago",
             "Pez volador"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién es el autor de 'El Principito'?",
@@ -150,7 +203,8 @@
             "Roald Dahl",
             "C.S. Lewis"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la montaña más alta del mundo?",
@@ -160,7 +214,8 @@
             "Everest",
             "Aconcagua"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué civilización construyó las pirámides de Giza?",
@@ -170,7 +225,8 @@
             "Persas",
             "Egipcios"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la Vía Láctea?",
@@ -180,7 +236,8 @@
             "Nuestra galaxia",
             "Un cometa"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el hueso más largo del cuerpo humano?",
@@ -190,7 +247,8 @@
             "Húmero",
             "Peroné"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué superhéroe de DC Comics es conocido como el 'Hombre de Acero'?",
@@ -200,7 +258,8 @@
             "Superman",
             "Aquaman"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el ingrediente principal del guacamole?",
@@ -210,7 +269,8 @@
             "Cebolla",
             "Limón"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué ciudad se encuentra el Coliseo Romano?",
@@ -220,7 +280,8 @@
             "Londres",
             "Roma"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál de estos instrumentos es de viento-madera?",
@@ -230,7 +291,8 @@
             "Clarinete",
             "Violín"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "La serie de libros de 'Harry Potter' fue escrita por...",
@@ -240,7 +302,8 @@
             "George R.R. Martin",
             "J.K. Rowling"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la fotosíntesis?",
@@ -250,7 +313,8 @@
             "La evaporación del agua",
             "La formación de rocas"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué país tiene forma de bota?",
@@ -260,7 +324,8 @@
             "Chile",
             "Noruega"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién es considerado el 'Rey del Pop'?",
@@ -270,7 +335,8 @@
             "Freddie Mercury",
             "Frank Sinatra"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es un Tsunami?",
@@ -280,7 +346,8 @@
             "Una tormenta eléctrica",
             "Un terremoto en tierra"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "La Estatua de la Libertad fue un regalo de ¿qué país a EE.UU.?",
@@ -290,7 +357,8 @@
             "Alemania",
             "Francia"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuántos corazones tiene un pulpo?",
@@ -300,7 +368,8 @@
             "Tres",
             "Cuatro"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué país se originaron los Juegos Olímpicos?",
@@ -310,7 +379,8 @@
             "China",
             "Grecia"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "El personaje 'Sherlock Holmes' fue creado por...",
@@ -320,7 +390,8 @@
             "Edgar Allan Poe",
             "Julio Verne"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el desierto más grande y cálido del mundo?",
@@ -330,7 +401,8 @@
             "Kalahari",
             "Sahara"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Canadá?",
@@ -340,17 +412,19 @@
             "Montreal",
             "Ottawa"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué elemento químico tiene el símbolo 'Au'?",
+        "question": "¿Qué elemento químico tiene el símbolo 'Au'?- ",
         "answers": [
             "Plata",
             "Argón",
             "Oro",
             "Aluminio"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué deporte practica profesionalmente Rafael Nadal?",
@@ -360,7 +434,8 @@
             "Tenis",
             "Golf"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cómo se llama el proceso de convertir un líquido en gas?",
@@ -370,7 +445,8 @@
             "Fusión",
             "Evaporación"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué ciudad está la famosa ópera 'La Scala'?",
@@ -380,7 +456,8 @@
             "Milán",
             "Praga"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el animal terrestre más rápido?",
@@ -390,7 +467,8 @@
             "Guepardo",
             "Leopardo"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién pintó 'El Guernica'?",
@@ -400,7 +478,8 @@
             "Diego Rivera",
             "Pablo Picasso"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuántos jugadores tiene un equipo de fútbol en el campo?",
@@ -410,7 +489,8 @@
             "11",
             "12"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué tipo de animal es la ballena?",
@@ -420,7 +500,8 @@
             "Anfibio",
             "Reptil"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el libro sagrado del Islam?",
@@ -430,7 +511,8 @@
             "El Corán",
             "El Tripitaka"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "El Sol es una...",
@@ -440,7 +522,8 @@
             "Galaxia",
             "Nebulosa"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la lengua más hablada en el mundo?",
@@ -450,7 +533,8 @@
             "Chino Mandarín",
             "Hindi"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué Beatle fue asesinado en 1980?",
@@ -460,7 +544,8 @@
             "Ringo Starr",
             "John Lennon"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué significan las siglas 'ADN'?",
@@ -470,7 +555,8 @@
             "Análisis Directo Numérico",
             "Azúcar de Naranja"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué famoso científico desarrolló la teoría de la relatividad?",
@@ -480,7 +566,8 @@
             "Albert Einstein",
             "Nikola Tesla"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el color que resulta de mezclar azul y amarillo?",
@@ -490,7 +577,8 @@
             "Marrón",
             "Verde"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué continente está la selva del Amazonas?",
@@ -500,7 +588,8 @@
             "América del Sur",
             "Australia"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el océano más pequeño del mundo?",
@@ -510,7 +599,8 @@
             "Índico",
             "Ártico"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué año llegó Cristóbal Colón a América?",
@@ -520,7 +610,8 @@
             "1492",
             "1488"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único mamífero que no puede saltar?",
@@ -530,7 +621,8 @@
             "Jirafa",
             "Elefante"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué país es el mayor productor de café del mundo?",
@@ -540,7 +632,8 @@
             "Etiopía",
             "Brasil"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué famoso pintor se cortó una oreja?",
@@ -550,7 +643,8 @@
             "Gauguin",
             "Cézanne"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "La Torre Eiffel se encuentra en...",
@@ -560,7 +654,8 @@
             "Berlín",
             "París"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el animal que más muertes humanas causa al año?",
@@ -570,7 +665,8 @@
             "León",
             "Mosquito"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Japón?",
@@ -580,17 +676,19 @@
             "Tokio",
             "Hiroshima"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué elemento químico tiene el símbolo 'Fe'?",
+        "question": "¿Qué elemento químico tiene el símbolo 'Fe'?- ",
         "answers": [
             "Fósforo",
             "Flúor",
             "Francio",
             "Hierro"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién escribió 'Cien años de soledad'?",
@@ -600,7 +698,8 @@
             "Julio Cortázar",
             "Pablo Neruda"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué año cayó el Muro de Berlín?",
@@ -610,7 +709,8 @@
             "1991",
             "1993"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el metal más ligero?",
@@ -620,7 +720,8 @@
             "Litio",
             "Magnesio"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es un 'lustro'?",
@@ -630,7 +731,8 @@
             "Un periodo de 50 años",
             "Un periodo de 100 años"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el país más grande del mundo por superficie?",
@@ -640,7 +742,8 @@
             "Estados Unidos",
             "Rusia"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién dirigió la película 'Pulp Fiction'?",
@@ -650,7 +753,8 @@
             "Quentin Tarantino",
             "James Cameron"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el nombre del proceso por el cual las plantas convierten la luz solar en energía?",
@@ -660,17 +764,19 @@
             "Fotosíntesis",
             "Germinación"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué famoso artista es conocido por sus 'latas de sopa Campbell'?",
+        "question": "¿Qué famoso artista es conocido por sus 'latas de sopa Campbell'?- ",
         "answers": [
             "Jackson Pollock",
             "Andy Warhol",
             "Roy Lichtenstein",
             "Jean-Michel Basquiat"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Argentina?",
@@ -680,7 +786,8 @@
             "Buenos Aires",
             "Lima"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué gas de efecto invernadero es el más abundante en la atmósfera terrestre?",
@@ -690,7 +797,8 @@
             "Óxido nitroso",
             "Vapor de agua"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué deporte se utiliza un 'birdie'?",
@@ -700,7 +808,8 @@
             "Golf",
             "Críquet"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el nombre del primer satélite artificial lanzado al espacio?",
@@ -710,7 +819,8 @@
             "Sputnik 1",
             "Luna 1"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién es el autor de la saga de libros 'El Señor de los Anillos'?",
@@ -720,7 +830,8 @@
             "J.K. Rowling",
             "J.R.R. Tolkien"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el punto más bajo de la Tierra?",
@@ -730,7 +841,8 @@
             "Mar Muerto",
             "Depresión de Danakil"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué instrumento tocaba Jimi Hendrix?",
@@ -740,7 +852,8 @@
             "Guitarra",
             "Teclado"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la moneda oficial del Reino Unido?",
@@ -750,7 +863,8 @@
             "Libra esterlina",
             "Franco"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué civilización antigua es famosa por sus acueductos?",
@@ -760,7 +874,8 @@
             "Persas",
             "Romanos"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el planeta más grande de nuestro sistema solar?",
@@ -770,7 +885,8 @@
             "Neptuno",
             "Urano"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién pintó la 'Noche Estrellada'?",
@@ -780,7 +896,8 @@
             "Vincent van Gogh",
             "Salvador Dalí"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el animal nacional de la India?",
@@ -790,7 +907,8 @@
             "Tigre de Bengala",
             "Pavo real"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué país se encuentra el Taj Mahal?",
@@ -800,7 +918,8 @@
             "Bangladés",
             "Nepal"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el componente principal del Sol?",
@@ -810,7 +929,8 @@
             "Hidrógeno",
             "Helio"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué famoso dramaturgo escribió 'Romeo y Julieta'?",
@@ -820,7 +940,8 @@
             "William Shakespeare",
             "John Webster"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el desierto más frío del mundo?",
@@ -830,7 +951,8 @@
             "Antártico",
             "Ártico"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es un 'origami'?",
@@ -840,7 +962,8 @@
             "El arte de doblar papel",
             "Un estilo de caligrafía"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Sudáfrica?",
@@ -850,7 +973,8 @@
             "Durban",
             "Pretoria"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué banda de rock británica lanzó el álbum 'The Dark Side of the Moon'?",
@@ -860,7 +984,8 @@
             "Pink Floyd",
             "Queen"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el órgano más grande del cuerpo humano?",
@@ -870,7 +995,8 @@
             "Intestino",
             "Piel"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el símbolo químico del agua?",
@@ -880,7 +1006,8 @@
             "H2O",
             "Au"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué planeta es el más cercano al Sol?",
@@ -890,7 +1017,8 @@
             "Mercurio",
             "Marte"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la velocidad de la luz?",
@@ -900,7 +1028,8 @@
             "500,000 km/s",
             "1,000,000 km/s"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué tipo de energía se obtiene del viento?",
@@ -910,7 +1039,8 @@
             "Geotérmica",
             "Eólica"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
@@ -920,7 +1050,8 @@
             "Cobre",
             "Plomo"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué estudia la entomología?",
@@ -930,7 +1061,8 @@
             "Insectos",
             "Plantas"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el ácido presente en los limones?",
@@ -940,7 +1072,8 @@
             "Ácido sulfúrico",
             "Ácido clorhídrico"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la penicilina?",
@@ -950,7 +1083,8 @@
             "Una vitamina",
             "Una hormona"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuántos huesos tiene un ser humano adulto?",
@@ -960,7 +1094,8 @@
             "200",
             "212"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la hematología?",
@@ -970,7 +1105,8 @@
             "El estudio de los músculos",
             "El estudio de los nervios"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué año se descubrió América?",
@@ -980,7 +1116,8 @@
             "1488",
             "1512"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue el primer emperador romano?",
@@ -990,7 +1127,8 @@
             "Nerón",
             "Calígula"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué guerra duró 100 años?",
@@ -1000,7 +1138,8 @@
             "La Segunda Guerra Mundial",
             "La Guerra de Vietnam"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Dónde se originó la civilización azteca?",
@@ -1010,7 +1149,8 @@
             "Egipto",
             "Grecia"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue Juana de Arco?",
@@ -1020,7 +1160,8 @@
             "Una escritora famosa",
             "Una pintora renacentista"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué evento marcó el inicio de la Edad Media?",
@@ -1030,7 +1171,8 @@
             "La invención de la imprenta",
             "La Revolución Francesa"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue el líder de la Reforma Protestante?",
@@ -1040,7 +1182,8 @@
             "Enrique VIII",
             "Ignacio de Loyola"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué país se encuentra la ciudad de Petra?",
@@ -1050,7 +1193,8 @@
             "Siria",
             "Irak"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué faraón egipcio es famoso por su tumba intacta?",
@@ -1060,7 +1204,8 @@
             "Tutankamón",
             "Akenatón"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue el Renacimiento?",
@@ -1070,7 +1215,8 @@
             "Una crisis económica",
             "Una pandemia"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el desierto más grande del mundo?",
@@ -1080,7 +1226,8 @@
             "El de Atacama",
             "El Antártico"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué país se encuentra el Monte Fuji?",
@@ -1090,7 +1237,8 @@
             "Japón",
             "Vietnam"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Rusia?",
@@ -1100,7 +1248,8 @@
             "Kiev",
             "Varsovia"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué río pasa por París?",
@@ -1110,7 +1259,8 @@
             "El Sena",
             "El Tíber"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el país más poblado de África?",
@@ -1120,7 +1270,8 @@
             "Sudáfrica",
             "Etiopía"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué cordillera se encuentra el Aconcagua?",
@@ -1130,7 +1281,8 @@
             "En el Himalaya",
             "En las Montañas Rocosas"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la isla más grande del mundo?",
@@ -1140,17 +1292,19 @@
             "Borneo",
             "Madagascar"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué país es conocido como la 'Tierra del Sol Naciente'?",
+        "question": "¿Qué país es conocido como la 'Tierra del Sol Naciente'?- ",
         "answers": [
             "China",
             "Japón",
             "Corea del Sur",
             "Tailandia"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Brasil?",
@@ -1160,7 +1314,8 @@
             "Brasilia",
             "Salvador"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué continente se encuentra la Patagonia?",
@@ -1170,17 +1325,8 @@
             "En Australia",
             "En Asia"
         ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió 'Cien años de soledad'?",
-        "answers": [
-            "Gabriel García Márquez",
-            "Mario Vargas Llosa",
-            "Julio Cortázar",
-            "Pablo Neruda"
-        ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién pintó 'La última cena'?",
@@ -1190,7 +1336,8 @@
             "Leonardo da Vinci",
             "Donatello"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué escritor es famoso por sus novelas de misterio con Hércules Poirot?",
@@ -1200,7 +1347,8 @@
             "Edgar Allan Poe",
             "Raymond Chandler"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién es el autor de 'El viejo y el mar'?",
@@ -1210,7 +1358,8 @@
             "John Steinbeck",
             "F. Scott Fitzgerald"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué movimiento artístico representa Salvador Dalí?",
@@ -1220,7 +1369,8 @@
             "Surrealismo",
             "Expresionismo"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién escribió 'La Divina Comedia'?",
@@ -1230,17 +1380,19 @@
             "Boccaccio",
             "Maquiavelo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué banda de rock es conocida como 'Sus Satánicas Majestades'?",
+        "question": "¿Qué banda de rock es conocida como 'Sus Satánicas Majestades'?- ",
         "answers": [
             "The Beatles",
             "The Rolling Stones",
             "Led Zeppelin",
             "Queen"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién compuso 'Las cuatro estaciones'?",
@@ -1250,7 +1402,8 @@
             "Beethoven",
             "Vivaldi"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué película ganó el primer Óscar a la Mejor Película?",
@@ -1260,7 +1413,8 @@
             "Casablanca",
             "El mago de Oz"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién es el autor de la escultura 'El Pensador'?",
@@ -1270,7 +1424,8 @@
             "Rodin",
             "Bernini"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué año se estrenó la primera película de Star Wars?",
@@ -1280,7 +1435,8 @@
             "1983",
             "1975"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién interpreta a Iron Man en el Universo Cinematográfico de Marvel?",
@@ -1290,7 +1446,8 @@
             "Mark Ruffalo",
             "Robert Downey Jr."
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el nombre del protagonista de la serie 'Breaking Bad'?",
@@ -1300,7 +1457,8 @@
             "Walter White",
             "Gus Fring"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué videojuego es considerado el más vendido de la historia?",
@@ -1310,27 +1468,30 @@
             "Grand Theft Auto V",
             "Super Mario Bros."
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es la cantante conocida como la 'Reina del Pop'?",
+        "question": "¿Quién es la cantante conocida como la 'Reina del Pop'?- ",
         "answers": [
             "Madonna",
             "Beyoncé",
             "Rihanna",
             "Lady Gaga"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué serie de televisión tiene como lema 'Winter is Coming'?",
+        "question": "¿Qué serie de televisión tiene como lema 'Winter is Coming'?- ",
         "answers": [
             "The Walking Dead",
             "Breaking Bad",
             "Game of Thrones",
             "Stranger Things"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué actor ha interpretado a James Bond en más películas?",
@@ -1340,27 +1501,30 @@
             "Daniel Craig",
             "Pierce Brosnan"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del parque de atracciones de dinosaurios en 'Jurassic Park'?",
+        "question": "¿Cuál es el nombre del parque de atracciones de dinosaurios en 'Jurassic Park'?- ",
         "answers": [
             "Isla Nublar",
             "Isla Sorna",
             "Parque Jurásico",
             "Mundo Jurásico"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué director de cine es conocido por películas como 'Tiburón', 'E.T.' y 'La lista de Schindler'?",
+        "question": "¿Qué director de cine es conocido por películas como 'Tiburón', 'E.T.' y 'La lista de Schindler'?- ",
         "answers": [
             "Martin Scorsese",
             "Francis Ford Coppola",
             "Steven Spielberg",
             "Quentin Tarantino"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué personaje de dibujos animados vive en una piña debajo del mar?",
@@ -1370,7 +1534,8 @@
             "Bob Esponja",
             "Homer Simpson"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué país se inventó el fútbol?",
@@ -1380,7 +1545,8 @@
             "Inglaterra",
             "España"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuántos anillos de la NBA tiene Michael Jordan?",
@@ -1390,7 +1556,8 @@
             "7",
             "8"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué tenista ha ganado más torneos de Grand Slam?",
@@ -1400,7 +1567,8 @@
             "Novak Djokovic",
             "Pete Sampras"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué deporte destaca Usain Bolt?",
@@ -1410,7 +1578,8 @@
             "Gimnasia",
             "Ciclismo"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el equipo de fútbol con más Champions League?",
@@ -1420,7 +1589,8 @@
             "Liverpool FC",
             "Real Madrid"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cómo se llama el estadio del FC Barcelona?",
@@ -1430,7 +1600,8 @@
             "Wanda Metropolitano",
             "San Mamés"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué país se celebraron los primeros Juegos Olímpicos de la era moderna?",
@@ -1440,17 +1611,19 @@
             "Reino Unido",
             "Estados Unidos"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué boxeador es conocido como 'The Greatest'?",
+        "question": "¿Qué boxeador es conocido como 'The Greatest'?- ",
         "answers": [
             "Mike Tyson",
             "Muhammad Ali",
             "Floyd Mayweather",
             "Manny Pacquiao"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué consiste un 'hat-trick' en el fútbol?",
@@ -1460,7 +1633,8 @@
             "Marcar 4 goles en un partido",
             "Marcar 5 goles en un partido"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué selección de fútbol ha ganado más Copas del Mundo?",
@@ -1470,7 +1644,8 @@
             "Argentina",
             "Brasil"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el animal que tiene tres corazones?",
@@ -1480,7 +1655,8 @@
             "El calamar",
             "Todos los anteriores"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿De qué color es la sangre de los insectos?",
@@ -1490,7 +1666,8 @@
             "Verde",
             "Amarillenta"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único mamífero capaz de volar?",
@@ -1500,7 +1677,8 @@
             "El colugo",
             "El petauro del azúcar"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuántos dientes tiene un caracol?",
@@ -1510,7 +1688,8 @@
             "Cientos",
             "Miles"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el animal más ruidoso del mundo?",
@@ -1520,7 +1699,8 @@
             "El mono aullador",
             "El camarón pistola"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Por qué los flamencos son rosas?",
@@ -1530,7 +1710,8 @@
             "Porque se tiñen",
             "Es un misterio"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el animal con la mordida más fuerte?",
@@ -1540,7 +1721,8 @@
             "La hiena",
             "El hipopótamo"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuánto tiempo puede vivir una medusa?",
@@ -1550,7 +1732,8 @@
             "Unos años",
             "Algunas son inmortales"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el animal que duerme más horas al día?",
@@ -1560,7 +1743,8 @@
             "El gato",
             "El murciélago"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué animal tiene la lengua más larga en proporción a su cuerpo?",
@@ -1570,7 +1754,8 @@
             "El murciélago néctar",
             "El picaflor"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la capital de Turquía?",
@@ -1580,7 +1765,8 @@
             "Izmir",
             "Bursa"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué famoso científico propuso las tres leyes del movimiento?",
@@ -1590,7 +1776,8 @@
             "Isaac Newton",
             "Nikola Tesla"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué país se encuentra la Torre de Pisa?",
@@ -1600,7 +1787,8 @@
             "España",
             "Grecia"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el libro más vendido de la historia?",
@@ -1610,7 +1798,8 @@
             "El Señor de los Anillos",
             "Harry Potter y la piedra filosofal"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es un archipiélago?",
@@ -1620,7 +1809,8 @@
             "Un tipo de relieve",
             "Un río subterráneo"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién pintó el techo de la Capilla Sixtina?",
@@ -1630,7 +1820,8 @@
             "Miguel Ángel",
             "Tiziano"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el idioma oficial de Brasil?",
@@ -1640,7 +1831,8 @@
             "Inglés",
             "Francés"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la aurora boreal?",
@@ -1650,7 +1842,8 @@
             "Un efecto óptico en la atmósfera",
             "Una constelación"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el metal más caro del mundo?",
@@ -1660,7 +1853,8 @@
             "Rodio",
             "Paladio"
         ],
-        "correct": 2
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue el primer ser humano en viajar al espacio?",
@@ -1670,7 +1864,8 @@
             "Buzz Aldrin",
             "John Glenn"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la fisión nuclear?",
@@ -1680,7 +1875,8 @@
             "La creación de un átomo",
             "La destrucción de un átomo"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el planeta más caliente del sistema solar?",
@@ -1690,7 +1886,8 @@
             "Marte",
             "Júpiter"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es el número de Avogadro?",
@@ -1700,7 +1897,8 @@
             "La velocidad del sonido",
             "La constante de Planck"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la clonación?",
@@ -1710,7 +1908,8 @@
             "La secuenciación del ADN",
             "La terapia génica"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la materia oscura?",
@@ -1720,7 +1919,8 @@
             "Una estrella de neutrones",
             "Una galaxia enana"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la antimateria?",
@@ -1730,7 +1930,8 @@
             "Una partícula más pesada",
             "Una partícula más ligera"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es el bosón de Higgs?",
@@ -1740,7 +1941,8 @@
             "Una partícula que transmite la fuerza nuclear débil",
             "Una partícula que transmite la fuerza electromagnética"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la teoría de cuerdas?",
@@ -1750,7 +1952,8 @@
             "Una teoría que explica la materia oscura",
             "Una teoría que predice la existencia de universos paralelos"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es un exoplaneta?",
@@ -1760,7 +1963,8 @@
             "Un planeta gaseoso",
             "Un planeta rocoso"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué es la biotecnología?",
@@ -1770,7 +1974,8 @@
             "La creación de vida artificial",
             "La modificación del clima"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue la Ruta de la Seda?",
@@ -1780,7 +1985,8 @@
             "Un movimiento religioso",
             "Una exploración científica"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue Alejandro Magno?",
@@ -1790,7 +1996,8 @@
             "Un emperador romano",
             "Un faraón egipcio"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue la Peste Negra?",
@@ -1800,7 +2007,8 @@
             "Una crisis económica en el Imperio Romano",
             "Una rebelión campesina en China"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue la Ilustración?",
@@ -1810,7 +2018,8 @@
             "Una reforma religiosa en el siglo XVI",
             "Una revolución política en el siglo XVII"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue la Guerra Fría?",
@@ -1820,7 +2029,8 @@
             "Un conflicto armado en la península de Corea",
             "Una carrera espacial entre EEUU y la URSS"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue Nelson Mandela?",
@@ -1830,7 +2040,8 @@
             "Un primer ministro de la India",
             "Un secretario general de las Naciones Unidas"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue el Imperio Otomano?",
@@ -1840,7 +2051,8 @@
             "Un imperio que dominó el subcontinente indio",
             "Un imperio que unificó China"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue la Revolución Industrial?",
@@ -1850,7 +2062,8 @@
             "Una guerra por el control de las colonias",
             "Un descubrimiento científico que cambió el mundo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién fue Gengis Kan?",
@@ -1860,7 +2073,8 @@
             "Un sultán de Egipto",
             "Un rey de Persia"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué fue el Apartheid?",
@@ -1870,7 +2084,8 @@
             "Una política de expansión territorial",
             "Una doctrina religiosa"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el lago más profundo del mundo?",
@@ -1880,7 +2095,8 @@
             "El lago Superior",
             "El mar Caspio"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la cascada más alta del mundo?",
@@ -1890,7 +2106,8 @@
             "Las cataratas de Iguazú",
             "Las cataratas Victoria"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el volcán más activo del mundo?",
@@ -1900,7 +2117,8 @@
             "El Stromboli",
             "El Monte Fuji"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el país con más volcanes?",
@@ -1910,7 +2128,8 @@
             "Estados Unidos",
             "Chile"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el río más caudaloso del mundo?",
@@ -1920,7 +2139,8 @@
             "El Orinoco",
             "El Paraná"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el país con más islas?",
@@ -1930,7 +2150,8 @@
             "Canadá",
             "Indonesia"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es la ciudad más poblada del mundo?",
@@ -1940,7 +2161,8 @@
             "Shanghái",
             "São Paulo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el país más pequeño del mundo?",
@@ -1950,7 +2172,8 @@
             "Tuvalu",
             "Ciudad del Vaticano"
         ],
-        "correct": 3
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el país con más fronteras terrestres?",
@@ -1960,7 +2183,8 @@
             "Brasil",
             "Alemania"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el punto más alejado del centro de la Tierra?",
@@ -1970,7 +2194,8 @@
             "El K2",
             "El Aconcagua"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién escribió 'El retrato de Dorian Gray'?",
@@ -1980,7 +2205,8 @@
             "Jane Austen",
             "George Orwell"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué pintor es considerado el padre del cubismo junto a Georges Braque?",
@@ -1990,17 +2216,19 @@
             "Joan Miró",
             "Juan Gris"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué novela comienza con la frase 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme...'?",
+        "question": "¿Qué novela comienza con la frase 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme...'?- ",
         "answers": [
             "Don Quijote de la Mancha",
             "La Celestina",
             "El Lazarillo de Tormes",
             "El Buscón"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién es el autor de la famosa escultura 'David'?",
@@ -2010,17 +2238,19 @@
             "Bernini",
             "Cellini"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué banda británica es conocida como los 'Fab Four'?",
+        "question": "¿Qué banda británica es conocida como los 'Fab Four'?- ",
         "answers": [
             "The Beatles",
             "The Rolling Stones",
             "The Who",
             "Queen"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Quién escribió la obra de teatro 'La vida es sueño'?",
@@ -2030,47 +2260,52 @@
             "Tirso de Molina",
             "Miguel de Cervantes"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué artista es famoso por sus 'Móviles'?",
+        "question": "¿Qué artista es famoso por sus 'Móviles'?- ",
         "answers": [
             "Alexander Calder",
             "Jean Arp",
             "Henry Moore",
             "Constantin Brancusi"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué libro de J.R.R. Tolkien precede a 'El Señor de los Anillos'?",
+        "question": "¿Qué libro de J.R.R. Tolkien precede a 'El Señor de los Anillos'?- ",
         "answers": [
             "El Hobbit",
             "El Silmarillion",
             "Los hijos de Húrin",
             "Cuentos inconclusos"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué director de cine es famoso por sus películas de 'spaghetti western'?",
+        "question": "¿Qué director de cine es famoso por sus películas de 'spaghetti western'?- ",
         "answers": [
             "Sergio Leone",
             "Federico Fellini",
             "Luchino Visconti",
             "Vittorio De Sica"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es la autora de la saga de novelas 'Los juegos del hambre'?",
+        "question": "¿Quién es la autora de la saga de novelas 'Los juegos del hambre'?- ",
         "answers": [
             "Suzanne Collins",
             "J.K. Rowling",
             "Stephenie Meyer",
             "Veronica Roth"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué película de Disney fue la primera en ser lanzada en formato VHS?",
@@ -2080,7 +2315,8 @@
             "Fantasía",
             "Dumbo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el nombre del actor que interpreta a Harry Potter?",
@@ -2090,17 +2326,19 @@
             "Tom Felton",
             "Matthew Lewis"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué grupo de rock es famoso por su canción 'Bohemian Rhapsody'?",
+        "question": "¿Qué grupo de rock es famoso por su canción 'Bohemian Rhapsody'?- ",
         "answers": [
             "Queen",
             "Led Zeppelin",
             "Pink Floyd",
             "The Beatles"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué videojuego aparece el personaje de Lara Croft?",
@@ -2110,7 +2348,8 @@
             "The Last of Us",
             "Resident Evil"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué serie de televisión trata sobre un profesor de química que se convierte en narcotraficante?",
@@ -2120,27 +2359,19 @@
             "Los Soprano",
             "Narcos"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué actor interpretó al Joker en la película 'El Caballero Oscuro'?",
+        "question": "¿Qué actor interpretó al Joker en la película 'El Caballero Oscuro'?- ",
         "answers": [
             "Heath Ledger",
             "Jack Nicholson",
             "Jared Leto",
             "Joaquin Phoenix"
         ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del mundo mágico en la saga de Harry Potter?",
-        "answers": [
-            "Hogwarts",
-            "El Mundo Mágico",
-            "El Callejón Diagon",
-            "El Ministerio de Magia"
-        ],
-        "correct": 1
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué película de Quentin Tarantino está dividida en capítulos no cronológicos?",
@@ -2150,7 +2381,8 @@
             "Kill Bill",
             "Bastardos sin gloria"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué personaje de Nintendo es un fontanero italiano?",
@@ -2160,17 +2392,19 @@
             "Wario",
             "Waluigi"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué cantante es conocida como la 'Princesa del Pop'?",
+        "question": "¿Qué cantante es conocida como la 'Princesa del Pop'?- ",
         "answers": [
             "Britney Spears",
             "Christina Aguilera",
             "Jessica Simpson",
             "Mandy Moore"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué deporte se utiliza un 'puck'?",
@@ -2180,7 +2414,8 @@
             "Polo",
             "Lacrosse"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuántos jugadores hay en un equipo de baloncesto en la cancha?",
@@ -2190,7 +2425,8 @@
             "7",
             "11"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué país ganó la primera Copa del Mundo de la FIFA en 1930?",
@@ -2200,7 +2436,8 @@
             "Brasil",
             "Italia"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué ciudad se celebran los torneos de tenis de Wimbledon?",
@@ -2210,7 +2447,8 @@
             "Nueva York",
             "Melbourne"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué ciclista ha ganado más Tours de Francia?",
@@ -2220,7 +2458,8 @@
             "Eddy Merckx",
             "Bernard Hinault"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el récord mundial de los 100 metros lisos masculinos?",
@@ -2230,7 +2469,8 @@
             "9.72 segundos",
             "9.79 segundos"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿En qué deporte se conoce a Babe Ruth como una leyenda?",
@@ -2240,7 +2480,8 @@
             "Baloncesto",
             "Hockey sobre hielo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué arte marcial es originario de Corea?",
@@ -2250,7 +2491,8 @@
             "Judo",
             "Kung Fu"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el evento principal del Super Bowl?",
@@ -2260,7 +2502,8 @@
             "Los anuncios publicitarios",
             "La ceremonia de premiación"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Qué nadador ha ganado más medallas de oro olímpicas?",
@@ -2270,807 +2513,8 @@
             "Ian Thorpe",
             "Ryan Lochte"
         ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único país que tiene una Biblia en su bandera?",
-        "answers": [
-            "República Dominicana",
-            "El Vaticano",
-            "Israel",
-            "Grecia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el animal que no puede sacar la lengua?",
-        "answers": [
-            "El cocodrilo",
-            "La serpiente",
-            "La tortuga",
-            "El lagarto"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el alimento que no se estropea?",
-        "answers": [
-            "La miel",
-            "El azúcar",
-            "La sal",
-            "El arroz"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el color más raro de ojos en los humanos?",
-        "answers": [
-            "Verde",
-            "Ámbar",
-            "Violeta",
-            "Gris"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único músculo que está unido solo por un extremo?",
-        "answers": [
-            "La lengua",
-            "El corazón",
-            "El diafragma",
-            "El bíceps"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el objeto más fabricado del mundo?",
-        "answers": [
-            "Los coches",
-            "Los teléfonos móviles",
-            "Las monedas",
-            "Los ladrillos LEGO"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el único número que no se puede representar en números romanos?",
-        "answers": [
-            "0",
-            "1000",
-            "1000000",
-            "No hay"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único planeta que gira en sentido horario?",
-        "answers": [
-            "Venus",
-            "Urano",
-            "Neptuno",
-            "Plutón"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único mamífero que pone huevos?",
-        "answers": [
-            "El ornitorrinco",
-            "El equidna",
-            "Ambos",
-            "Ninguno"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es el único alimento que tiene todos los nutrientes que el ser humano necesita?",
-        "answers": [
-            "La leche materna",
-            "El huevo",
-            "La quinoa",
-            "La espirulina"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Nueva Zelanda?",
-        "answers": [
-            "Auckland",
-            "Wellington",
-            "Christchurch",
-            "Queenstown"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Quién es el autor de la novela '1984'?",
-        "answers": [
-            "George Orwell",
-            "Aldous Huxley",
-            "Ray Bradbury",
-            "Philip K. Dick"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué país se encuentra el desierto de Gobi?",
-        "answers": [
-            "China y Mongolia",
-            "Rusia y Kazajistán",
-            "India y Pakistán",
-            "Irán y Afganistán"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la moneda oficial de Suiza?",
-        "answers": [
-            "Euro",
-            "Franco suizo",
-            "Libra esterlina",
-            "Dólar estadounidense"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Qué es la UNESCO?",
-        "answers": [
-            "La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura",
-            "La Organización Mundial de la Salud",
-            "El Fondo Monetario Internacional",
-            "La Organización Mundial del Comercio"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue la primera mujer en ganar un Premio Nobel?",
-        "answers": [
-            "Marie Curie",
-            "Irène Joliot-Curie",
-            "Dorothy Hodgkin",
-            "Gerty Cori"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el océano que rodea la Antártida?",
-        "answers": [
-            "Océano Antártico",
-            "Océano Atlántico",
-            "Océano Pacífico",
-            "Océano Índico"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es el sintoísmo?",
-        "answers": [
-            "La religión tradicional de Japón",
-            "Una filosofía china",
-            "Un sistema político de la India",
-            "Una forma de arte de Corea"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el edificio más alto del mundo?",
-        "answers": [
-            "Burj Khalifa",
-            "Torre de Shanghái",
-            "Abraj Al-Bait",
-            "Ping An Finance Center"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el actual rey de España?",
-        "answers": [
-            "Felipe VI",
-            "Juan Carlos I",
-            "Alfonso XIII",
-            "Felipe V"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la tabla periódica?",
-        "answers": [
-            "Una tabla que organiza los elementos químicos",
-            "Una tabla que muestra las fases de la luna",
-            "Una tabla que predice el clima",
-            "Una tabla que calcula las mareas"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es un agujero negro?",
-        "answers": [
-            "Una región del espacio con una gravedad tan fuerte que nada puede escapar",
-            "Una estrella que ha agotado su combustible",
-            "Una galaxia sin estrellas",
-            "Un planeta sin atmósfera"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es el efecto invernadero?",
-        "answers": [
-            "Un fenómeno por el cual ciertos gases retienen el calor en la atmósfera",
-            "Un proceso que enfría la Tierra",
-            "Un ciclo que renueva el aire",
-            "Un campo magnético que protege de la radiación"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la relatividad general?",
-        "answers": [
-            "Una teoría de la gravedad desarrollada por Einstein",
-            "Una teoría sobre el origen del universo",
-            "Una teoría que describe las partículas subatómicas",
-            "Una teoría que explica la luz"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es un virus?",
-        "answers": [
-            "Un agente infeccioso que se replica dentro de las células",
-            "Una bacteria que causa enfermedades",
-            "Un hongo que crece en los alimentos",
-            "Un parásito que vive en los intestinos"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la evolución?",
-        "answers": [
-            "El proceso por el cual las especies cambian a lo largo del tiempo",
-            "La idea de que todos los seres vivos fueron creados al mismo tiempo",
-            "La teoría de que la vida se originó en otro planeta",
-            "El estudio de los fósiles"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la fotosíntesis?",
-        "answers": [
-            "El proceso por el cual las plantas convierten la luz solar en energía",
-            "La forma en que los animales respiran",
-            "La manera en que los hongos se reproducen",
-            "El ciclo del agua en la naturaleza"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es el ADN?",
-        "answers": [
-            "La molécula que contiene la información genética",
-            "La proteína que transporta el oxígeno en la sangre",
-            "La enzima que digiere los alimentos",
-            "La hormona que regula el crecimiento"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la Vía Láctea?",
-        "answers": [
-            "Nuestra galaxia",
-            "Un cúmulo de estrellas",
-            "Una nebulosa planetaria",
-            "Un sistema solar vecino"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la inteligencia artificial?",
-        "answers": [
-            "La simulación de la inteligencia humana en las máquinas",
-            "La capacidad de los ordenadores para aprender sin ser programados",
-            "El desarrollo de robots que pueden pensar y sentir",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue la civilización maya?",
-        "answers": [
-            "Una civilización mesoamericana que destacó por su escritura y su arte",
-            "Una civilización andina que construyó Machu Picchu",
-            "Una civilización egipcia que construyó las pirámides",
-            "Una civilización griega que inventó la democracia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué fue la Reforma Protestante?",
-        "answers": [
-            "Un movimiento religioso que dividió el cristianismo occidental",
-            "Una reforma política que limitó el poder de los reyes",
-            "Una reforma económica que introdujo el capitalismo",
-            "Una reforma social que abolió la esclavitud"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué fue la Revolución Rusa?",
-        "answers": [
-            "Un movimiento que derrocó al zar y estableció la Unión Soviética",
-            "Una guerra civil que enfrentó a los bolcheviques y los mencheviques",
-            "Una rebelión campesina que exigía pan, paz y tierra",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue la Gran Depresión?",
-        "answers": [
-            "Una profunda crisis económica mundial que comenzó en 1929",
-            "Una sequía que afectó a las llanuras de Estados Unidos",
-            "Una pandemia que mató a millones de personas",
-            "Una guerra que devastó Europa"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué fue el Holocausto?",
-        "answers": [
-            "El genocidio de seis millones de judíos por parte de los nazis",
-            "Un programa de eutanasia para eliminar a los discapacitados",
-            "La persecución y el asesinato de gitanos, homosexuales y otros grupos",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue el movimiento por los derechos civiles en Estados Unidos?",
-        "answers": [
-            "Una lucha por la igualdad de derechos para los afroamericanos",
-            "Una campaña para poner fin a la segregación racial en las escuelas",
-            "Una serie de protestas no violentas lideradas por Martin Luther King Jr.",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue la caída del Muro de Berlín?",
-        "answers": [
-            "Un evento que simbolizó el fin de la Guerra Fría",
-            "La reunificación de Alemania Oriental y Occidental",
-            "La apertura de las fronteras entre el bloque comunista y el occidental",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue el Renacimiento de Harlem?",
-        "answers": [
-            "Un florecimiento de la cultura afroamericana en Nueva York",
-            "Un movimiento literario, artístico y musical",
-            "Una expresión de orgullo y resistencia contra el racismo",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue la Prohibición en Estados Unidos?",
-        "answers": [
-            "Un período en el que la venta de alcohol era ilegal",
-            "Una ley que pretendía reducir el crimen y la corrupción",
-            "Una enmienda a la Constitución que fue finalmente derogada",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue el escándalo de Watergate?",
-        "answers": [
-            "Un escándalo político que llevó a la dimisión del presidente Nixon",
-            "Un robo en la sede del Partido Demócrata",
-            "Un encubrimiento por parte de la Casa Blanca",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el estrecho que separa Asia de América?",
-        "answers": [
-            "El estrecho de Bering",
-            "El estrecho de Gibraltar",
-            "El estrecho de Magallanes",
-            "El canal de Suez"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de la India?",
-        "answers": [
-            "Nueva Delhi",
-            "Bombay",
-            "Calcuta",
-            "Bangalore"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué país se encuentra el Kilimanjaro?",
-        "answers": [
-            "Tanzania",
-            "Kenia",
-            "Uganda",
-            "Etiopía"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el lago más grande de América del Sur?",
-        "answers": [
-            "El lago Titicaca",
-            "El lago de Maracaibo",
-            "El lago de Valencia",
-            "El lago Argentino"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Egipto?",
-        "answers": [
-            "El Cairo",
-            "Alejandría",
-            "Luxor",
-            "Asuán"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué continente se encuentra el desierto del Kalahari?",
-        "answers": [
-            "África",
-            "Asia",
-            "Australia",
-            "América del Sur"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Tailandia?",
-        "answers": [
-            "Bangkok",
-            "Chiang Mai",
-            "Phuket",
-            "Pattaya"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el río que forma la frontera entre México y Estados Unidos?",
-        "answers": [
-            "El río Bravo",
-            "El río Colorado",
-            "El río Misisipi",
-            "El río Misuri"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Vietnam?",
-        "answers": [
-            "Hanói",
-            "Ho Chi Minh",
-            "Da Nang",
-            "Hué"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué país se encuentra la ciudad de Dubái?",
-        "answers": [
-            "Emiratos Árabes Unidos",
-            "Arabia Saudita",
-            "Catar",
-            "Omán"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió 'El guardián entre el centeno'?",
-        "answers": [
-            "J.D. Salinger",
-            "F. Scott Fitzgerald",
-            "Ernest Hemingway",
-            "William Faulkner"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué artista es conocido por sus pinturas de nenúfares?",
-        "answers": [
-            "Claude Monet",
-            "Pierre-Auguste Renoir",
-            "Edgar Degas",
-            "Camille Pissarro"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué novela de ciencia ficción describe un futuro distópico donde los libros están prohibidos?",
-        "answers": [
-            "Fahrenheit 451",
-            "1984",
-            "Un mundo feliz",
-            "El cuento de la criada"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la ópera 'Carmen'?",
-        "answers": [
-            "Georges Bizet",
-            "Giuseppe Verdi",
-            "Richard Wagner",
-            "Wolfgang Amadeus Mozart"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué movimiento artístico se caracteriza por el uso de formas geométricas y colores puros?",
-        "answers": [
-            "Neoplasticismo",
-            "Cubismo",
-            "Suprematismo",
-            "Constructivismo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió el poema épico 'La Eneida'?",
-        "answers": [
-            "Virgilio",
-            "Homero",
-            "Ovidio",
-            "Horacio"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué fotógrafo es famoso por sus retratos en blanco y negro de la América rural durante la Gran Depresión?",
-        "answers": [
-            "Dorothea Lange",
-            "Ansel Adams",
-            "Walker Evans",
-            "Robert Frank"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué libro de Gabriel García Márquez cuenta la historia de la familia Buendía?",
-        "answers": [
-            "Cien años de soledad",
-            "El amor en los tiempos del cólera",
-            "Crónica de una muerte anunciada",
-            "El otoño del patriarca"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué arquitecto diseñó la Casa de la Cascada?",
-        "answers": [
-            "Frank Lloyd Wright",
-            "Le Corbusier",
-            "Mies van der Rohe",
-            "Walter Gropius"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la canción 'Imagine'?",
-        "answers": [
-            "John Lennon",
-            "Paul McCartney",
-            "George Harrison",
-            "Ringo Starr"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué película de 1997 ganó 11 premios Óscar, incluyendo Mejor Película?",
-        "answers": [
-            "Titanic",
-            "La vida es bella",
-            "Salvar al soldado Ryan",
-            "Shakespeare in Love"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del protagonista de la saga de videojuegos 'The Legend of Zelda'?",
-        "answers": [
-            "Link",
-            "Zelda",
-            "Ganon",
-            "Sheik"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué banda de grunge de los 90 es famosa por su álbum 'Nevermind'?",
-        "answers": [
-            "Nirvana",
-            "Pearl Jam",
-            "Soundgarden",
-            "Alice in Chains"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué programa de televisión los personajes compiten por el Trono de Hierro?",
-        "answers": [
-            "Juego de Tronos",
-            "Vikingos",
-            "The Last Kingdom",
-            "Los Tudor"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué actor es conocido por su papel de Capitán Jack Sparrow?",
-        "answers": [
-            "Johnny Depp",
-            "Orlando Bloom",
-            "Geoffrey Rush",
-            "Javier Bardem"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del estudio de animación japonés fundado por Hayao Miyazaki?",
-        "answers": [
-            "Studio Ghibli",
-            "Toei Animation",
-            "Madhouse",
-            "Bones"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué reality show sigue la vida de la familia Kardashian-Jenner?",
-        "answers": [
-            "Keeping Up with the Kardashians",
-            "The Real Housewives of Beverly Hills",
-            "Vanderpump Rules",
-            "Jersey Shore"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego de construcción y supervivencia permite a los jugadores crear sus propios mundos?",
-        "answers": [
-            "Minecraft",
-            "Roblox",
-            "Terraria",
-            "Stardew Valley"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué director de cine es conocido por sus películas de gánsteres como 'Uno de los nuestros' y 'El irlandés'?",
-        "answers": [
-            "Martin Scorsese",
-            "Francis Ford Coppola",
-            "Brian De Palma",
-            "Michael Mann"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué cantante y compositora es famosa por su álbum '21'?",
-        "answers": [
-            "Adele",
-            "Taylor Swift",
-            "Beyoncé",
-            "Rihanna"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué deporte se celebra el Tour de Francia?",
-        "answers": [
-            "Ciclismo",
-            "Atletismo",
-            "Automovilismo",
-            "Motociclismo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuántos puntos vale un 'try' en el rugby?",
-        "answers": [
-            "5",
-            "4",
-            "6",
-            "7"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país es considerado la cuna del críquet?",
-        "answers": [
-            "Inglaterra",
-            "India",
-            "Australia",
-            "Pakistán"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué ciudad se encuentra el estadio de Maracaná?",
-        "answers": [
-            "Río de Janeiro",
-            "São Paulo",
-            "Belo Horizonte",
-            "Porto Alegre"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué piloto de Fórmula 1 ha ganado más campeonatos del mundo?",
-        "answers": [
-            "Lewis Hamilton",
-            "Michael Schumacher",
-            "Juan Manuel Fangio",
-            "Alain Prost"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del trofeo que se entrega al ganador de la Copa Stanley?",
-        "answers": [
-            "La Copa Stanley",
-            "El Trofeo del Comisionado",
-            "El Trofeo Vince Lombardi",
-            "El Trofeo Larry O'Brien"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué deporte se destaca Simone Biles?",
-        "answers": [
-            "Gimnasia artística",
-            "Natación sincronizada",
-            "Salto de trampolín",
-            "Patinaje artístico"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué equipo de la NBA tiene más campeonatos?",
-        "answers": [
-            "Boston Celtics",
-            "Los Angeles Lakers",
-            "Chicago Bulls",
-            "Golden State Warriors"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del campo de golf donde se celebra el Masters de Augusta?",
-        "answers": [
-            "Augusta National Golf Club",
-            "Pebble Beach Golf Links",
-            "St Andrews Links",
-            "Pinehurst Resort"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país ha ganado más medallas en la historia de los Juegos Olímpicos de Invierno?",
-        "answers": [
-            "Noruega",
-            "Estados Unidos",
-            "Alemania",
-            "Rusia"
-        ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único mamífero que no tiene cuerdas vocales?",
@@ -3080,7 +2524,8 @@
             "El armadillo",
             "El topo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único planeta del sistema solar que no lleva el nombre de un dios romano o griego?",
@@ -3090,7 +2535,8 @@
             "Neptuno",
             "Plutón"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único hueso del cuerpo humano que no está conectado a ningún otro?",
@@ -3100,7 +2546,8 @@
             "El esternón",
             "La rótula"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único continente que se encuentra en los cuatro hemisferios?",
@@ -3110,7 +2557,8 @@
             "Australia",
             "América del Sur"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único animal que no puede enfermar?",
@@ -3120,7 +2568,8 @@
             "La medusa inmortal",
             "El tardígrado"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único metal que es líquido a temperatura ambiente?",
@@ -3130,1477 +2579,8 @@
             "El cesio",
             "El francio"
         ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único país del mundo que empieza por la letra 'O' en español?",
-        "answers": [
-            "Omán",
-            "Países Bajos",
-            "Polonia",
-            "Portugal"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único mamífero que puede ver el color rojo?",
-        "answers": [
-            "Los humanos",
-            "Los primates",
-            "Algunos marsupiales",
-            "Ninguno"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Cuál es el único órgano del cuerpo humano que puede regenerarse?",
-        "answers": [
-            "El hígado",
-            "La piel",
-            "El corazón",
-            "El cerebro"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único número que tiene el mismo número de letras que su valor?",
-        "answers": [
-            "Cinco",
-            "Cuatro",
-            "Tres",
-            "Seis"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la caligrafía?",
-        "answers": [
-            "El arte de escribir a mano de forma bella",
-            "Un estilo de pintura",
-            "Una técnica de grabado",
-            "Un tipo de escultura"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Escocia?",
-        "answers": [
-            "Edimburgo",
-            "Glasgow",
-            "Aberdeen",
-            "Dundee"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió 'El diario de Ana Frank'?",
-        "answers": [
-            "Ana Frank",
-            "Otto Frank",
-            "Miep Gies",
-            "Un autor anónimo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es un haiku?",
-        "answers": [
-            "Un poema japonés de tres versos",
-            "Una novela corta",
-            "Una obra de teatro de un solo acto",
-            "Una canción popular"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el instrumento nacional de Irlanda?",
-        "answers": [
-            "El arpa",
-            "La gaita",
-            "El violín",
-            "La flauta"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué ciudad se encuentra el Partenón?",
-        "answers": [
-            "Atenas",
-            "Roma",
-            "Estambul",
-            "El Cairo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién pintó 'El nacimiento de Venus'?",
-        "answers": [
-            "Sandro Botticelli",
-            "Leonardo da Vinci",
-            "Miguel Ángel",
-            "Rafael"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el género literario de 'La Odisea'?",
-        "answers": [
-            "Epopeya",
-            "Tragedia",
-            "Comedia",
-            "Lírica"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es el flamenco?",
-        "answers": [
-            "Un género musical y de baile originario de Andalucía",
-            "Un tipo de cante jondo",
-            "Un estilo de guitarra",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Quién es el autor de la famosa cita 'Pienso, luego existo'?",
-        "answers": [
-            "René Descartes",
-            "Platón",
-            "Aristóteles",
-            "Sócrates"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la astrofísica?",
-        "answers": [
-            "La rama de la astronomía que estudia las propiedades físicas de los astros",
-            "La búsqueda de vida extraterrestre",
-            "La exploración de otros planetas",
-            "La predicción del futuro a través de las estrellas"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la partícula subatómica con carga negativa?",
-        "answers": [
-            "El electrón",
-            "El protón",
-            "El neutrón",
-            "El fotón"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la genética?",
-        "answers": [
-            "El estudio de la herencia y los genes",
-            "La manipulación del ADN",
-            "La creación de organismos transgénicos",
-            "La prevención de enfermedades hereditarias"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la fórmula química del dióxido de carbono?",
-        "answers": [
-            "CO2",
-            "H2O",
-            "O2",
-            "NaCl"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la paleontología?",
-        "answers": [
-            "El estudio de los fósiles",
-            "La búsqueda de dinosaurios",
-            "La reconstrucción de ecosistemas antiguos",
-            "La datación de rocas"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la unidad básica de la vida?",
-        "answers": [
-            "La célula",
-            "El átomo",
-            "La molécula",
-            "El tejido"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la sismología?",
-        "answers": [
-            "El estudio de los terremotos",
-            "La predicción de erupciones volcánicas",
-            "La medición de la intensidad de los tsunamis",
-            "La prevención de desastres naturales"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el planeta más alejado del Sol?",
-        "answers": [
-            "Neptuno",
-            "Urano",
-            "Saturno",
-            "Júpiter"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es la botánica?",
-        "answers": [
-            "El estudio de las plantas",
-            "El cultivo de flores",
-            "El diseño de jardines",
-            "La clasificación de árboles"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la estrella más cercana a la Tierra?",
-        "answers": [
-            "El Sol",
-            "Próxima Centauri",
-            "Alfa Centauri A",
-            "Sirio"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué fue la batalla de Stalingrado?",
-        "answers": [
-            "Una batalla decisiva en el frente oriental de la Segunda Guerra Mundial",
-            "Un punto de inflexión que detuvo el avance alemán en la Unión Soviética",
-            "Una de las batallas más sangrientas de la historia",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Quién fue Cleopatra?",
-        "answers": [
-            "La última reina del Antiguo Egipto",
-            "Una amante de Julio César y Marco Antonio",
-            "Una figura histórica famosa por su belleza e inteligencia",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue la Inquisición española?",
-        "answers": [
-            "Un tribunal eclesiástico que perseguía la herejía",
-            "Una institución que utilizó la tortura y la quema en la hoguera",
-            "Un instrumento de control social y político de la monarquía",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Quién fue Marco Polo?",
-        "answers": [
-            "Un mercader y explorador veneciano que viajó a China",
-            "El autor de 'Los viajes de Marco Polo'",
-            "Una fuente de inspiración para futuros exploradores como Cristóbal Colón",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue el Imperio Inca?",
-        "answers": [
-            "El imperio más grande de la América precolombina",
-            "Una civilización que construyó una red de caminos y ciudades en los Andes",
-            "Un pueblo que adoraba al dios Sol",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Quién fue Leonardo da Vinci?",
-        "answers": [
-            "Un polímata del Renacimiento italiano: pintor, escultor, arquitecto, músico, científico, inventor...",
-            "El autor de 'La Gioconda' y 'La última cena'",
-            "Un genio que se adelantó a su tiempo con sus ideas y diseños",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue la batalla de Waterloo?",
-        "answers": [
-            "La batalla que supuso la derrota final de Napoleón Bonaparte",
-            "El fin de las Guerras Napoleónicas y del Primer Imperio Francés",
-            "Un enfrentamiento entre el ejército francés y una coalición liderada por el Duque de Wellington",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Quién fue Juana la Loca?",
-        "answers": [
-            "Una reina de Castilla y Aragón que fue encerrada por su supuesta locura",
-            "La madre del emperador Carlos V",
-            "Una figura trágica marcada por los celos y las intrigas políticas",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué fue la toma de la Bastilla?",
-        "answers": [
-            "Un evento simbólico que marcó el inicio de la Revolución Francesa",
-            "La caída de una prisión que representaba el absolutismo monárquico",
-            "Una revuelta popular que inspiró a otros países a luchar por la libertad",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Quién fue Simón Bolívar?",
-        "answers": [
-            "Un líder militar y político que luchó por la independencia de varios países de América del Sur",
-            "El fundador de la Gran Colombia",
-            "Conocido como 'El Libertador'",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es la capital de Marruecos?",
-        "answers": [
-            "Rabat",
-            "Casablanca",
-            "Marrakech",
-            "Fez"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué país se encuentra el desierto de Sonora?",
-        "answers": [
-            "México y Estados Unidos",
-            "Chile y Argentina",
-            "Perú y Bolivia",
-            "Brasil y Colombia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Noruega?",
-        "answers": [
-            "Oslo",
-            "Bergen",
-            "Trondheim",
-            "Stavanger"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el río más largo de Europa?",
-        "answers": [
-            "El Volga",
-            "El Danubio",
-            "El Rin",
-            "El Dniéper"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Irán?",
-        "answers": [
-            "Teherán",
-            "Isfahán",
-            "Shiraz",
-            "Tabriz"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué continente se encuentra Madagascar?",
-        "answers": [
-            "África",
-            "Asia",
-            "Oceanía",
-            "América del Sur"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Perú?",
-        "answers": [
-            "Lima",
-            "Cuzco",
-            "Arequipa",
-            "Trujillo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el mar que separa Europa de África?",
-        "answers": [
-            "El mar Mediterráneo",
-            "El mar Rojo",
-            "El mar Negro",
-            "El mar Caspio"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Filipinas?",
-        "answers": [
-            "Manila",
-            "Cebú",
-            "Dávao",
-            "Quezon City"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué país se encuentra la ciudad de La Meca?",
-        "answers": [
-            "Arabia Saudita",
-            "Irán",
-            "Irak",
-            "Egipto"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió 'Matar a un ruiseñor'?",
-        "answers": [
-            "Harper Lee",
-            "Truman Capote",
-            "Flannery O'Connor",
-            "William Faulkner"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué pintor holandés es famoso por sus autorretratos?",
-        "answers": [
-            "Rembrandt",
-            "Vermeer",
-            "Hals",
-            "Steen"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué novela de Fiódor Dostoyevski explora la psicología de un asesino?",
-        "answers": [
-            "Crimen y castigo",
-            "Los hermanos Karamázov",
-            "El idiota",
-            "Los demonios"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la sinfonía 'Heroica'?",
-        "answers": [
-            "Ludwig van Beethoven",
-            "Wolfgang Amadeus Mozart",
-            "Franz Joseph Haydn",
-            "Franz Schubert"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué movimiento literario se asocia con autores como Jack Kerouac y Allen Ginsberg?",
-        "answers": [
-            "La Generación Beat",
-            "La Generación Perdida",
-            "El Modernismo",
-            "El Postmodernismo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió la obra de teatro 'Un tranvía llamado Deseo'?",
-        "answers": [
-            "Tennessee Williams",
-            "Arthur Miller",
-            "Eugene O'Neill",
-            "Edward Albee"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué artista pop es famoso por sus serigrafías de Marilyn Monroe?",
-        "answers": [
-            "Andy Warhol",
-            "Roy Lichtenstein",
-            "Keith Haring",
-            "Jean-Michel Basquiat"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué libro de Lewis Carroll narra las aventuras de una niña en un mundo fantástico?",
-        "answers": [
-            "Alicia en el país de las maravillas",
-            "A través del espejo",
-            "La caza del Snark",
-            "Silvia y Bruno"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué director de cine es conocido por sus películas de suspense como 'Psicosis' y 'Los pájaros'?",
-        "answers": [
-            "Alfred Hitchcock",
-            "Orson Welles",
-            "Stanley Kubrick",
-            "Billy Wilder"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la canción 'Like a Rolling Stone'?",
-        "answers": [
-            "Bob Dylan",
-            "The Beatles",
-            "The Rolling Stones",
-            "Jimi Hendrix"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué película de 2001 de Stanley Kubrick presenta a un superordenador llamado HAL 9000?",
-        "answers": [
-            "2001: Una odisea del espacio",
-            "La naranja mecánica",
-            "El resplandor",
-            "Barry Lyndon"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del fontanero verde, hermano de Mario?",
-        "answers": [
-            "Luigi",
-            "Wario",
-            "Waluigi",
-            "Toad"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué banda de rock irlandesa es liderada por el vocalista Bono?",
-        "answers": [
-            "U2",
-            "The Cranberries",
-            "Thin Lizzy",
-            "The Script"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué serie de televisión un grupo de amigos pasa el rato en una cafetería llamada Central Perk?",
-        "answers": [
-            "Friends",
-            "Seinfeld",
-            "Cómo conocí a vuestra madre",
-            "The Big Bang Theory"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué actor interpretó a Forrest Gump?",
-        "answers": [
-            "Tom Hanks",
-            "Robin Williams",
-            "Bill Murray",
-            "John Travolta"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del león protagonista de 'El Rey León'?",
-        "answers": [
-            "Simba",
-            "Mufasa",
-            "Scar",
-            "Nala"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué programa de televisión presenta a concursantes que compiten en desafíos de cocina?",
-        "answers": [
-            "MasterChef",
-            "Top Chef",
-            "Hell's Kitchen",
-            "The Great British Bake Off"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego de rol de acción de mundo abierto fue desarrollado por CD Projekt Red?",
-        "answers": [
-            "The Witcher 3: Wild Hunt",
-            "Cyberpunk 2077",
-            "The Elder Scrolls V: Skyrim",
-            "Fallout 4"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué director de cine es conocido por sus películas de animación stop-motion como 'El extraño mundo de Jack' y 'Coraline'?",
-        "answers": [
-            "Henry Selick",
-            "Tim Burton",
-            "Wes Anderson",
-            "Laika"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué cantante es conocida como la 'Reina del Soul'?",
-        "answers": [
-            "Aretha Franklin",
-            "Etta James",
-            "Nina Simone",
-            "Billie Holiday"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué deporte se utiliza una 'bola 8'?",
-        "answers": [
-            "Billar",
-            "Bolos",
-            "Petanca",
-            "Curling"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuántos hoyos tiene un campo de golf estándar?",
-        "answers": [
-            "18",
-            "9",
-            "27",
-            "36"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país es famoso por su equipo de rugby, los All Blacks?",
-        "answers": [
-            "Nueva Zelanda",
-            "Australia",
-            "Sudáfrica",
-            "Inglaterra"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué ciudad se encuentra el estadio de Wembley?",
-        "answers": [
-            "Londres",
-            "Mánchester",
-            "Liverpool",
-            "Birmingham"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué piloto de carreras es conocido como 'El Doctor'?",
-        "answers": [
-            "Valentino Rossi",
-            "Marc Márquez",
-            "Jorge Lorenzo",
-            "Casey Stoner"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del trofeo que se entrega al ganador del Abierto de Francia de tenis?",
-        "answers": [
-            "La Copa de los Mosqueteros",
-            "El Trofeo Norman Brookes",
-            "La Copa Davis",
-            "El Trofeo del Centenario"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué deporte se destaca Michael Jordan?",
-        "answers": [
-            "Baloncesto",
-            "Béisbol",
-            "Fútbol americano",
-            "Golf"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué equipo de fútbol es conocido como los 'Red Devils'?",
-        "answers": [
-            "Manchester United",
-            "Liverpool",
-            "Arsenal",
-            "Chelsea"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del torneo de golf más antiguo del mundo?",
-        "answers": [
-            "El Abierto Británico",
-            "El Masters de Augusta",
-            "El Abierto de Estados Unidos",
-            "El Campeonato de la PGA"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país ha ganado más Copas del Mundo de Críquet?",
-        "answers": [
-            "Australia",
-            "India",
-            "Indias Occidentales",
-            "Pakistán"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único animal que no puede saltar?",
-        "answers": [
-            "El elefante",
-            "El rinoceronte",
-            "El hipopótamo",
-            "La jirafa"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único mamífero que puede volar?",
-        "answers": [
-            "El murciélago",
-            "La ardilla voladora",
-            "El colugo",
-            "El petauro del azúcar"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único continente sin desiertos?",
-        "answers": [
-            "Europa",
-            "América del Norte",
-            "América del Sur",
-            "Australia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único país que es también un continente?",
-        "answers": [
-            "Australia",
-            "Groenlandia",
-            "La Antártida",
-            "Islandia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único animal que tiene la cabeza en el corazón?",
-        "answers": [
-            "El camarón",
-            "La gamba",
-            "El langostino",
-            "Todos los anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el único metal que no es sólido a temperatura ambiente?",
-        "answers": [
-            "El mercurio",
-            "El galio",
-            "El cesio",
-            "El francio"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único país del mundo cuyo nombre empieza por 'Y' en español?",
-        "answers": [
-            "Yemen",
-            "Yibuti",
-            "Yugoslavia",
-            "No hay"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Cuál es el único mamífero que no tiene estómago?",
-        "answers": [
-            "El ornitorrinco",
-            "El equidna",
-            "El perezoso",
-            "El armadillo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único órgano del cuerpo humano que flota en el agua?",
-        "answers": [
-            "El pulmón",
-            "El hígado",
-            "El bazo",
-            "El riñón"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único número que tiene el mismo número de letras que su valor?",
-        "answers": [
-            "Cinco",
-            "Cuatro",
-            "Tres",
-            "Seis"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué cultura ibérica es famosa por su escultura, la Dama de Elche?",
-        "answers": [
-            "La cultura íbera",
-            "La cultura celta",
-            "La cultura tartésica",
-            "La cultura fenicia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué ciudad actual fue la más importante para los cartagineses en la península ibérica?",
-        "answers": [
-            "Cartagena",
-            "Cádiz",
-            "Ibiza",
-            "Málaga"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué ciudad fue conquistada por los romanos en el año 133 a.C.?",
-        "answers": [
-            "Numancia",
-            "Sagunto",
-            "Cartago Nova",
-            "Gades"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué batalla marcó el final del reino visigodo?",
-        "answers": [
-            "La batalla de Guadalete",
-            "La batalla de Covadonga",
-            "La batalla de las Navas de Tolosa",
-            "La batalla de Simancas"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué siglo comenzó la Reconquista?",
-        "answers": [
-            "En el siglo VIII",
-            "En el siglo IX",
-            "En el siglo X",
-            "En el siglo XI"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué batalla marcó el inicio de la Reconquista?",
-        "answers": [
-            "La batalla de Covadonga",
-            "La batalla de Roncesvalles",
-            "La batalla de Guadalete",
-            "La batalla de Clavijo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué rey castellano fomentó la Escuela de Traductores de Toledo?",
-        "answers": [
-            "Alfonso X el Sabio",
-            "Fernando III el Santo",
-            "Sancho IV el Bravo",
-            "Alfonso VIII de Castilla"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué reyes efectuaron la unión dinástica en España a finales del siglo XV?",
-        "answers": [
-            "Los Reyes Católicos",
-            "Los Austrias",
-            "Los Borbones",
-            "Los Trastámara"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué tratado puso fin a la Guerra de Sucesión Española?",
-        "answers": [
-            "El Tratado de Utrecht",
-            "El Tratado de Tordesillas",
-            "La Paz de Westfalia",
-            "El Tratado de los Pirineos"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué dinastía comenzó a reinar en España con Felipe V?",
-        "answers": [
-            "La Dinastía Borbónica",
-            "La Dinastía de los Austrias",
-            "La Dinastía de los Trastámara",
-            "La Dinastía de los Saboya"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Desde qué ciudad trasladó la capitalidad a Madrid Felipe II?",
-        "answers": [
-            "Toledo",
-            "Valladolid",
-            "Sevilla",
-            "Granada"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué rey expulsó a los moriscos de España?",
-        "answers": [
-            "Felipe III",
-            "Felipe II",
-            "Felipe IV",
-            "Carlos II"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Con qué otro nombre se conoce la Constitución firmada en 1812?",
-        "answers": [
-            "La Pepa",
-            "La Gloriosa",
-            "La Non nata",
-            "El Estatuto Real"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué guerra comenzó tras la muerte de Fernando VII?",
-        "answers": [
-            "La Primera Guerra Carlista",
-            "La Guerra de la Independencia",
-            "La Guerra de Sucesión",
-            "La Guerra de los Siete Años"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué etapa histórica fue rey de España Amadeo I de Saboya?",
-        "answers": [
-            "En el Sexenio Democrático",
-            "En la Restauración borbónica",
-            "En la Segunda República",
-            "En el Franquismo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue el primer presidente del gobierno de la democracia actual?",
-        "answers": [
-            "Adolfo Suárez",
-            "Felipe González",
-            "Leopoldo Calvo-Sotelo",
-            "José María Aznar"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué año se celebraron los Juegos Olímpicos en Barcelona?",
-        "answers": [
-            "1992",
-            "1988",
-            "1996",
-            "2004"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del caballo de Don Quijote?",
-        "answers": [
-            "Rocinante",
-            "Babieca",
-            "Bucéfalo",
-            "Pegaso"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuántos lados tiene un heptágono?",
-        "answers": [
-            "5",
-            "6",
-            "7",
-            "8"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es el nombre del océano que separa Europa de América?",
-        "answers": [
-            "Atlántico",
-            "Pacífico",
-            "Índico",
-            "Ártico"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué instrumento musical es conocido como el 'rey de los instrumentos'?",
-        "answers": [
-            "Piano",
-            "Violín",
-            "Órgano",
-            "Guitarra"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es el nombre del proceso por el cual el agua se convierte en vapor?",
-        "answers": [
-            "Condensación",
-            "Evaporación",
-            "Fusión",
-            "Solidificación"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Quién es el autor de la teoría de la evolución por selección natural?",
-        "answers": [
-            "Charles Darwin",
-            "Gregor Mendel",
-            "Louis Pasteur",
-            "Isaac Newton"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del gas que respiramos?",
-        "answers": [
-            "Dióxido de carbono",
-            "Nitrógeno",
-            "Oxígeno",
-            "Hidrógeno"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es el nombre del satélite natural de la Tierra?",
-        "answers": [
-            "Marte",
-            "Venus",
-            "Luna",
-            "Sol"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Qué es un holograma?",
-        "answers": [
-            "Una imagen tridimensional creada por láser",
-            "Un tipo de fotografía antigua",
-            "Un efecto de sonido",
-            "Un tipo de pintura"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del primer ordenador electrónico digital?",
-        "answers": [
-            "ENIAC",
-            "UNIVAC",
-            "IBM PC",
-            "Apple I"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue el primer presidente de Estados Unidos?",
-        "answers": [
-            "George Washington",
-            "Thomas Jefferson",
-            "Abraham Lincoln",
-            "John Adams"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?",
-        "answers": [
-            "1945",
-            "1939",
-            "1918",
-            "1950"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué evento histórico se conoce como la 'Noche de los Cristales Rotos'?",
-        "answers": [
-            "Un pogromo contra los judíos en Alemania en 1938",
-            "Una batalla de la Primera Guerra Mundial",
-            "Un golpe de estado en la Unión Soviética",
-            "Una revuelta estudiantil en Francia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue el último emperador de China?",
-        "answers": [
-            "Puyi",
-            "Qin Shi Huang",
-            "Kublai Kan",
-            "Mao Zedong"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué civilización antigua es famosa por sus jeroglíficos?",
-        "answers": [
-            "Egipcia",
-            "Romana",
-            "Griega",
-            "Maya"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la capital de Sudáfrica?",
-        "answers": [
-            "Pretoria",
-            "Ciudad del Cabo",
-            "Bloemfontein",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Qué país es el más grande de América del Sur?",
-        "answers": [
-            "Argentina",
-            "Brasil",
-            "Colombia",
-            "Perú"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Cuál es el río más largo de Europa?",
-        "answers": [
-            "Volga",
-            "Danubio",
-            "Rin",
-            "Sena"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país es conocido como la 'Tierra de los Mil Lagos'?",
-        "answers": [
-            "Suecia",
-            "Noruega",
-            "Finlandia",
-            "Canadá"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es la capital de Egipto?",
-        "answers": [
-            "El Cairo",
-            "Alejandría",
-            "Luxor",
-            "Asuán"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién pintó 'La persistencia de la memoria'?",
-        "answers": [
-            "Salvador Dalí",
-            "Pablo Picasso",
-            "Joan Miró",
-            "Frida Kahlo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso detective creado por Arthur Conan Doyle?",
-        "answers": [
-            "Sherlock Holmes",
-            "Hércules Poirot",
-            "Miss Marple",
-            "Philip Marlowe"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué género musical se originó en Nueva Orleans a principios del siglo XX?",
-        "answers": [
-            "Blues",
-            "Jazz",
-            "Rock and Roll",
-            "Country"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Quién es el autor de la novela 'Orgullo y prejuicio'?",
-        "answers": [
-            "Jane Austen",
-            "Charlotte Brontë",
-            "Emily Brontë",
-            "Mary Shelley"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué famoso compositor es conocido por sus nueve sinfonías?",
-        "answers": [
-            "Wolfgang Amadeus Mozart",
-            "Ludwig van Beethoven",
-            "Johann Sebastian Bach",
-            "Franz Schubert"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Qué película de Disney presenta a una princesa que vive con siete enanitos?",
-        "answers": [
-            "Blancanieves y los siete enanitos",
-            "La Cenicienta",
-            "La Bella Durmiente",
-            "La Sirenita"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del actor que interpreta a James Bond en la mayoría de las películas?",
-        "answers": [
-            "Sean Connery",
-            "Roger Moore",
-            "Daniel Craig",
-            "Pierce Brosnan"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué serie de televisión se desarrolla en el continente ficticio de Westeros?",
-        "answers": [
-            "Juego de Tronos",
-            "Vikingos",
-            "The Witcher",
-            "El Señor de los Anillos"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego es famoso por su personaje principal, un fontanero italiano?",
-        "answers": [
-            "Super Mario Bros.",
-            "The Legend of Zelda",
-            "Pokémon",
-            "Tetris"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es la cantante conocida como la 'Reina del Soul'?",
-        "answers": [
-            "Aretha Franklin",
-            "Tina Turner",
-            "Diana Ross",
-            "Whitney Houston"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué deporte se utiliza un 'shuttlecock'?",
-        "answers": [
-            "Bádminton",
-            "Tenis",
-            "Voleibol",
-            "Squash"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuántos jugadores hay en un equipo de voleibol en la cancha?",
-        "answers": [
-            "5",
-            "6",
-            "7",
-            "8"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Qué país ha ganado más medallas de oro en los Juegos Olímpicos de verano?",
-        "answers": [
-            "Estados Unidos",
-            "China",
-            "Rusia",
-            "Alemania"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué ciudad se encuentra el estadio de Old Trafford?",
-        "answers": [
-            "Mánchester",
-            "Londres",
-            "Liverpool",
-            "Birmingham"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué piloto de Fórmula 1 es conocido como 'El Profesor'?",
-        "answers": [
-            "Ayrton Senna",
-            "Michael Schumacher",
-            "Alain Prost",
-            "Lewis Hamilton"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es el nombre del trofeo que se entrega al ganador de la Copa Mundial de la FIFA?",
-        "answers": [
-            "Copa Jules Rimet",
-            "Copa del Mundo de la FIFA",
-            "Copa América",
-            "Eurocopa"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿En qué deporte se destaca Serena Williams?",
-        "answers": [
-            "Tenis",
-            "Baloncesto",
-            "Golf",
-            "Atletismo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué equipo de fútbol es conocido como los 'Gunners'?",
-        "answers": [
-            "Arsenal",
-            "Chelsea",
-            "Liverpool",
-            "Manchester United"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del torneo de tenis más antiguo del mundo?",
-        "answers": [
-            "Wimbledon",
-            "Roland Garros",
-            "Abierto de Australia",
-            "Abierto de Estados Unidos"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país ha ganado más Copas del Mundo de Rugby?",
-        "answers": [
-            "Nueva Zelanda",
-            "Sudáfrica",
-            "Australia",
-            "Inglaterra"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Cuál es el animal terrestre más grande?",
-        "answers": [
-            "Elefante africano",
-            "Jirafa",
-            "Rinoceronte",
-            "Hipopótamo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el animal más venenoso del mundo?",
-        "answers": [
-            "Serpiente marina",
-            "Rana dardo venenosa",
-            "Medusa caja",
-            "Pulpo de anillos azules"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es el país con la mayor cantidad de husos horarios?",
-        "answers": [
-            "Rusia",
-            "China",
-            "Estados Unidos",
-            "Francia"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el único mamífero que puede ver el color azul?",
-        "answers": [
-            "Los humanos",
-            "Los perros",
-            "Los gatos",
-            "Ninguno"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único animal que no tiene cerebro?",
-        "answers": [
-            "Medusa",
-            "Esponja",
-            "Estrella de mar",
-            "Todas las anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el único metal que es líquido a temperatura ambiente?",
-        "answers": [
-            "Mercurio",
-            "Galio",
-            "Cesio",
-            "Francio"
-        ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
         "question": "¿Cuál es el único país del mundo que empieza por la letra 'Z' en español?",
@@ -4610,1436 +2590,469 @@
             "Zaire",
             "No hay"
         ],
-        "correct": 1
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el único mamífero que no tiene pulgar oponible?",
+        "question": "¿Cuál es el único mamífero que puede ver el color rojo?",
         "answers": [
             "Los humanos",
-            "Los monos",
-            "Los koalas",
-            "Los osos"
+            "Los primates",
+            "Algunos marsupiales",
+            "Ninguno"
         ],
-        "correct": 3
+        "correct": 1,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el único órgano del cuerpo humano que no puede sentir dolor?",
+        "question": "¿Cuál es el único órgano del cuerpo humano que puede regenerarse?",
         "answers": [
-            "El cerebro",
-            "El corazón",
             "El hígado",
-            "Los pulmones"
+            "La piel",
+            "El corazón",
+            "El cerebro"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el único número que no tiene una letra en su nombre en inglés?",
+        "question": "¿Cuál es el único número que tiene el mismo número de letras que su valor?",
         "answers": [
-            "Four",
-            "One",
-            "Zero",
-            "Five"
+            "Cinco",
+            "Cuatro",
+            "Tres",
+            "Seis"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es la capital de Australia?",
+        "question": "¿Qué es la caligrafía?",
         "answers": [
-            "Sídney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
+            "El arte de escribir a mano de forma bella",
+            "Un estilo de pintura",
+            "Una técnica de grabado",
+            "Un tipo de escultura"
         ],
-        "correct": 2
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué río es el más largo de Sudamérica?",
+        "question": "¿Cuál es la capital de Escocia?",
         "answers": [
-            "Amazonas",
-            "Paraná",
-            "Orinoco",
-            "Magdalena"
+            "Edimburgo",
+            "Glasgow",
+            "Aberdeen",
+            "Dundee"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿En qué continente se encuentra el desierto del Sahara?",
+        "question": "¿Quién escribió 'El diario de Ana Frank'?",
         "answers": [
-            "África",
-            "Asia",
-            "América del Norte",
-            "Australia"
+            "Ana Frank",
+            "Otto Frank",
+            "Miep Gies",
+            "Un autor anónimo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el país más grande del mundo por superficie terrestre?",
+        "question": "¿Qué es un haiku?",
         "answers": [
-            "China",
-            "Canadá",
-            "Estados Unidos",
-            "Rusia"
+            "Un poema japonés de tres versos",
+            "Una novela corta",
+            "Una obra de teatro de un solo acto",
+            "Una canción popular"
         ],
-        "correct": 3
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué océano es el más grande y profundo del mundo?",
+        "question": "¿Cuál es el instrumento nacional de Irlanda?",
         "answers": [
-            "Pacífico",
-            "Atlántico",
-            "Índico",
-            "Ártico"
+            "El arpa",
+            "La gaita",
+            "El violín",
+            "La flauta"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es la montaña más alta de África?",
-        "answers": [
-            "Kilimanjaro",
-            "Monte Kenia",
-            "Monte Stanley",
-            "Monte Speke"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué ciudad es conocida como la 'Ciudad Eterna'?",
+        "question": "¿En qué ciudad se encuentra el Partenón?",
         "answers": [
             "Atenas",
             "Roma",
             "Estambul",
-            "Jerusalén"
+            "El Cairo"
         ],
-        "correct": 1
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué país tiene más pirámides que Egipto?",
+        "question": "¿Quién pintó 'El nacimiento de Venus'?",
         "answers": [
-            "Sudán",
-            "México",
-            "Perú",
-            "China"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el lago más grande de África?",
-        "answers": [
-            "Lago Victoria",
-            "Lago Tanganica",
-            "Lago Malawi",
-            "Lago Chad"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué estrecho separa Europa de África?",
-        "answers": [
-            "Estrecho de Gibraltar",
-            "Estrecho de Bering",
-            "Estrecho de Magallanes",
-            "Estrecho de Ormuz"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue el primer presidente de los Estados Unidos?",
-        "answers": [
-            "George Washington",
-            "Thomas Jefferson",
-            "Abraham Lincoln",
-            "John Adams"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué año cayó el Muro de Berlín?",
-        "answers": [
-            "1989",
-            "1991",
-            "1987",
-            "1993"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
-        "answers": [
-            "Miguel de Cervantes",
-            "Lope de Vega",
-            "Francisco de Quevedo",
-            "Tirso de Molina"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué año comenzó la Primera Guerra Mundial?",
-        "answers": [
-            "1914",
-            "1918",
-            "1939",
-            "1945"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue el líder de la Unión Soviética durante la Segunda Guerra Mundial?",
-        "answers": [
-            "Joseph Stalin",
-            "Vladimir Lenin",
-            "Nikita Khrushchev",
-            "Mikhail Gorbachev"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué civilización construyó las pirámides de Giza?",
-        "answers": [
-            "Egipcia",
-            "Romana",
-            "Griega",
-            "Maya"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue el emperador romano que legalizó el cristianismo?",
-        "answers": [
-            "Constantino I",
-            "Augusto",
-            "Nerón",
-            "Julio César"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué año llegó Cristóbal Colón a América?",
-        "answers": [
-            "1492",
-            "1500",
-            "1488",
-            "1512"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué evento marcó el inicio de la Revolución Francesa?",
-        "answers": [
-            "La toma de la Bastilla",
-            "La Declaración de los Derechos del Hombre y del Ciudadano",
-            "La ejecución de Luis XVI",
-            "El Reinado del Terror"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién fue la reina de Egipto conocida por su relación con Julio César y Marco Antonio?",
-        "answers": [
-            "Cleopatra",
-            "Nefertiti",
-            "Hatshepsut",
-            "Isis"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el elemento químico más abundante en la corteza terrestre?",
-        "answers": [
-            "Oxígeno",
-            "Silicio",
-            "Aluminio",
-            "Hierro"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué planeta es conocido como el 'Planeta Rojo'?",
-        "answers": [
-            "Marte",
-            "Júpiter",
-            "Venus",
-            "Saturno"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el animal terrestre más rápido?",
-        "answers": [
-            "Guepardo",
-            "León",
-            "Tigre",
-            "Leopardo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué gas necesitan las plantas para la fotosíntesis?",
-        "answers": [
-            "Dióxido de carbono",
-            "Oxígeno",
-            "Nitrógeno",
-            "Hidrógeno"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el hueso más largo del cuerpo humano?",
-        "answers": [
-            "Fémur",
-            "Tibia",
-            "Peroné",
-            "Húmero"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué tipo de energía produce el Sol?",
-        "answers": [
-            "Energía solar",
-            "Energía eólica",
-            "Energía hidráulica",
-            "Energía geotérmica"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la fórmula química del agua?",
-        "answers": [
-            "H2O",
-            "CO2",
-            "O2",
-            "NaCl"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué científico formuló la teoría de la relatividad?",
-        "answers": [
-            "Albert Einstein",
-            "Isaac Newton",
-            "Galileo Galilei",
-            "Nikola Tesla"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el órgano más grande del cuerpo humano?",
-        "answers": [
-            "Piel",
-            "Hígado",
-            "Cerebro",
-            "Corazón"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué animal es el único mamífero que puede volar?",
-        "answers": [
-            "Murciélago",
-            "Ardilla voladora",
-            "Colugo",
-            "Petauro del azúcar"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién pintó la 'Mona Lisa'?",
-        "answers": [
+            "Sandro Botticelli",
             "Leonardo da Vinci",
-            "Pablo Picasso",
-            "Vincent van Gogh",
-            "Salvador Dalí"
+            "Miguel Ángel",
+            "Rafael"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del famoso mago de Hogwarts?",
-        "answers": [
-            "Albus Dumbledore",
-            "Harry Potter",
-            "Severus Snape",
-            "Lord Voldemort"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué banda de rock lanzó el álbum 'Thriller'?",
-        "answers": [
-            "Michael Jackson",
-            "Queen",
-            "The Beatles",
-            "Led Zeppelin"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el deporte más popular del mundo?",
-        "answers": [
-            "Fútbol",
-            "Baloncesto",
-            "Tenis",
-            "Críquet"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de 'Cien años de soledad'?",
-        "answers": [
-            "Gabriel García Márquez",
-            "Mario Vargas Llosa",
-            "Julio Cortázar",
-            "Pablo Neruda"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país ganó la Copa Mundial de la FIFA en 2022?",
-        "answers": [
-            "Argentina",
-            "Francia",
-            "Brasil",
-            "Alemania"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del ratón más famoso de Disney?",
-        "answers": [
-            "Mickey Mouse",
-            "Minnie Mouse",
-            "Donald Duck",
-            "Goofy"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué instrumento musical tiene 88 teclas?",
-        "answers": [
-            "Piano",
-            "Guitarra",
-            "Violín",
-            "Batería"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es la cantante conocida como la 'Reina del Pop'?",
-        "answers": [
-            "Madonna",
-            "Beyoncé",
-            "Rihanna",
-            "Lady Gaga"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es la película con mayor recaudación de todos los tiempos?",
-        "answers": [
-            "Avatar",
-            "Avengers: Endgame",
-            "Titanic",
-            "Star Wars: El despertar de la Fuerza"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuántos jugadores tiene un equipo de fútbol en el campo?",
-        "answers": [
-            "11",
-            "9",
-            "10",
-            "12"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país ha ganado más Copas Mundiales de la FIFA?",
-        "answers": [
-            "Brasil",
-            "Alemania",
-            "Italia",
-            "Argentina"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es considerado el mejor baloncestista de todos los tiempos?",
-        "answers": [
-            "Michael Jordan",
-            "LeBron James",
-            "Kareem Abdul-Jabbar",
-            "Magic Johnson"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué deporte se utiliza un 'birdie' y un 'eagle'?",
-        "answers": [
-            "Golf",
-            "Bádminton",
-            "Tenis",
-            "Críquet"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuántos anillos hay en el símbolo olímpico?",
-        "answers": [
-            "5",
-            "4",
-            "6",
-            "7"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué tenista masculino ha ganado más títulos de Grand Slam?",
-        "answers": [
-            "Novak Djokovic",
-            "Roger Federer",
-            "Rafael Nadal",
-            "Pete Sampras"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del estadio del Real Madrid?",
-        "answers": [
-            "Santiago Bernabéu",
-            "Camp Nou",
-            "Wanda Metropolitano",
-            "Metropolitano"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué deporte se juega en Wimbledon?",
-        "answers": [
-            "Tenis",
-            "Bádminton",
-            "Críquet",
-            "Fútbol"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el atleta con más medallas de oro olímpicas en natación?",
-        "answers": [
-            "Michael Phelps",
-            "Mark Spitz",
-            "Ian Thorpe",
-            "Ryan Lochte"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué equipo de la NBA tiene el récord de más campeonatos?",
-        "answers": [
-            "Boston Celtics",
-            "Los Angeles Lakers",
-            "Chicago Bulls",
-            "Golden State Warriors"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es considerado el padre de la computación?",
-        "answers": [
-            "Charles Babbage",
-            "Alan Turing",
-            "Bill Gates",
-            "Steve Jobs"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué significa WWW en una dirección web?",
-        "answers": [
-            "World Wide Web",
-            "World Web Wide",
-            "Web Wide World",
-            "Wide World Web"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál fue el primer navegador web gráfico?",
-        "answers": [
-            "Mosaic",
-            "Netscape Navigator",
-            "Internet Explorer",
-            "Google Chrome"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué lenguaje de programación fue creado por Guido van Rossum?",
-        "answers": [
-            "Python",
-            "Java",
-            "C++",
-            "JavaScript"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el sistema operativo móvil más utilizado en el mundo?",
-        "answers": [
-            "iOS",
-            "Android",
-            "Windows Phone",
-            "BlackBerry OS"
-        ],
-        "correct": 1
-    },
-    {
-        "question": "¿Qué empresa desarrolló el primer microprocesador comercial?",
-        "answers": [
-            "Intel",
-            "AMD",
-            "Motorola",
-            "IBM"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es un píxel?",
-        "answers": [
-            "La unidad más pequeña de una imagen digital",
-            "Un tipo de archivo de imagen",
-            "Un programa de edición de fotos",
-            "Un dispositivo de almacenamiento"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre de la primera red de computadoras?",
-        "answers": [
-            "ARPANET",
-            "Internet",
-            "Ethernet",
-            "World Wide Web"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué es el código abierto (Open Source)?",
-        "answers": [
-            "Software cuyo código fuente está disponible públicamente",
-            "Software que es gratuito",
-            "Software que no tiene derechos de autor",
-            "Software que solo puede ser modificado por el creador"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién co-fundó Apple Inc. junto a Steve Jobs?",
-        "answers": [
-            "Steve Wozniak",
-            "Ronald Wayne",
-            "Tim Cook",
-            "Jony Ive"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué movimiento artístico se caracteriza por el uso de colores brillantes y pinceladas sueltas?",
-        "answers": [
-            "Impresionismo",
-            "Cubismo",
-            "Surrealismo",
-            "Expresionismo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién pintó 'La noche estrellada'?",
-        "answers": [
-            "Vincent van Gogh",
-            "Claude Monet",
-            "Pablo Picasso",
-            "Salvador Dalí"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre de la famosa escultura de Miguel Ángel que representa a un joven pastor?",
-        "answers": [
-            "David",
-            "Piedad",
-            "Moisés",
-            "Baco"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué artista es conocido por sus obras de arte pop que representan objetos cotidianos?",
-        "answers": [
-            "Andy Warhol",
-            "Roy Lichtenstein",
-            "Keith Haring",
-            "Jean-Michel Basquiat"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso mural de Diego Rivera que representa la historia de México?",
-        "answers": [
-            "Epopeya del pueblo mexicano",
-            "Sueño de una tarde dominical en la Alameda Central",
-            "La creación",
-            "El hombre controlador del universo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué movimiento artístico se caracteriza por la representación de sueños y el subconsciente?",
-        "answers": [
-            "Surrealismo",
-            "Dadaísmo",
-            "Fauvismo",
-            "Cubismo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la ópera 'Las bodas de Fígaro'?",
-        "answers": [
-            "Wolfgang Amadeus Mozart",
-            "Giuseppe Verdi",
-            "Richard Wagner",
-            "Johann Sebastian Bach"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué famoso arquitecto diseñó el Museo Guggenheim de Bilbao?",
-        "answers": [
-            "Frank Gehry",
-            "Le Corbusier",
-            "Zaha Hadid",
-            "Santiago Calatrava"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué tipo de arte es el 'graffiti'?",
-        "answers": [
-            "Arte urbano",
-            "Arte abstracto",
-            "Arte conceptual",
-            "Arte figurativo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es la autora de la novela 'Frankenstein'?",
-        "answers": [
-            "Mary Shelley",
-            "Jane Austen",
-            "Emily Brontë",
-            "Charlotte Brontë"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién escribió 'Romeo y Julieta'?",
-        "answers": [
-            "William Shakespeare",
-            "Charles Dickens",
-            "Jane Austen",
-            "Fiódor Dostoyevski"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del protagonista de la novela 'Moby Dick'?",
-        "answers": [
-            "Capitán Ahab",
-            "Ismael",
-            "Starbuck",
-            "Queequeg"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la saga de libros 'Las Crónicas de Narnia'?",
-        "answers": [
-            "C.S. Lewis",
-            "J.R.R. Tolkien",
-            "J.K. Rowling",
-            "George R.R. Martin"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué novela de George Orwell describe una sociedad totalitaria?",
-        "answers": [
-            "1984",
-            "Rebelión en la granja",
-            "Un mundo feliz",
-            "Fahrenheit 451"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la obra de teatro 'Hamlet'?",
-        "answers": [
-            "William Shakespeare",
-            "Christopher Marlowe",
-            "Ben Jonson",
-            "John Webster"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso detective belga creado por Agatha Christie?",
-        "answers": [
-            "Hércules Poirot",
-            "Sherlock Holmes",
-            "Miss Marple",
-            "Philip Marlowe"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué libro de Antoine de Saint-Exupéry narra la historia de un pequeño príncipe?",
-        "answers": [
-            "El Principito",
-            "Vuelo nocturno",
-            "Tierra de hombres",
-            "Correo del sur"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Quién es el autor de la novela 'Cien años de soledad'?",
-        "answers": [
-            "Gabriel García Márquez",
-            "Mario Vargas Llosa",
-            "Julio Cortázar",
-            "Pablo Neruda"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué género literario es 'La Ilíada'?",
+        "question": "¿Cuál es el género literario de 'La Odisea'?",
         "answers": [
             "Epopeya",
             "Tragedia",
             "Comedia",
             "Lírica"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es el autor de la novela 'El Gran Gatsby'?",
+        "question": "¿Qué es el flamenco?",
         "answers": [
-            "F. Scott Fitzgerald",
-            "Ernest Hemingway",
-            "William Faulkner",
-            "John Steinbeck"
+            "Un género musical y de baile originario de Andalucía",
+            "Un tipo de cante jondo",
+            "Un estilo de guitarra",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué banda de rock es famosa por su canción 'Stairway to Heaven'?",
+        "question": "¿Quién es el autor de la famosa cita 'Pienso, luego existo'?- ",
         "answers": [
-            "Led Zeppelin",
-            "Queen",
-            "The Beatles",
-            "The Rolling Stones"
+            "René Descartes",
+            "Platón",
+            "Aristóteles",
+            "Sócrates"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es la cantante conocida como la 'Reina del Pop Latino'?",
+        "question": "¿Qué es la astrofísica?",
         "answers": [
-            "Shakira",
-            "Jennifer Lopez",
-            "Gloria Estefan",
-            "Thalía"
+            "La rama de la astronomía que estudia las propiedades físicas de los astros",
+            "La búsqueda de vida extraterrestre",
+            "La exploración de otros planetas",
+            "La predicción del futuro a través de las estrellas"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué instrumento musical es el más grande de la familia de las cuerdas?",
+        "question": "¿Cuál es la partícula subatómica con carga negativa?",
         "answers": [
-            "Contrabajo",
-            "Violonchelo",
-            "Violín",
-            "Viola"
+            "El electrón",
+            "El protón",
+            "El neutrón",
+            "El fotón"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es el autor de la canción 'Bohemian Rhapsody'?",
+        "question": "¿Qué es la genética?",
         "answers": [
-            "Freddie Mercury",
-            "John Lennon",
-            "Paul McCartney",
-            "Bob Dylan"
+            "El estudio de la herencia y los genes",
+            "La manipulación del ADN",
+            "La creación de organismos transgénicos",
+            "La prevención de enfermedades hereditarias"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué género musical se originó en Jamaica en la década de 1960?",
+        "question": "¿Cuál es la fórmula química del dióxido de carbono?",
         "answers": [
-            "Reggae",
-            "Ska",
-            "Rocksteady",
-            "Dancehall"
+            "CO2",
+            "H2O",
+            "O2",
+            "NaCl"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es el compositor de la ópera 'La flauta mágica'?",
+        "question": "¿Qué es la paleontología?",
         "answers": [
-            "Wolfgang Amadeus Mozart",
-            "Ludwig van Beethoven",
-            "Johann Sebastian Bach",
-            "Franz Schubert"
+            "El estudio de los fósiles",
+            "La búsqueda de dinosaurios",
+            "La reconstrucción de ecosistemas antiguos",
+            "La datación de rocas"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué banda de rock es famosa por su álbum 'The Dark Side of the Moon'?",
+        "question": "¿Cuál es la unidad básica de la vida?",
         "answers": [
-            "Pink Floyd",
-            "Led Zeppelin",
-            "Queen",
-            "The Beatles"
+            "La célula",
+            "El átomo",
+            "La molécula",
+            "El tejido"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es la cantante conocida como la 'Reina del Soul'?",
+        "question": "¿Qué es la sismología?",
         "answers": [
-            "Aretha Franklin",
-            "Tina Turner",
-            "Diana Ross",
-            "Whitney Houston"
+            "El estudio de los terremotos",
+            "La predicción de erupciones volcánicas",
+            "La medición de la intensidad de los tsunamis",
+            "La prevención de desastres naturales"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué instrumento musical es el más antiguo del mundo?",
+        "question": "¿Cuál es el planeta más alejado del Sol?",
         "answers": [
-            "Flauta",
-            "Tambor",
-            "Arpa",
-            "Guitarra"
+            "Neptuno",
+            "Urano",
+            "Saturno",
+            "Júpiter"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es el autor de la canción 'Imagine'?",
+        "question": "¿Qué es la botánica?",
         "answers": [
-            "John Lennon",
-            "Paul McCartney",
-            "George Harrison",
-            "Ringo Starr"
+            "El estudio de las plantas",
+            "El cultivo de flores",
+            "El diseño de jardines",
+            "La clasificación de árboles"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué película ganó el Óscar a la Mejor Película en 2020?",
+        "question": "¿Cuál es la estrella más cercana a la Tierra?",
         "answers": [
-            "Parásitos",
-            "1917",
-            "Érase una vez en Hollywood",
-            "Joker"
+            "El Sol",
+            "Próxima Centauri",
+            "Alfa Centauri A",
+            "Sirio"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién dirigió la película 'El Padrino'?",
+        "question": "¿Qué fue la batalla de Stalingrado?",
         "answers": [
-            "Francis Ford Coppola",
-            "Martin Scorsese",
-            "Steven Spielberg",
-            "Quentin Tarantino"
+            "Una batalla decisiva en el frente oriental de la Segunda Guerra Mundial",
+            "Un punto de inflexión que detuvo el avance alemán en la Unión Soviética",
+            "Una de las batallas más sangrientas de la historia",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del actor que interpreta a Batman en la trilogía de Christopher Nolan?",
+        "question": "¿Quién fue Cleopatra?",
         "answers": [
-            "Christian Bale",
-            "Ben Affleck",
-            "Robert Pattinson",
-            "Michael Keaton"
+            "La última reina del Antiguo Egipto",
+            "Una amante de Julio César y Marco Antonio",
+            "Una figura histórica famosa por su belleza e inteligencia",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué película de ciencia ficción es famosa por su frase 'Que la fuerza te acompañe'?",
+        "question": "¿Qué fue la Inquisición española?",
         "answers": [
-            "Star Wars",
-            "Blade Runner",
-            "Matrix",
-            "Alien"
+            "Un tribunal eclesiástico que perseguía la herejía",
+            "Una institución que utilizó la tortura y la quema en la hoguera",
+            "Un instrumento de control social y político de la monarquía",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es el director de la película 'Pulp Fiction'?",
+        "question": "¿Quién fue Marco Polo?",
         "answers": [
-            "Quentin Tarantino",
-            "Martin Scorsese",
-            "Steven Spielberg",
-            "Francis Ford Coppola"
+            "Un mercader y explorador veneciano que viajó a China",
+            "El autor de 'Los viajes de Marco Polo'",
+            "Una fuente de inspiración para futuros exploradores como Cristóbal Colón",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del famoso estudio de animación japonés conocido por películas como 'El viaje de Chihiro'?",
+        "question": "¿Qué fue el Imperio Inca?",
         "answers": [
-            "Studio Ghibli",
-            "Toei Animation",
-            "Madhouse",
-            "Bones"
+            "El imperio más grande de la América precolombina",
+            "Una civilización que construyó una red de caminos y ciudades en los Andes",
+            "Un pueblo que adoraba al dios Sol",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué película de terror es famosa por su escena de la ducha?",
+        "question": "¿Quién fue Leonardo da Vinci?",
         "answers": [
-            "Psicosis",
-            "El Exorcista",
-            "El Resplandor",
-            "Halloween"
+            "Un polímata del Renacimiento italiano: pintor, escultor, arquitecto, músico, científico, inventor...",
+            "El autor de 'La Gioconda' y 'La última cena'",
+            "Un genio que se adelantó a su tiempo con sus ideas y diseños",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es el actor que interpreta a Iron Man en el Universo Cinematográfico de Marvel?",
+        "question": "¿Qué fue la batalla de Waterloo?",
         "answers": [
-            "Robert Downey Jr.",
-            "Chris Evans",
-            "Chris Hemsworth",
-            "Mark Ruffalo"
+            "La batalla que supuso la derrota final de Napoleón Bonaparte",
+            "El fin de las Guerras Napoleónicas y del Primer Imperio Francés",
+            "Un enfrentamiento entre el ejército francés y una coalición liderada por el Duque de Wellington",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del director de la película 'Titanic'?",
+        "question": "¿Quién fue Juana la Loca?",
         "answers": [
-            "James Cameron",
-            "Steven Spielberg",
-            "Martin Scorsese",
-            "Quentin Tarantino"
+            "Una reina de Castilla y Aragón que fue encerrada por su supuesta locura",
+            "La madre del emperador Carlos V",
+            "Una figura trágica marcada por los celos y las intrigas políticas",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué película de animación de Pixar trata sobre juguetes que cobran vida?",
+        "question": "¿Qué fue la toma de la Bastilla?",
         "answers": [
-            "Toy Story",
-            "Buscando a Nemo",
-            "Up",
-            "Coco"
+            "Un evento simbólico que marcó el inicio de la Revolución Francesa",
+            "La caída de una prisión que representaba el absolutismo monárquico",
+            "Una revuelta popular que inspiró a otros países a luchar por la libertad",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué serie de televisión se desarrolla en la ciudad de Nueva York y sigue la vida de seis amigos?",
+        "question": "¿Quién fue Simón Bolívar?",
         "answers": [
-            "Friends",
-            "Seinfeld",
-            "Cómo conocí a vuestra madre",
-            "The Big Bang Theory"
+            "Un líder militar y político que luchó por la independencia de varios países de América del Sur",
+            "El fundador de la Gran Colombia",
+            "Conocido como 'El Libertador'",
+            "Todas las anteriores"
         ],
-        "correct": 0
+        "correct": 3,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del protagonista de la serie 'Breaking Bad'?",
+        "question": "¿Cuál es la capital de Marruecos?",
         "answers": [
-            "Walter White",
-            "Jesse Pinkman",
-            "Saul Goodman",
-            "Gus Fring"
+            "Rabat",
+            "Casablanca",
+            "Marrakech",
+            "Fez"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué serie de televisión de fantasía épica es famosa por su lema 'Winter is Coming'?",
+        "question": "¿En qué país se encuentra el desierto de Sonora?",
         "answers": [
-            "Juego de Tronos",
-            "Vikingos",
-            "The Witcher",
-            "El Señor de los Anillos"
+            "México y Estados Unidos",
+            "Chile y Argentina",
+            "Perú y Bolivia",
+            "Brasil y Colombia"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del famoso programa de televisión de cocina presentado por Gordon Ramsay?",
+        "question": "¿Cuál es la capital de Noruega?",
         "answers": [
-            "Hell's Kitchen",
-            "MasterChef",
-            "Top Chef",
-            "Kitchen Nightmares"
+            "Oslo",
+            "Bergen",
+            "Trondheim",
+            "Stavanger"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué serie de televisión de ciencia ficción trata sobre un grupo de supervivientes en un mundo post-apocalíptico lleno de zombis?",
+        "question": "¿Cuál es el río más largo de Europa?",
         "answers": [
-            "The Walking Dead",
-            "Fear the Walking Dead",
-            "Z Nation",
-            "Kingdom"
+            "El Volga",
+            "El Danubio",
+            "El Rin",
+            "El Dniéper"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del famoso programa de televisión de comedia que se desarrolla en una oficina?",
+        "question": "¿Cuál es la capital de Irán?",
         "answers": [
-            "The Office",
-            "Parks and Recreation",
-            "Brooklyn Nine-Nine",
-            "Modern Family"
+            "Teherán",
+            "Isfahán",
+            "Shiraz",
+            "Tabriz"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué serie de televisión de drama criminal sigue la vida de un narcotraficante en Colombia?",
+        "question": "¿En qué continente se encuentra Madagascar?",
         "answers": [
-            "Narcos",
-            "El Patrón del Mal",
-            "Pablo Escobar: El Patrón del Mal",
-            "El Chapo"
+            "África",
+            "Asia",
+            "Oceanía",
+            "América del Sur"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del famoso programa de televisión de concursos donde los participantes responden preguntas de cultura general?",
+        "question": "¿Cuál es la capital de Perú?",
         "answers": [
-            "¿Quién quiere ser millonario?",
-            "Pasapalabra",
-            "Saber y ganar",
-            "Boom!"
+            "Lima",
+            "Cuzco",
+            "Arequipa",
+            "Trujillo"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Qué serie de televisión de animación para adultos es famosa por su humor negro y sus personajes disfuncionales?",
+        "question": "¿Cuál es el mar que separa Europa de África?",
         "answers": [
-            "Los Simpson",
-            "Padre de familia",
-            "South Park",
-            "Rick y Morty"
+            "El mar Mediterráneo",
+            "El mar Rojo",
+            "El mar Negro",
+            "El mar Caspio"
         ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del famoso programa de televisión de telerrealidad que sigue la vida de la familia Kardashian-Jenner?",
+        "question": "¿Cuál es la capital de Filipinas?",
         "answers": [
-            "Keeping Up with the Kardashians",
-            "The Real Housewives of Beverly Hills",
-            "Vanderpump Rules",
-            "Jersey Shore"
+            "Manila",
+            "Cebú",
+            "Dávao",
+            "Quezon City"
         ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso fontanero italiano de Nintendo?",
-        "answers": [
-            "Mario",
-            "Luigi",
-            "Wario",
-            "Waluigi"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego de rol de acción de mundo abierto fue desarrollado por CD Projekt Red?",
-        "answers": [
-            "The Witcher 3: Wild Hunt",
-            "Cyberpunk 2077",
-            "The Elder Scrolls V: Skyrim",
-            "Fallout 4"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso juego de construcción y supervivencia donde los jugadores pueden crear sus propios mundos?",
-        "answers": [
-            "Minecraft",
-            "Roblox",
-            "Terraria",
-            "Stardew Valley"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego de disparos en primera persona es famoso por sus batallas multijugador?",
-        "answers": [
-            "Call of Duty",
-            "Battlefield",
-            "Halo",
-            "Counter-Strike"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso juego de carreras de karts de Nintendo?",
-        "answers": [
-            "Mario Kart",
-            "Crash Team Racing",
-            "Sonic & All-Stars Racing Transformed",
-            "F-Zero"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego de terror de supervivencia es famoso por sus zombis y su atmósfera de miedo?",
-        "answers": [
-            "Resident Evil",
-            "Silent Hill",
-            "Outlast",
-            "Amnesia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso juego de rol japonés donde los jugadores luchan contra monstruos y exploran un mundo de fantasía?",
-        "answers": [
-            "Final Fantasy",
-            "Dragon Quest",
-            "Pokémon",
-            "The Legend of Zelda"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego de estrategia en tiempo real es famoso por sus unidades y facciones únicas?",
-        "answers": [
-            "StarCraft",
-            "Warcraft",
-            "Age of Empires",
-            "Command & Conquer"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del famoso juego de lucha donde los jugadores eligen entre una variedad de personajes con habilidades únicas?",
-        "answers": [
-            "Street Fighter",
-            "Mortal Kombat",
-            "Tekken",
-            "Super Smash Bros."
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué videojuego de plataformas es famoso por su personaje principal, un erizo azul?",
-        "answers": [
-            "Sonic the Hedgehog",
-            "Super Mario Bros.",
-            "Crash Bandicoot",
-            "Spyro the Dragon"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el deporte más popular en Estados Unidos?",
-        "answers": [
-            "Fútbol americano",
-            "Baloncesto",
-            "Béisbol",
-            "Hockey sobre hielo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuántos puntos vale un touchdown en el fútbol americano?",
-        "answers": [
-            "6",
-            "3",
-            "7",
-            "1"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país ha ganado más Copas del Mundo de Baloncesto?",
-        "answers": [
-            "Estados Unidos",
-            "España",
-            "Serbia",
-            "Argentina"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué ciudad se encuentra el estadio de los Dallas Cowboys?",
-        "answers": [
-            "Arlington",
-            "Dallas",
-            "Houston",
-            "San Antonio"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué atleta es conocido como 'La Bestia' en el atletismo?",
-        "answers": [
-            "Usain Bolt",
-            "Carl Lewis",
-            "Jesse Owens",
-            "Michael Johnson"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del trofeo que se entrega al ganador de la Super Bowl?",
-        "answers": [
-            "Trofeo Vince Lombardi",
-            "Trofeo Larry O'Brien",
-            "Copa Stanley",
-            "Copa Grey"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿En qué deporte se destaca LeBron James?",
-        "answers": [
-            "Baloncesto",
-            "Fútbol americano",
-            "Béisbol",
-            "Hockey sobre hielo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué equipo de béisbol es conocido como los 'Yankees'?",
-        "answers": [
-            "New York Yankees",
-            "Boston Red Sox",
-            "Los Angeles Dodgers",
-            "Chicago Cubs"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el nombre del torneo de baloncesto universitario más famoso de Estados Unidos?",
-        "answers": [
-            "March Madness",
-            "Final Four",
-            "NIT",
-            "CBI"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Qué país ha ganado más medallas de oro en los Juegos Olímpicos de Invierno?",
-        "answers": [
-            "Noruega",
-            "Estados Unidos",
-            "Alemania",
-            "Rusia"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el animal que tiene el cerebro más grande en proporción a su cuerpo?",
-        "answers": [
-            "Humano",
-            "Delfín",
-            "Elefante",
-            "Musaraña"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el animal que puede cambiar de color para camuflarse?",
-        "answers": [
-            "Camaleón",
-            "Pulpo",
-            "Sepia",
-            "Todos los anteriores"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el país con la mayor cantidad de volcanes activos?",
-        "answers": [
-            "Indonesia",
-            "Japón",
-            "Estados Unidos",
-            "Chile"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único mamífero que no tiene cuerdas vocales?",
-        "answers": [
-            "Jirafa",
-            "Perezoso",
-            "Armadillo",
-            "Topo"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único animal que no puede vomitar?",
-        "answers": [
-            "Conejo",
-            "Rata",
-            "Caballo",
-            "Todos los anteriores"
-        ],
-        "correct": 2
-    },
-    {
-        "question": "¿Cuál es el único metal que es líquido a temperatura ambiente?",
-        "answers": [
-            "Mercurio",
-            "Galio",
-            "Cesio",
-            "Francio"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único país del mundo que empieza por la letra 'Q' en español?",
-        "answers": [
-            "Catar",
-            "Cuba",
-            "Chile",
-            "No hay"
-        ],
-        "correct": 3
-    },
-    {
-        "question": "¿Cuál es el único mamífero que puede ver el color rojo?",
-        "answers": [
-            "Humanos",
-            "Monos",
-            "Perros",
-            "Gatos"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único órgano del cuerpo humano que puede regenerarse?",
-        "answers": [
-            "Hígado",
-            "Piel",
-            "Corazón",
-            "Cerebro"
-        ],
-        "correct": 0
-    },
-    {
-        "question": "¿Cuál es el único número que tiene el mismo número de letras que su valor?",
-        "answers": [
-            "Cuatro",
-            "Cinco",
-            "Seis",
-            "Siete"
-        ],
-        "correct": 0
+        "correct": 0,
+        "type": "multiple_choice"
     }
 ]
