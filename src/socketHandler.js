@@ -6,7 +6,7 @@ function sanitize(str) {
 
 function initializeSocket(io) {
     io.on('connection', (socket) => {
-        socket.on('host-create-game', async ({ hostName }) => {
+        socket.on('host-create-game', async () => {
             const { game, error } = await createGame(socket);
             if (error) {
                 socket.emit('create-game-error', error);

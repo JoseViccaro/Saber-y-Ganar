@@ -3,15 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let gamePin;
     let timerInterval;
     let currentScore = 0;
-    let answerStreak = 0;
     let lastAnswerIndex; // Para guardar la última respuesta del jugador
-    let rondaRelampagoAnunciada = false; // Flag to show announcement only once
     let selectedAvatar;
 
     // Constants
     const AVATAR_COUNT = 6;
-    const RONDA_RELAMPAGO_QUESTION_INDEX = 18;
-    const RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION = 3000;
+    
     const FEEDBACK_DISPLAY_DURATION = 2000;
     const READY_GO_DISPLAY_DURATION = 1000;
     const BONUS_TOAST_DISPLAY_DURATION = 3000;
@@ -211,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pointsGainedElement.classList.remove('hidden');
             screens.feedback.classList.add('correct');
         } else {
-            incorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+            incorrectSound.play().catch(() => console.log("El navegador bloqueó la reproducción de sonido."));
             if (selectedButton) selectedButton.classList.add('incorrect');
             window.triggerIncorrectAnimation(); // Lanza la animación de "X"
             feedbackText.textContent = '¡Incorrecto!';
@@ -332,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.textContent = `${data.name}: ${data.message}`;
         messages.appendChild(item);
         messages.scrollTop = messages.scrollHeight;
-        notificationSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+        notificationSound.play().catch(() => console.log("El navegador bloqueó la reproducción de sonido."));
     });
 
     toggleChatBtn.addEventListener('click', () => {

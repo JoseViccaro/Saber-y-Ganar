@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function showScreen(screenName, screens) {
     for (let key in screens) {
         screens[key].classList.add('hidden');

@@ -133,7 +133,7 @@ function handleAnswer(pin, socket, answerIndex) {
     };
 }
 
-function usePowerup(pin, socket, powerupType, io) {
+function usePowerup(pin, socket, powerupType) {
     const game = games[pin];
     if (!game || !game.players[socket.id] || game.state !== 'question') return;
 

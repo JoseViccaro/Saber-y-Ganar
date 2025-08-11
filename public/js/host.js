@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showEpicRondaRelampagoAnnouncement();
     });
 
-    socket.on('update-timer', (timeLeft, totalTime) => {
+    socket.on('update-timer', (timeLeft) => {
         hostTimerCountdown.textContent = timeLeft;
 
         if (timeLeft <= 5 && timeLeft > 0) {
@@ -209,9 +209,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         if (data.answerCounts[data.correctAnswerIndex] > 0) {
             confetti({ particleCount: 150, spread: 180 });
-            hostCorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+            hostCorrectSound.play().catch(() => console.log("El navegador bloqueó la reproducción de sonido."));
         } else {
-            hostIncorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+            hostIncorrectSound.play().catch(() => console.log("El navegador bloqueó la reproducción de sonido."));
         }
         showScreen('questionSummary', screens);
         showLeaderboardBtn.classList.remove('hidden');
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.textContent = `${data.name}: ${data.message}`;
         hostMessages.appendChild(item);
         hostMessages.scrollTop = hostMessages.scrollHeight;
-        notificationSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+        notificationSound.play().catch(() => console.log("El navegador bloqueó la reproducción de sonido."));
     });
 
     const chatContainer = document.getElementById('chat-container');
