@@ -18,3 +18,18 @@ build/
 /windows/runner/Debug/
 /windows/runner/Release/
 /windows/runner/Profile/
+
+# Virtual environment
+.venv/
+
+# Generated Flutter files
+kahoot_flutter_app/linux/flutter/generated_plugin_registrant.cc
+kahoot_flutter_app/linux/flutter/generated_plugin_registrant.h
+kahoot_flutter_app/linux/flutter/generated_plugins.cmake
+kahoot_flutter_app/macos/Flutter/GeneratedPluginRegistrant.swift
+kahoot_flutter_app/windows/flutter/generated_plugin_registrant.cc
+kahoot_flutter_app/windows/flutter/generated_plugin_registrant.h
+kahoot_flutter_app/windows/flutter/generated_plugins.cmake
+
+# Commit message file
+commit_message.txt
