@@ -210,7 +210,7 @@ class _PlayerAppState extends State<PlayerApp> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text(
-          'Saber y Ganar',
+          'Quiz Venezuela',
           style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 20),
@@ -451,7 +451,7 @@ class _PlayerAppState extends State<PlayerApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Saber y Ganar - Jugador'),
+        title: const Text('Quiz Venezuela - Jugador'),
         centerTitle: true,
       ),
       body: Center(

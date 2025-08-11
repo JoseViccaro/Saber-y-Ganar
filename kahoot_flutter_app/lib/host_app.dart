@@ -206,7 +206,7 @@ class _HostAppState extends State<HostApp> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text(
-          'Saber y Ganar',
+          'Quiz Venezuela',
           style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 40),
@@ -571,7 +571,7 @@ class _HostAppState extends State<HostApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Saber y Ganar - Anfitrión'),
+        title: const Text('Quiz Venezuela - Anfitrión'),
         centerTitle: true,
       ),
       body: Center(

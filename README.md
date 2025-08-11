@@ -1,4 +1,4 @@
-# Saber y Ganar
+# Quiz Venezuela
 
 Este es un juego de preguntas y respuestas en tiempo real, similar a Kahoot!, construido con Node.js para el backend y Flutter para la aplicación cliente.
 

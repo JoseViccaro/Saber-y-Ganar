@@ -1,4 +1,4 @@
-const MASTER_QUESTIONS = require('../questions.json');
+const MASTER_QUESTIONS = require('../Quiz Venezuela.json');
 let availableQuestions = [...MASTER_QUESTIONS];
 
 let games = {};

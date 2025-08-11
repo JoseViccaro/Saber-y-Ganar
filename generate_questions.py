@@ -375,7 +375,7 @@ for question in unique_questions:
     else:
         question['type'] = 'multiple_choice'
 
-with open('questions.json', 'w', encoding='utf-8') as f:
+with open('Quiz Venezuela.json', 'w', encoding='utf-8') as f:
     json.dump(unique_questions, f, ensure_ascii=False, indent=4)
 
-print(f"Se han generado {len(unique_questions)} preguntas en el archivo questions.json")
+print(f"Se han generado {len(unique_questions)} preguntas en el archivo Quiz Venezuela.json")
