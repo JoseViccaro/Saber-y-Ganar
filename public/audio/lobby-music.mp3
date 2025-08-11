@@ -1,0 +1,99 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Online Sequencer - Error</title>
+<meta charset="utf-8"> 
+<meta name="Description" content="OnlineSequencer.net is an online music sequencer. Make tunes in your browser and share them with friends!" />
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link id="css_resources/fonts" rel="stylesheet" href="/resources/fonts.css" />
+<link id="css_resources/style" rel="stylesheet" href="/resources/style.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+<body>  
+<noscript><div class="sitemessage">This site requires JavaScript to be enabled in your browser settings to work properly.</div></noscript>
+    <div id="container">
+        <div id="header">
+                        <div id="nav">
+    <a id="logo" href="/">
+        <div class="icon"></div>
+        <div class="text">  
+            <span class="title">Online Sequencer</span>
+            <span class="subtitle">Make music online</span>
+        </div>
+    </a>
+    <div id="header_right">
+    <ul>
+<li><a href="/sequences">Sequences</a></li><li><a href="/memberlist">Members</a></li><li><a href="/import">Import MIDI</a></li><li><a href="/forum/">Forum</a></li></ul>
+<div id="bar">
+    <div style="float:right; padding-right: 10px;">
+        <div id="user_guest" style="display: none">
+            <div id="login_fields">
+                <input type="text" id="username" name="username" placeholder="Username" />
+                <input type="password" id="password" name="password" placeholder="Password" />
+            </div>
+            <a id="login_button" class="linkbutton" href="javascript:;">Login</a>
+            <a id="registerbutton" class="linkbutton" href="/forum/member.php?action=register" target="_blank">Register</a>
+            </span>
+        </div>
+            </div>
+    <span id="sequence_info"></span>
+</div>
+</div>
+            </div>
+        </div>
+
+        <div id="main">
+        <div id="page_bg"></div>
+            <div id="page"  style="">
+                        <div id="page_right">
+<div class="block">
+<div class="btitle">Error</div>
+<div class="bcontents">
+<div class="bcontents_t">
+<div class="bcontents_text">
+The page 2121320 does not exist.</div></div><div class="bcontents_b"></div></div>
+</div><div id="space"></div>
+            </div>
+            <div class="clear"></div>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8586779; 
+var sc_invisible=1; 
+var sc_security="5041619c"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="click tracking"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8586779/0/5041619c/1/"
+alt="click tracking"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<!-- End of StatCounter Code for Default Guide -->
+<!-- Piwik -->
+<script type="text/javascript"> 
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://buildism.net/stats//";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://buildism.net/stats/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+            </div>
+        </div>
+    </div>
+<br/><br/>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96d73400598d18b2',t:'MTc1NDkwOTc1Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

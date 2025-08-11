@@ -29,9 +29,9 @@ function initializeSocket(io) {
         socket.on('host-next-question', handleRequestQuestion);
 
         socket.on('player-join-game', (data) => {
-            const { pin, name } = data;
+            const { pin, name, avatar } = data;
             const sanitizedName = sanitize(name);
-            const { game, error } = addPlayer(pin, socket, sanitizedName);
+            const { game, error } = addPlayer(pin, socket, sanitizedName, avatar);
             if (error) {
                 socket.emit('join-error', error);
                 return;
@@ -65,6 +65,21 @@ function initializeSocket(io) {
         socket.on('player-use-powerup', (data) => {
             const { pin, powerupType } = data;
             usePowerup(pin, socket, powerupType, io);
+        });
+
+        socket.on('sendMessage', (message) => {
+            const sanitizedMessage = sanitize(message);
+            // Find the game the player is in
+            const pin = Object.keys(games).find(pin => games[pin] && games[pin].players[socket.id]);
+            if (pin) {
+                const player = games[pin].players[socket.id];
+                if (player) {
+                    io.to(pin).emit('newMessage', {
+                        name: player.name,
+                        message: sanitizedMessage
+                    });
+                }
+            }
         });
 
         socket.on('disconnect', () => {

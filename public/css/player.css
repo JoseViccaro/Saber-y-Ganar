@@ -1,3 +1,29 @@
+/* Avatar Grid */
+.avatar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.avatar-option {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.avatar-option:hover {
+    transform: scale(1.1);
+    border-color: #ddd;
+}
+
+.avatar-option.selected {
+    border-color: #8A2BE2;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
+}
+
 /* General Body Styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -225,8 +251,6 @@ input[type="text"]:focus, input[type="number"]:focus {
 
 
 
-
-
 /* Bonus Toast */
 .bonus-toast {
     position: fixed;
@@ -297,4 +321,80 @@ input[type="text"]:focus, input[type="number"]:focus {
 @keyframes winner-pulse {
     from { transform: scale(1); opacity: 1; }
     to { transform: scale(1.1); opacity: 0.9; }
+}
+
+/* Chat Styles */
+#chat-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    color: white;
+}
+
+#messages li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+#chat-form {
+    display: flex;
+    padding: 5px;
+    background: #333;
+}
+
+#message-input {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#chat-form button {
+    background: #8A2BE2;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-header {
+    background: #8A2BE2;
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#toggle-chat-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#chat-container.minimized #messages,
+#chat-container.minimized #chat-form {
+    display: none;
 }

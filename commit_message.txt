@@ -1,0 +1,8 @@
+feat: Fix JavaScript errors and add missing assets
+
+This commit addresses several issues:
+- Fixed a JavaScript syntax error in `public/js/common.js` that was causing `ReferenceError`s for `showScreen` and `unlockAudio` in `host.js` and `player.js`.
+- Added `public/audio/lobby-music.mp3` to replace the missing lobby music.
+- Added `public/css/epic-animation.css` and ensured other CSS files are tracked.
+- Added `public/audio/notificacion.mp3` and `public/avatars/` directory.
+- Updated `.gitignore` to exclude virtual environment and generated Flutter files.

@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let answerStreak = 0;
     let lastAnswerIndex; // Para guardar la última respuesta del jugador
     let rondaRelampagoAnunciada = false; // Flag to show announcement only once
+    let selectedAvatar;
 
     // Constants
+    const AVATAR_COUNT = 6;
     const RONDA_RELAMPAGO_QUESTION_INDEX = 18;
     const RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION = 3000;
     const FEEDBACK_DISPLAY_DURATION = 2000;
@@ -26,13 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     const correctSound = document.getElementById('correct-sound');
     const incorrectSound = document.getElementById('incorrect-sound');
-    const timerTickSound = document.getElementById('timer-tick-sound');
+    const notificationSound = document.getElementById('notification-sound');
+    
     const joinButton = document.getElementById('join-btn');
     const feedbackText = document.getElementById('feedback-text');
     const questionProgress = document.getElementById('question-progress');
     const playerTimer = document.getElementById('player-timer');
     const playerTimerBar = document.getElementById('player-timer-bar');
     const readyGoText = document.getElementById('ready-go-text');
+    const avatarSelection = document.getElementById('avatar-selection');
     
     const playerScoreElement = document.getElementById('player-score');
     const answerStreakElement = document.getElementById('answer-streak');
@@ -43,15 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const confettiCanvas = document.getElementById('confetti-canvas');
     const customConfetti = confetti.create(confettiCanvas, { resize: true });
 
-    function showScreen(screenName) {
-        for (let key in screens) {
-            screens[key].classList.add('hidden');
-            if (key === 'feedback') {
-                screens[key].classList.remove('show');
-            }
-        }
-        if (screens[screenName]) {
-            screens[screenName].classList.remove('hidden');
+    function populateAvatarSelection() {
+        for (let i = 1; i <= AVATAR_COUNT; i++) {
+            const avatarImg = document.createElement('img');
+            avatarImg.src = `/avatars/avatar${i}.svg`;
+            avatarImg.classList.add('avatar-option');
+            avatarImg.dataset.avatarId = i;
+            avatarImg.addEventListener('click', () => {
+                document.querySelectorAll('.avatar-option').forEach(img => img.classList.remove('selected'));
+                avatarImg.classList.add('selected');
+                selectedAvatar = `/avatars/avatar${i}.svg`;
+            });
+            avatarSelection.appendChild(avatarImg);
         }
     }
 
@@ -71,15 +78,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Se interactúa con los sonidos en la primera acción del usuario.
         correctSound.play().then(() => correctSound.pause()).catch(() => {});
         incorrectSound.play().then(() => incorrectSound.pause()).catch(() => {});
-        // timerTickSound.play().then(() => timerTickSound.pause()).catch(() => {}); // Removed commented out audio logic
+        notificationSound.play().then(() => notificationSound.pause()).catch(() => {});
 
         gamePin = document.getElementById('pin-input').value;
         const name = document.getElementById('name-input').value.trim();
-        if (gamePin && name) {
-            console.log(`Intentando unirse al juego con PIN: ${gamePin} y nombre: ${name}`);
-            socket.emit('player-join-game', { pin: gamePin, name: name });
+        if (gamePin && name && selectedAvatar) {
+            console.log(`Intentando unirse al juego con PIN: ${gamePin}, nombre: ${name} y avatar: ${selectedAvatar}`);
+            socket.emit('player-join-game', { pin: gamePin, name: name, avatar: selectedAvatar });
         } else {
-            document.getElementById('error-message').textContent = 'Debes introducir un PIN y un nombre.';
+            document.getElementById('error-message').textContent = 'Debes introducir un PIN, un nombre y seleccionar un avatar.';
         }
     });
 
@@ -102,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('join-success', () => {
         console.log('¡Unión exitosa!');
-        showScreen('waiting');
+        showScreen('waiting', screens);
     });
     socket.on('join-error', (message) => {
         console.error(`Error al unirse: ${message}`);
@@ -114,8 +121,15 @@ document.addEventListener('DOMContentLoaded', () => {
         playerTimer.textContent = '';
         playerTimerBar.style.transform = 'scaleY(1)';
 
+        if (data.isLightningRound) {
+            document.body.classList.add('ronda-relampago');
+            questionProgress.textContent = `¡RONDA RELÁMPAGO! | Pregunta ${data.questionIndex + 1} de ${data.totalQuestions}`;
+        } else {
+            document.body.classList.remove('ronda-relampago');
+            questionProgress.textContent = `Pregunta ${data.questionIndex + 1} de ${data.totalQuestions}`;
+        }
+
         document.getElementById('player-question-text').textContent = data.question;
-        questionProgress.textContent = `Pregunta ${data.questionIndex + 1} de ${data.totalQuestions}`;
 
         answerStreakElement.classList.add('hidden');
 
@@ -169,16 +183,11 @@ document.addEventListener('DOMContentLoaded', () => {
             powerupSkipQuestionBtn.disabled = !data.powerups.skipQuestion;
         }
 
-        showScreen('question');
+        showScreen('question', screens);
     });
 
     socket.on('ronda-relampago-announce', () => {
-        showScreen('rondaRelampago');
-        setTimeout(() => {
-            // The server will send the 'new-question' event after the announcement duration
-            // so we just hide the announcement screen here.
-            screens.rondaRelampago.classList.add('hidden');
-        }, RONDA_RELAMPAGO_ANNOUNCEMENT_DURATION);
+        showEpicRondaRelampagoAnnouncement();
     });
 
     socket.on('answer-result', (data) => {
@@ -211,11 +220,11 @@ document.addEventListener('DOMContentLoaded', () => {
             screens.feedback.classList.add('incorrect');
         }
 
-        showScreen('feedback');
+        showScreen('feedback', screens);
         setTimeout(() => {
             screens.feedback.classList.add('hidden');
             screens.feedback.classList.remove('correct', 'incorrect');
-            showScreen('waiting'); // Go back to waiting screen after feedback
+            showScreen('waiting', screens); // Go back to waiting screen after feedback
         }, FEEDBACK_DISPLAY_DURATION);
 
         playerScoreElement.textContent = `Puntos: ${currentScore}`;
@@ -254,10 +263,10 @@ document.addEventListener('DOMContentLoaded', () => {
         feedbackText.textContent = '¡Pregunta Saltada!';
         pointsGainedElement.classList.add('hidden');
         screens.feedback.classList.remove('correct', 'incorrect'); // Ensure no color from previous feedback
-        showScreen('feedback');
+        showScreen('feedback', screens);
         setTimeout(() => {
             screens.feedback.classList.add('hidden');
-            showScreen('waiting'); // Go back to waiting screen after feedback
+            showScreen('waiting', screens); // Go back to waiting screen after feedback
         }, FEEDBACK_DISPLAY_DURATION);
     });
 
@@ -265,12 +274,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('show-leaderboard', () => {
         clearInterval(timerInterval);
-        showScreen('waiting');
+        showScreen('waiting', screens);
     });
 
     socket.on('game-over', (winnerName) => {
         document.getElementById('winner-name').textContent = winnerName;
-        showScreen('winnerAnnouncement');
+        showScreen('winnerAnnouncement', screens);
     });
 
     socket.on('game-cancelled', () => { alert("El anfitrión ha cancelado el juego."); location.reload(); });
@@ -287,18 +296,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             playerTimerBar.style.backgroundColor = '#e74c3c'; // Rojo
         }
-
-        if (timeLeft <= 5 && timeLeft > 0) {
-            // timerTickSound.play();
-        } else {
-            // timerTickSound.pause();
-            // timerTickSound.currentTime = 0;
-        }
     });
 
     socket.on('ready-go', (message) => {
         readyGoText.textContent = message;
-        showScreen('readyGo');
+        showScreen('readyGo', screens);
         setTimeout(() => {
             screens.readyGo.classList.add('hidden');
         }, READY_GO_DISPLAY_DURATION);
@@ -307,5 +309,38 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     // --- INICIALIZACIÓN ---
-    showScreen('join');
+    populateAvatarSelection();
+    showScreen('join', screens);
+
+    // Chat logic
+    const chatContainer = document.getElementById('chat-container');
+    const messages = document.getElementById('messages');
+    const chatForm = document.getElementById('chat-form');
+    const messageInput = document.getElementById('message-input');
+    const toggleChatBtn = document.getElementById('toggle-chat-btn');
+
+    chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (messageInput.value) {
+            socket.emit('sendMessage', messageInput.value);
+            messageInput.value = '';
+        }
+    });
+
+    socket.on('newMessage', (data) => {
+        const item = document.createElement('li');
+        item.textContent = `${data.name}: ${data.message}`;
+        messages.appendChild(item);
+        messages.scrollTop = messages.scrollHeight;
+        notificationSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+    });
+
+    toggleChatBtn.addEventListener('click', () => {
+        chatContainer.classList.toggle('minimized');
+        if (chatContainer.classList.contains('minimized')) {
+            toggleChatBtn.textContent = '+';
+        } else {
+            toggleChatBtn.textContent = '-';
+        }
+    });
 });

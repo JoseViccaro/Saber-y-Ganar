@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/host.css">
+    <link rel="stylesheet" href="/css/epic-animation.css">
 </head>
 <body>
 <div class="container">
@@ -93,11 +94,18 @@
         <button id="next-question-btn" class="btn btn-next">Siguiente Pregunta</button>
     </div>
 
-    <div id="ronda-relampago-announcement" class="screen hidden epic-announcement">
+    <div id="ronda-relampago-announcement" class="epic-announcement-overlay hidden">
         <div class="epic-content">
             <h1 class="epic-title">¡RONDA RELÁMPAGO!</h1>
             <p class="epic-subtitle">Las próximas 5 preguntas valen doble</p>
         </div>
+    </div>
+    <div id="chat-container">
+        <div id="chat-header">
+            <h3>Chat en Vivo</h3>
+            <button id="toggle-chat-btn">-</button>
+        </div>
+        <ul id="host-messages"></ul>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
@@ -109,5 +117,6 @@
     <audio id="lobby-music" src="/audio/lobby-music.mp3" preload="auto" loop></audio>
     <audio id="timer-tick-sound" src="/audio/timer-tick.mp3" preload="auto" loop></audio>
     <audio id="background-music" src="/audio/fondo.mp3" preload="auto" loop></audio>
+    <audio id="notification-sound" src="/audio/notificacion.mp3" preload="auto"></audio>
 </body>
 </html>

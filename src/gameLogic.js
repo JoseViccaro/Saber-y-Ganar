@@ -57,11 +57,12 @@ function createGame(socket) {
     }
 }
 
-function addPlayer(pin, socket, name) {
+function addPlayer(pin, socket, name, avatar) {
     const game = games[pin];
     if (game && game.state === 'waiting') {
         game.players[socket.id] = {
             name,
+            avatar,
             score: 0,
             streak: 0,
             powerups: { fiftyFifty: true, doublePoints: true, skipQuestion: true },
@@ -213,15 +214,17 @@ function sendActualQuestion(io, pin) {
     if (game.currentQuestion < game.questions.length) {
         game.state = 'question';
         const question = game.questions[game.currentQuestion];
+        const isLightningRound = game.currentQuestion >= (SPECIAL_QUESTION_START - 1) && game.currentQuestion <= (SPECIAL_QUESTION_END - 1);
         const basePayload = {
             question: question.question,
             answers: question.answers,
             questionIndex: game.currentQuestion,
             totalQuestions: game.questions.length,
             image: question.image || null,
-            type: question.type || 'multiple_choice'
+            type: question.type || 'multiple_choice',
+            isLightningRound: isLightningRound
         };
-        game.timeLimit = (game.currentQuestion >= SPECIAL_QUESTION_START && game.currentQuestion <= SPECIAL_QUESTION_END) ? TIME_LIMIT_SHORT : TIME_LIMIT_LONG;
+        game.timeLimit = isLightningRound ? TIME_LIMIT_SHORT : TIME_LIMIT_LONG;
 
         io.to(game.hostId).emit('new-question', basePayload);
 

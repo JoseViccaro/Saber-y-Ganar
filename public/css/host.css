@@ -75,9 +75,17 @@ body {
     font-size: 1.1em;
     color: #FFF;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.player-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #fff;
 }
 
 /* Buttons */
@@ -411,4 +419,62 @@ body {
 #incorrect-animation-overlay.flash {
     opacity: 1;
     transition: opacity 0.1s ease-in;
+}
+
+/* Chat Styles */
+#chat-container {
+    margin-top: 20px;
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#chat-container h3 {
+    margin-top: 0;
+    color: #e0e0e0;
+    font-size: 1.2em;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#host-messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #ccc;
+}
+
+#host-messages li {
+    padding: 8px 0;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+#host-messages li:last-child {
+    border-bottom: none;
+}
+
+#chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #2a2a2a;
+    padding: 0 15px;
+    border-bottom: 2px solid #444;
+}
+
+#toggle-chat-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#chat-container.minimized #host-messages {
+    display: none;
 }

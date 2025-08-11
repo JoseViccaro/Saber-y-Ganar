@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/player.css">
+    <link rel="stylesheet" href="/css/epic-animation.css">
     <style>
         #incorrect-canvas, #confetti-canvas {
             position: fixed;
@@ -26,6 +27,8 @@
 <div class="container">
     <div id="join-screen" class="screen">
         <h1 id="game-title">Saber y Ganar</h1>
+        <h2>Elige tu Avatar</h2>
+        <div id="avatar-selection" class="avatar-grid"></div>
         <h2>Unirse al Juego</h2>
         <input type="number" id="pin-input" placeholder="PIN del Juego" autocomplete="off">
         <input type="text" id="name-input" placeholder="Tu Nombre" autocomplete="off">
@@ -68,23 +71,38 @@
         <div id="points-gained" class="hidden">+0</div>
     </div>
 </div>
-<div id="ronda-relampago-announcement" class="screen hidden">
-    <h1>¡Ronda Relámpago!</h1>
-    <p>¡Prepárense para la velocidad!</p>
-</div>
+
 
 <div id="winner-announcement" class="screen hidden">
     <h1>¡GANADOR!</h1>
     <h2 id="winner-name"></h2>
 </div>
+<div id="ronda-relampago-announcement" class="epic-announcement-overlay hidden">
+    <div class="epic-content">
+        <h1 class="epic-title">¡RONDA RELÁMPAGO!</h1>
+        <p class="epic-subtitle">¡Prepárate!</p>
+    </div>
+</div>
 
 <audio id="correct-sound" src="/audio/correct.mp3" preload="auto"></audio>
 <audio id="incorrect-sound" src="/audio/incorrect.mp3" preload="auto"></audio>
-<audio id="timer-tick-sound" src="/audio/timer-tick.mp3" preload="auto" loop></audio>
+<audio id="notification-sound" src="/audio/notificacion.mp3" preload="auto"></audio>
+
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/js/common.js"></script>
-<script src="/js/incorrect-animation.js"></script>
-<script src="/js/player.js"></script>
+<script src="js/common.js" defer></script>
+<script src="js/incorrect-animation.js" defer></script>
+<script src="js/player.js" defer></script>
+    <!-- Chat -->
+    <div id="chat-container">
+        <div id="chat-header">
+            <span>Chat</span>
+            <button id="toggle-chat-btn">-</button>
+        </div>
+        <ul id="messages"></ul>
+        <form id="chat-form" action="">
+            <input id="message-input" autocomplete="off" /><button>Enviar</button>
+        </form>
+    </div>
 </body>
 </html>

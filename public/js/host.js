@@ -2,13 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const socket = io();
     let gamePin;
     let timerInterval;
-    let rondaRelampagoAnunciada = false; // Flag to show announcement only once
-    const RONDA_RELAMPAGO_QUESTION_INDEX = 18; // Define constant for Ronda Relampago question index
     const screens = { 
         setup: document.getElementById('setup-screen'), 
         lobby: document.getElementById('lobby-screen'), 
         quiz: document.getElementById('quiz-screen'), 
-        questionSummary: document.getElementById('question-summary-screen'), // Nueva pantalla
+        questionSummary: document.getElementById('question-summary-screen'),
         leaderboard: document.getElementById('leaderboard-screen'),
         rondaRelampago: document.getElementById('ronda-relampago-announcement'),
     };
@@ -22,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const lobbyMusic = document.getElementById('lobby-music');
     const timerTickSound = document.getElementById('timer-tick-sound');
     const backgroundMusic = document.getElementById('background-music');
+    const notificationSound = document.getElementById('notification-sound');
 
     const answerCountElements = [
         document.getElementById('answer-count-0'),
@@ -41,60 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const showLeaderboardBtn = document.getElementById('show-leaderboard-btn');
     const nextQuestionBtn = document.getElementById('next-question-btn');
 
-    function showScreen(screenName) {
-        // Hide all screens first
-        for (let key in screens) {
-            screens[key].classList.add('hidden');
-            // Specifically handle the epic announcement visibility
-            if (screens[key].classList.contains('epic-announcement')) {
-                screens[key].classList.remove('visible');
-            }
-        }
-
-        // Show the target screen
-        screens[screenName].classList.remove('hidden');
-        if (screens[screenName].classList.contains('epic-announcement')) {
-            screens[screenName].classList.add('visible');
-        }
-
-
-        // --- Music Control ---
-        const playLobby = screenName === 'lobby';
-        const playBackground = ['quiz', 'questionSummary', 'leaderboard', 'rondaRelampago'].includes(screenName);
-
-        if (playLobby) {
-            lobbyMusic.volume = 0.3;
-            lobbyMusic.play().catch(e => console.log("Lobby music autoplay blocked."));
-        } else {
-            lobbyMusic.pause();
-            lobbyMusic.currentTime = 0;
-        }
-
-        if (playBackground) {
-            backgroundMusic.volume = 0.2;
-            backgroundMusic.play().catch(e => console.log("Background music autoplay blocked."));
-        } else {
-            backgroundMusic.pause();
-            backgroundMusic.currentTime = 0;
-        }
-    }
-
-    function unlockAudio() {
-        hostCorrectSound.play().then(() => hostCorrectSound.pause()).catch(() => {});
-        hostIncorrectSound.play().then(() => hostIncorrectSound.pause()).catch(() => {});
-        lobbyMusic.play().then(() => lobbyMusic.pause()).catch(() => {});
-        timerTickSound.play().then(() => timerTickSound.pause()).catch(() => {});
-        backgroundMusic.play().then(() => backgroundMusic.pause()).catch(() => {});
-    }
-
     document.getElementById('create-game-btn').addEventListener('click', () => {
-        unlockAudio();
+        unlockAudio(hostCorrectSound, hostIncorrectSound, lobbyMusic, timerTickSound, backgroundMusic);
         socket.emit('host-create-game', { hostName: 'Anfitrión' });
     });
 
-    
-
-    document.getElementById('start-game-btn').addEventListener('click', () => socket.emit('host-start-game', gamePin));
+    document.getElementById('start-game-btn').addEventListener('click', () => {
+        socket.emit('host-start-game', gamePin);
+    });
 
     showLeaderboardBtn.addEventListener('click', () => {
         socket.emit('host-show-leaderboard', gamePin);
@@ -108,17 +61,23 @@ document.addEventListener('DOMContentLoaded', () => {
         gamePin = pin;
         document.getElementById('game-pin-display').textContent = pin;
         document.getElementById('players-list').innerHTML = '';
-        showScreen('lobby');
+        showScreen('lobby', screens);
+        backgroundMusic.play();
     });
 
     socket.on('update-player-list', (players) => {
-        console.log('update-player-list event received:', players);
         const list = document.getElementById('players-list');
         list.innerHTML = '';
         Object.values(players).forEach(p => {
             const playerTag = document.createElement('li');
             playerTag.className = 'player-tag';
-            playerTag.textContent = p.name;
+            const avatarImg = document.createElement('img');
+            avatarImg.src = p.avatar;
+            avatarImg.classList.add('player-avatar');
+            playerTag.appendChild(avatarImg);
+            const playerName = document.createElement('span');
+            playerName.textContent = p.name;
+            playerTag.appendChild(playerName);
             list.appendChild(playerTag);
         });
         const startGameBtn = document.getElementById('start-game-btn');
@@ -135,7 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(timerInterval);
         hostTimerCountdown.textContent = ''; 
 
-        document.getElementById('question-counter').textContent = `Pregunta ${data.questionIndex + 1} / ${data.totalQuestions}`;
+        if (data.isLightningRound) {
+            document.body.classList.add('ronda-relampago');
+            document.getElementById('question-counter').textContent = `¡RONDA RELÁMPAGO! | Pregunta ${data.questionIndex + 1} / ${data.totalQuestions}`;
+        } else {
+            document.body.classList.remove('ronda-relampago');
+            document.getElementById('question-counter').textContent = `Pregunta ${data.questionIndex + 1} / ${data.totalQuestions}`;
+        }
+
         document.getElementById('question').textContent = data.question;
         const questionImageContainer = document.getElementById('question-image-container');
         if (data.image) {
@@ -144,13 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             questionImageContainer.classList.add('hidden');
         }
-        playersRespondedList.innerHTML = ''; // Limpiar la lista de respondedores
-        correctPlayersList.innerHTML = ''; // Limpiar la lista de respuestas correctas
+        playersRespondedList.innerHTML = '';
+        correctPlayersList.innerHTML = '';
 
-        // Resetear contadores de respuestas
         answerCountElements.forEach(el => el.textContent = '0');
 
-        // Actualizar la cuadrícula de respuestas para el anfitrión
         const hostAnswerGrid = document.getElementById('host-answer-grid');
         hostAnswerGrid.innerHTML = '';
         data.answers.forEach((answer, index) => {
@@ -160,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hostAnswerGrid.appendChild(answerDiv);
         });
 
-        // Ocultar o mostrar contadores de respuestas según el tipo de pregunta
         if (data.type === 'true_false') {
             document.getElementById('answer-counts-container').children[2].classList.add('hidden');
             document.getElementById('answer-counts-container').children[3].classList.add('hidden');
@@ -169,11 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('answer-counts-container').children[3].classList.remove('hidden');
         }
 
-        showScreen('quiz');
+        showScreen('quiz', screens);
     });
 
     socket.on('ronda-relampago-announce', () => {
-        showScreen('rondaRelampago');
+        showEpicRondaRelampagoAnnouncement();
     });
 
     socket.on('update-timer', (timeLeft, totalTime) => {
@@ -194,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
         playerRespondedTag.textContent = playerName;
         playersRespondedList.appendChild(playerRespondedTag);
 
-        // Incrementar el contador de la respuesta seleccionada
         const currentCount = parseInt(answerCountElements[answerIndex].textContent);
         answerCountElements[answerIndex].textContent = currentCount + 1;
     });
@@ -251,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             hostIncorrectSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
         }
-        showScreen('questionSummary');
+        showScreen('questionSummary', screens);
         showLeaderboardBtn.classList.remove('hidden');
         nextQuestionBtn.classList.add('hidden');
     });
@@ -263,21 +225,39 @@ document.addEventListener('DOMContentLoaded', () => {
         playerArray.slice(0, 5).forEach((p, i) => { leaderboardHTML += `<li><span>#${i + 1} ${p.name}</span> <span>${p.score} pts</span></li>`; });
         leaderboardHTML += '</ol>';
         document.getElementById('leaderboard').innerHTML = leaderboardHTML;
-        showScreen('leaderboard');
+        showScreen('leaderboard', screens);
         showLeaderboardBtn.classList.add('hidden');
         nextQuestionBtn.classList.remove('hidden');
     });
 
-    
-
     socket.on('game-cancelled', () => { alert("El anfitrión ha cancelado el juego."); location.reload(); });
-
-    
 
     socket.on('error-creating-game', (message) => {
         alert(`Error al crear el juego: ${message}`);
     });
 
-    // --- INICIALIZACIÓN ---
-    showScreen('setup');
+    showScreen('setup', screens);
+
+    // Chat logic
+    const hostMessages = document.getElementById('host-messages');
+
+    socket.on('newMessage', (data) => {
+        const item = document.createElement('li');
+        item.textContent = `${data.name}: ${data.message}`;
+        hostMessages.appendChild(item);
+        hostMessages.scrollTop = hostMessages.scrollHeight;
+        notificationSound.play().catch(e => console.log("El navegador bloqueó la reproducción de sonido."));
+    });
+
+    const chatContainer = document.getElementById('chat-container');
+    const toggleChatBtn = document.getElementById('toggle-chat-btn');
+
+    toggleChatBtn.addEventListener('click', () => {
+        chatContainer.classList.toggle('minimized');
+        if (chatContainer.classList.contains('minimized')) {
+            toggleChatBtn.textContent = '+';
+        } else {
+            toggleChatBtn.textContent = '-';
+        }
+    });
 });
