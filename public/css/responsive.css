@@ -1,0 +1,142 @@
+/* General Responsive Styles */
+
+/* For small screens (phones, less than 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    #game-title {
+        font-size: 2em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    input[type="text"], input[type="number"] {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+
+    /* Host specific */
+    #game-pin-display {
+        font-size: 2.5em;
+    }
+
+    #question {
+        font-size: 1.5em;
+    }
+
+    .host-answer-option {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    #leaderboard li {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    /* Player specific */
+    .avatar-grid {
+        gap: 10px;
+    }
+
+    .answer-btn {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    #feedback-text {
+        font-size: 2.5em;
+    }
+
+    #points-gained {
+        font-size: 1.8em;
+    }
+}
+
+/* For medium screens (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        padding: 20px;
+    }
+
+    #game-title {
+        font-size: 2.8em;
+    }
+
+    .btn {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    /* Host specific */
+    #game-pin-display {
+        font-size: 3.5em;
+    }
+
+    #question {
+        font-size: 2em;
+    }
+
+    /* Player specific */
+    .answer-btn {
+        padding: 20px;
+        font-size: 1.1em;
+    }
+}
+
+/* For large screens (desktops, 901px and up) */
+@media (min-width: 901px) {
+    .host-container {
+        max-width: 900px; /* A bit wider for desktops */
+    }
+
+    .player-container {
+        max-width: 500px;
+    }
+
+    #game-title {
+        font-size: 3.5em;
+    }
+
+    /* Host specific */
+    #question {
+        font-size: 2.5em;
+    }
+
+    #host-answer-grid {
+        gap: 20px;
+    }
+}
+
+/* For very large screens (TVs, 1200px and up) */
+@media (min-width: 1201px) {
+    .host-container {
+        max-width: 1100px;
+    }
+
+    .player-container {
+        max-width: 600px;
+    }
+
+    #game-title {
+        font-size: 4em;
+    }
+
+    /* Host specific */
+    #question {
+        font-size: 3em;
+    }
+
+    #game-pin-display {
+        font-size: 5em;
+    }
+}

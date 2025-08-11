@@ -1,50 +1,39 @@
 [
     {
-        "question": "¿Qué famoso monumento es este?",
+        "question": "¿Cómo se le dice de forma súper común a un amigo o compañero en Venezuela?",
         "answers": [
-            "La Torre Eiffel",
-            "El Coliseo",
-            "La Estatua de la Libertad",
-            "El Big Ben"
-        ],
-        "correct": 0,
-        "image": "https://i.imgur.com/6L29zIm.jpeg",
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién pintó este cuadro?",
-        "answers": [
-            "Vincent van Gogh",
-            "Pablo Picasso",
-            "Leonardo da Vinci",
-            "Claude Monet"
+            "Tío",
+            "Parce",
+            "Pana",
+            "Cuate"
         ],
         "correct": 2,
-        "image": "https://i.imgur.com/O7f42d1.jpeg",
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el río más largo del mundo?",
+        "question": "Si un venezolano dice que algo está 'chévere', ¿qué quiere decir?",
         "answers": [
-            "Amazonas",
-            "Nilo",
-            "Misisipi",
-            "Yangtsé"
+            "Que está dañado",
+            "Que es aburrido",
+            "Que es genial o estupendo",
+            "Que hace frío"
         ],
-        "correct": 0,
+        "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "La capital de Francia es Roma.",
+        "question": "¿Qué es un 'coroto' en el vocabulario venezolano?",
         "answers": [
-            "Verdadero",
-            "Falso"
+            "Un tipo de baile",
+            "Una fruta",
+            "Cualquier objeto, cosa o trasto",
+            "Un billete de alta denominación"
         ],
-        "correct": 1,
-        "type": "true_false"
+        "correct": 2,
+        "type": "multiple_choice"
     },
     {
-        "question": "El agua hierve a 100 grados Celsius al nivel del mar.",
+        "question": "La 'Reina Pepiada' es uno de los rellenos de arepa más famosos de Venezuela.?",
         "answers": [
             "Verdadero",
             "Falso"
@@ -53,3006 +42,1590 @@
         "type": "true_false"
     },
     {
-        "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
+        "question": "El Pabellón Criollo, plato nacional, lleva caraotas, carne mechada, arroz y tajadas de plátano maduro frito.?",
         "answers": [
-            "García Márquez",
-            "Shakespeare",
-            "Homero",
-            "Miguel de Cervantes"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa la expresión 'echar los perros'?",
+        "answers": [
+            "Sacar a pasear a las mascotas",
+            "Regalar cachorros",
+            "Coquetear o intentar conquistar a alguien",
+            "Amenazar a una persona"
+        ],
+        "correct": 2,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "Si alguien te dice 'estoy pelando bola', ¿cuál es su situación?",
+        "answers": [
+            "Está jugando béisbol",
+            "Está afeitándose",
+            "No tiene dinero",
+            "Se siente muy feliz"
+        ],
+        "correct": 2,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "¿Qué es la 'gaita' en Venezuela?",
+        "answers": [
+            "Un tipo de flauta escocesa",
+            "Un género musical, especialmente popular en Navidad y originario del Zulia",
+            "Un baile de salón",
+            "Un dulce típico"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "Un 'palo de agua' se refiere a:?",
+        "answers": [
+            "Una bebida alcohólica muy fuerte",
+            "Un árbol específico de la selva",
+            "Una lluvia torrencial",
+            "Un tipo de bastón"
+        ],
+        "correct": 2,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La principal diferencia entre una arepa y una cachapa es que la cachapa se hace con maíz dulce (jojoto).?",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'tequeño'?",
+        "answers": [
+            "Un tipo de sombrero",
+            "Un baile tradicional",
+            "Un pasapalo de queso forrado en masa y frito",
+            "Un habitante de Los Teques"
+        ],
+        "correct": 2,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La expresión 'mamando gallo' significa estar trabajando muy duro.?",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 1,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Cuál de estas bebidas gaseosas es un ícono venezolano?",
+        "answers": [
+            "Inca Kola",
+            "Guaraná Antarctica",
+            "Postobón",
+            "Frescolita"
         ],
         "correct": 3,
         "type": "multiple_choice"
     },
     {
-        "question": "¿En qué continente se encuentra Egipto?",
+        "question": "¿A qué se le llama 'guachafa'?",
         "answers": [
-            "Asia",
-            "África",
-            "Europa",
-            "Oceanía"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el océano más grande del mundo?",
-        "answers": [
-            "Atlántico",
-            "Índico",
-            "Pacífico",
-            "Ártico"
+            "A una mujer muy elegante",
+            "A un tipo de sopa",
+            "A un desorden, alboroto o relajo",
+            "A una herramienta de construcción"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué planeta es conocido como el 'Planeta Rojo'?",
+        "question": "El 'cambur' es el nombre que se le da en Venezuela a la banana o plátano dulce.?",
         "answers": [
-            "Júpiter",
-            "Marte",
-            "Venus",
-            "Saturno"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si algo es un 'mango bajito', significa que...?",
+        "answers": [
+            "La fruta está en mal estado",
+            "Es una oportunidad muy fácil de aprovechar",
+            "Es un postre de mango",
+            "Es algo muy costoso"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "La Mona Lisa fue pintada por...",
+        "question": "¿Qué es 'El Ávila' para un caraqueño?",
         "answers": [
-            "Van Gogh",
-            "Picasso",
-            "Leonardo da Vinci",
-            "Monet"
+            "Un centro comercial",
+            "Una playa famosa",
+            "La montaña que caracteriza a la ciudad de Caracas",
+            "Un equipo de béisbol"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es la capital de Australia?",
+        "question": "El 'quesillo' venezolano es un postre muy similar al flan.?",
         "answers": [
-            "Sídney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Cuando un venezolano te dice '¡mosca!', ¿qué te está advirtiendo?",
+        "answers": [
+            "Que hay un insecto cerca",
+            "Que debes estar atento o alerta",
+            "Que hables más bajo",
+            "Que te apresures"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "¿Cuál es el ave nacional de Venezuela?",
+        "answers": [
+            "El Cardenalito",
+            "La Guacamaya",
+            "El Turpial",
+            "El Colibrí"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué gas es esencial para que respiremos?",
+        "question": "'Echarse los palos' es una invitación a...",
         "answers": [
-            "Nitrógeno",
-            "CO2",
-            "Hidrógeno",
-            "Oxígeno"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue el primer hombre en pisar la Luna?",
-        "answers": [
-            "Yuri Gagarin",
-            "Buzz Aldrin",
-            "Michael Collins",
-            "Neil Armstrong"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-        "answers": [
-            "1914",
-            "1939",
-            "1945",
-            "1929"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "La Gran Muralla China fue construida para protegerse de...",
-        "answers": [
-            "Los japoneses",
-            "Los mongoles",
-            "Los rusos",
-            "Los coreanos"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué instrumento musical tiene 88 teclas?",
-        "answers": [
-            "Guitarra",
-            "Violín",
-            "Piano",
-            "Batería"
+            "Pelear",
+            "Construir algo de madera",
+            "Beber alcohol",
+            "Jugar un deporte"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el país con más habitantes del mundo?",
+        "question": "El plato principal de la cena navideña en Venezuela es la hallaca.",
         "answers": [
-            "China",
-            "India",
-            "Estados Unidos",
-            "Indonesia"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'dar la cola'?",
+        "answers": [
+            "Hacer una fila",
+            "Pedir o dar un aventón (transporte)",
+            "Llegar de último",
+            "Repartir un postre"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué animal es un mamífero y puede volar?",
+        "question": "Un 'zaperoco' es:",
         "answers": [
-            "Pingüino",
-            "Avestruz",
-            "Murciélago",
-            "Pez volador"
+            "Un aguacero fuerte",
+            "Un alboroto, pelea o escándalo",
+            "Una comida muy picante",
+            "Un baile muy enérgico"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "Un 'biyuyo' es una forma coloquial de referirse al dinero.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿A qué se le llama 'chamo' o 'chama'?",
+        "answers": [
+            "A un jefe",
+            "A un anciano",
+            "A un muchacho o muchacha",
+            "A un extranjero"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Quién es el autor de 'El Principito'?",
+        "question": "La 'torta tres leches' es un postre popular en Venezuela.",
         "answers": [
-            "J.K. Rowling",
-            "Antoine de Saint-Exupéry",
-            "Roald Dahl",
-            "C.S. Lewis"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si alguien te dice que una película es 'chimba', ¿cuál es su opinión?",
+        "answers": [
+            "Que es excelente",
+            "Que es de mala calidad o aburrida",
+            "Que es de terror",
+            "Que es una comedia"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es la montaña más alta del mundo?",
+        "question": "¿Qué es un 'sifrino' o 'sifrina'?",
         "answers": [
-            "K2",
-            "Mont Blanc",
-            "Everest",
-            "Aconcagua"
+            "Una persona muy trabajadora",
+            "Una persona que vive en el campo",
+            "Una persona, usualmente joven, que es o aparenta ser de clase alta y habla de forma afectada",
+            "Un deportista de alto rendimiento"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué civilización construyó las pirámides de Giza?",
+        "question": "La 'guarapa' es el jugo que se extrae de la caña de azúcar.",
         "answers": [
-            "Griegos",
-            "Romanos",
-            "Persas",
-            "Egipcios"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si te dan un 'café marrón', ¿qué vas a beber?",
+        "answers": [
+            "Un café negro largo",
+            "Un café con un poco de leche",
+            "Un café con licor",
+            "Un café descafeinado"
+        ],
+        "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué es la Vía Láctea?",
+        "question": "La frase 'se prendió el peo' indica que...",
         "answers": [
-            "Un planeta",
-            "Una estrella",
-            "Nuestra galaxia",
-            "Un cometa"
+            "Comenzó una fiesta",
+            "Se encendió una fogata",
+            "Se desató un conflicto o problema",
+            "Llegó la comida"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el hueso más largo del cuerpo humano?",
+        "question": "Un 'golfeado' es un pan dulce enrollado en forma de caracol con papelón y queso.",
         "answers": [
-            "Tibia",
-            "Fémur",
-            "Húmero",
-            "Peroné"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 1,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿Qué superhéroe de DC Comics es conocido como el 'Hombre de Acero'?",
+        "question": "¿Qué es un 'bonche'?",
         "answers": [
-            "Batman",
-            "Flash",
-            "Superman",
-            "Aquaman"
+            "Un golpe fuerte",
+            "Un grupo de llaves",
+            "Una fiesta o reunión",
+            "Un tipo de flor"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el ingrediente principal del guacamole?",
+        "question": "Si alguien es un 'jala bola', significa que es una persona...",
         "answers": [
-            "Tomate",
-            "Aguacate",
-            "Cebolla",
-            "Limón"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué ciudad se encuentra el Coliseo Romano?",
-        "answers": [
-            "Atenas",
-            "París",
-            "Londres",
-            "Roma"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál de estos instrumentos es de viento-madera?",
-        "answers": [
-            "Trompeta",
-            "Trombón",
-            "Clarinete",
-            "Violín"
+            "Muy fuerte",
+            "Muy rápida",
+            "Aduladora",
+            "Muy inteligente"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "La serie de libros de 'Harry Potter' fue escrita por...",
+        "question": "El 'casabe' es un tipo de pan plano y crujiente hecho de yuca.",
         "answers": [
-            "Suzanne Collins",
-            "J.R.R. Tolkien",
-            "George R.R. Martin",
-            "J.K. Rowling"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿Qué es la fotosíntesis?",
+        "question": "¿Qué significa 'arrecochinar'?",
         "answers": [
-            "La respiración de los animales",
-            "La forma en que las plantas hacen su comida",
-            "La evaporación del agua",
-            "La formación de rocas"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué país tiene forma de bota?",
-        "answers": [
-            "Grecia",
-            "Italia",
-            "Chile",
-            "Noruega"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es considerado el 'Rey del Pop'?",
-        "answers": [
-            "Elvis Presley",
-            "Michael Jackson",
-            "Freddie Mercury",
-            "Frank Sinatra"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es un Tsunami?",
-        "answers": [
-            "Un tornado de agua",
-            "Una serie de olas gigantes",
-            "Una tormenta eléctrica",
-            "Un terremoto en tierra"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "La Estatua de la Libertad fue un regalo de ¿qué país a EE.UU.?",
-        "answers": [
-            "Reino Unido",
-            "España",
-            "Alemania",
-            "Francia"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuántos corazones tiene un pulpo?",
-        "answers": [
-            "Uno",
-            "Dos",
-            "Tres",
-            "Cuatro"
+            "Cocinar para muchas personas",
+            "Ahorrar mucho dinero",
+            "Agrupar o amontonar personas o cosas en un lugar pequeño",
+            "Limpiar profundamente"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿En qué país se originaron los Juegos Olímpicos?",
+        "question": "Un 'gentío' se refiere a:",
         "answers": [
-            "Italia",
-            "Egipto",
-            "China",
-            "Grecia"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "El personaje 'Sherlock Holmes' fue creado por...",
-        "answers": [
-            "Agatha Christie",
-            "Arthur Conan Doyle",
-            "Edgar Allan Poe",
-            "Julio Verne"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el desierto más grande y cálido del mundo?",
-        "answers": [
-            "Gobi",
-            "Atacama",
-            "Kalahari",
-            "Sahara"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Canadá?",
-        "answers": [
-            "Toronto",
-            "Vancouver",
-            "Montreal",
-            "Ottawa"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué elemento químico tiene el símbolo 'Au'?- ",
-        "answers": [
-            "Plata",
-            "Argón",
-            "Oro",
-            "Aluminio"
+            "Una persona muy amable",
+            "Una familia noble",
+            "Una multitud de personas",
+            "Un pueblo pequeño"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué deporte practica profesionalmente Rafael Nadal?",
+        "question": "La expresión 'eso es pura coba' quiere decir que algo es mentira.",
         "answers": [
-            "Fútbol",
-            "Baloncesto",
-            "Tenis",
-            "Golf"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿A qué se le llama 'pasapalo'?",
+        "answers": [
+            "A un trago de licor",
+            "A un atajo en un camino",
+            "A un aperitivo o bocadillo que se sirve en fiestas",
+            "A un juego de mesa"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cómo se llama el proceso de convertir un líquido en gas?",
+        "question": "¿Qué es 'rumbear'?",
         "answers": [
-            "Condensación",
-            "Solidificación",
-            "Fusión",
-            "Evaporación"
+            "Perder el rumbo o dirección",
+            "Irse de fiesta",
+            "Caminar muy rápido",
+            "Hablar en voz muy alta"
         ],
-        "correct": 3,
+        "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿En qué ciudad está la famosa ópera 'La Scala'?",
+        "question": "El 'joropo' es el baile y música nacional de Venezuela.",
         "answers": [
-            "Viena",
-            "París",
-            "Milán",
-            "Praga"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si te dicen que alguien es 'pana burda', ¿cómo es esa persona?",
+        "answers": [
+            "Es un amigo falso",
+            "Es un amigo aburrido",
+            "Es un muy buen amigo",
+            "Es un amigo de otro país"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el animal terrestre más rápido?",
+        "question": "¿Qué significa 'bochinche'?",
         "answers": [
-            "León",
-            "Tigre",
-            "Guepardo",
-            "Leopardo"
+            "Una bebida refrescante",
+            "Un alboroto, desorden o fiesta ruidosa",
+            "Un tipo de sombrero de paja",
+            "Un insecto grande"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El 'Salto Ángel' es la caída de agua más alta del mundo y se ubica en el Parque Nacional Canaima.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Un 'guayoyo' es un tipo de:",
+        "answers": [
+            "Fruta tropical",
+            "Pájaro colorido",
+            "Café negro claro y aguado",
+            "Hamaca"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Quién pintó 'El Guernica'?",
+        "question": "Si una persona está 'enchufada', coloquialmente significa que:",
         "answers": [
-            "Salvador Dalí",
-            "Frida Kahlo",
-            "Diego Rivera",
-            "Pablo Picasso"
+            "Está muy concentrada en su trabajo",
+            "Tiene conexiones, usualmente con el gobierno, que le dan ventajas",
+            "Acaba de cargar su teléfono",
+            "Está muy enamorada"
         ],
-        "correct": 3,
+        "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuántos jugadores tiene un equipo de fútbol en el campo?",
+        "question": "El 'cuatro' es un instrumento musical de cuatro cuerdas, similar a una guitarra pequeña, fundamental en la música venezolana.",
         "answers": [
-            "9",
-            "10",
-            "11",
-            "12"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es una 'taguara'?",
+        "answers": [
+            "Un restaurante de lujo",
+            "Una tienda de ropa",
+            "Un bar o local de mala muerte y aspecto descuidado",
+            "Una biblioteca pública"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué tipo de animal es la ballena?",
+        "question": "La expresión '¡qué nota!' se usa para decir que algo es:",
         "answers": [
-            "Pez",
-            "Mamífero",
-            "Anfibio",
-            "Reptil"
+            "Muy triste",
+            "Excelente o impresionante",
+            "Muy costoso",
+            "Falso"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el libro sagrado del Islam?",
+        "question": "¿Qué significa la expresión 'darle la cola' a alguien?",
         "answers": [
-            "La Torá",
-            "La Biblia",
-            "El Corán",
-            "El Tripitaka"
+            "Pegarle en la espalda",
+            "Darle un aventón o llevarlo en el coche",
+            "Hacerle un favor importante",
+            "Ignorarlo completamente"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La playa más famosa y visitada de la Isla de Margarita es Playa El Agua.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué son los 'tepuyes' en Venezuela?",
+        "answers": [
+            "Un tipo de animal endémico",
+            "Mesetas de cima plana y paredes verticales, características de la Gran Sabana",
+            "Instrumentos musicales aborígenes",
+            "Ruinas de antiguas civilizaciones"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Mochima es conocido por sus costas e islas caribeñas, ubicadas entre los estados Sucre y Anzoátegui.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'estar mamarracho'?",
+        "answers": [
+            "Estar muy elegante",
+            "Estar en mal estado físico",
+            "Estar vestido de forma descuidada o ridícula",
+            "Estar muy cansado"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "El Sol es una...",
+        "question": "¿Cuál es la capital de Venezuela?",
         "answers": [
-            "Estrella",
-            "Planeta",
-            "Galaxia",
-            "Nebulosa"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la lengua más hablada en el mundo?",
-        "answers": [
-            "Inglés",
-            "Español",
-            "Chino Mandarín",
-            "Hindi"
+            "Maracaibo",
+            "Valencia",
+            "Caracas",
+            "Barquisimeto"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué Beatle fue asesinado en 1980?",
+        "question": "El Lago de Maracaibo es famoso por el fenómeno natural del 'Relámpago del Catatumbo'.",
         "answers": [
-            "Paul McCartney",
-            "George Harrison",
-            "Ringo Starr",
-            "John Lennon"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es una 'cachapa'?",
+        "answers": [
+            "Un tipo de arepa",
+            "Una tortilla de maíz dulce, generalmente acompañada con queso de mano",
+            "Un dulce de coco",
+            "Un tipo de bebida alcohólica"
+        ],
+        "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué significan las siglas 'ADN'?",
+        "question": "El Parque Nacional Henri Pittier es el parque más antiguo de Venezuela y es famoso por su biodiversidad y playas.",
         "answers": [
-            "Ácido Desoxirribonucleico",
-            "Amida de Nitrógeno",
-            "Análisis Directo Numérico",
-            "Azúcar de Naranja"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si a alguien le da un 'yeyo', significa que:",
+        "answers": [
+            "Se ha ganado la lotería",
+            "Ha sufrido un desmayo o malestar súbito",
+            "Se ha enfadado mucho",
+            "Ha tenido un ataque de risa"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Archipiélago Los Roques es un Parque Nacional conocido por sus playas de arena blanca y aguas cristalinas.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'estar enconchado/a'?",
+        "answers": [
+            "Estar escondido o resguardado",
+            "Estar muy cómodo en casa",
+            "Estar trabajando en una construcción",
+            "Estar muy aburrido"
         ],
         "correct": 0,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué famoso científico desarrolló la teoría de la relatividad?",
+        "question": "La arepa es un plato hecho a base de maíz molido o harina de maíz precocida.",
         "answers": [
-            "Isaac Newton",
-            "Galileo Galilei",
-            "Albert Einstein",
-            "Nikola Tesla"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué se entiende por 'rodar la bola'?",
+        "answers": [
+            "Jugar a la pelota",
+            "Correr muy rápido",
+            "Propagar un rumor o chisme",
+            "Caerse al suelo"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el color que resulta de mezclar azul y amarillo?",
+        "question": "El Parque Nacional Morrocoy es famoso por sus cayos e islotes de aguas turquesas en el estado Falcón.",
         "answers": [
-            "Rojo",
-            "Naranja",
-            "Marrón",
-            "Verde"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'patacón' en la gastronomía zuliana?",
+        "answers": [
+            "Un tipo de pan",
+            "Un plátano verde frito y aplastado, relleno de carne, queso y vegetales",
+            "Un dulce de leche",
+            "Un tipo de sopa"
+        ],
+        "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿En qué continente está la selva del Amazonas?",
+        "question": "El teleférico de Mérida (Mukumbarí) es el segundo más largo y alto del mundo.",
         "answers": [
-            "Asia",
-            "África",
-            "América del Sur",
-            "Australia"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si alguien te dice que eres un 'fresco/a', ¿qué quiere decir?",
+        "answers": [
+            "Que eres muy agradable",
+            "Que eres descarado o desvergonzado",
+            "Que tienes frío",
+            "Que eres muy joven"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Médanos de Coro se caracteriza por sus grandes dunas de arena.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'tostón'?",
+        "answers": [
+            "Un tipo de pan tostado",
+            "Una rodaja de plátano verde frita y aplastada",
+            "Un postre de frutas",
+            "Un plato de carne asada"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Orquesta Sinfónica Simón Bolívar de Venezuela es una de las orquestas juveniles más reconocidas a nivel mundial.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'tener la pata'?",
+        "answers": [
+            "Tener una extremidad larga",
+            "Tener buena suerte o ventaja",
+            "Estar cojo",
+            "Ser lento"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Cacao venezolano es reconocido internacionalmente por su alta calidad y aroma.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'ponquecito'?",
+        "answers": [
+            "Un pequeño golpe",
+            "Un pastelito individual o magdalena",
+            "Un tipo de jugo de frutas",
+            "Un juguete pequeño"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El 'Diablo de Yare' es una manifestación cultural y religiosa reconocida por la UNESCO como Patrimonio Inmaterial de la Humanidad.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si te dicen que alguien 'anda con la pata de perro', ¿qué implica?",
+        "answers": [
+            "Que tiene una mascota",
+            "Que está de mal humor",
+            "Que está buscando algo, generalmente dinero",
+            "Que camina mucho"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el océano más pequeño del mundo?",
+        "question": "El río Orinoco es el segundo río más largo de América del Sur.",
         "answers": [
-            "Pacífico",
-            "Atlántico",
-            "Índico",
-            "Ártico"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿En qué año llegó Cristóbal Colón a América?",
+        "question": "¿Qué es un 'franelógrafo'?",
         "answers": [
-            "1502",
-            "1498",
-            "1492",
-            "1488"
+            "Un tipo de máquina de escribir",
+            "Un proyector de imágenes antiguo",
+            "Un cartel de tela usado para exposiciones, común en escuelas",
+            "Una máquina para hacer franelas"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el único mamífero que no puede saltar?",
+        "question": "La Basílica de Nuestra Señora de Chiquinquirá es un importante centro de peregrinación en Maracaibo.",
         "answers": [
-            "Rinoceronte",
-            "Hipopótamo",
-            "Jirafa",
-            "Elefante"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿Qué país es el mayor productor de café del mundo?",
+        "question": "¿Qué significa 'tener mala leche'?",
         "answers": [
-            "Colombia",
-            "Vietnam",
-            "Etiopía",
-            "Brasil"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué famoso pintor se cortó una oreja?",
-        "answers": [
-            "Monet",
-            "Van Gogh",
-            "Gauguin",
-            "Cézanne"
+            "Tener un problema de salud",
+            "Tener mala suerte o una actitud malintencionada",
+            "No gustarle la leche",
+            "Ser una persona débil"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "La Torre Eiffel se encuentra en...",
+        "question": "La Colonia Tovar es un asentamiento alemán en el estado Aragua conocido por su arquitectura y clima frío.",
         "answers": [
-            "Londres",
-            "Roma",
-            "Berlín",
-            "París"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿Cuál es el animal que más muertes humanas causa al año?",
+        "question": "¿Qué es un 'conuco'?",
         "answers": [
-            "Tiburón",
-            "Serpiente",
-            "León",
-            "Mosquito"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Japón?",
-        "answers": [
-            "Kioto",
-            "Osaka",
-            "Tokio",
-            "Hiroshima"
+            "Una pequeña embarcación",
+            "Un tipo de mercado al aire libre",
+            "Una pequeña parcela de tierra cultivada para subsistencia",
+            "Un animal de granja"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué elemento químico tiene el símbolo 'Fe'?- ",
+        "question": "Simón Bolívar es conocido como 'El Libertador' de varias naciones sudamericanas, incluyendo Venezuela.",
         "answers": [
-            "Fósforo",
-            "Flúor",
-            "Francio",
-            "Hierro"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 3,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿Quién escribió 'Cien años de soledad'?",
+        "question": "Si una persona está 'engorilada', significa que está:",
         "answers": [
-            "Mario Vargas Llosa",
-            "Gabriel García Márquez",
-            "Julio Cortázar",
-            "Pablo Neruda"
+            "Muy alegre",
+            "Muy enojada o furiosa",
+            "Muy tranquila",
+            "Muy cansada"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿En qué año cayó el Muro de Berlín?",
+        "question": "El Parque Nacional Canaima, Patrimonio de la Humanidad, abarca una gran parte de la Gran Sabana.",
         "answers": [
-            "1987",
-            "1989",
-            "1991",
-            "1993"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'pernil'?",
+        "answers": [
+            "Un tipo de ave",
+            "Una pierna de cerdo asada, plato típico navideño",
+            "Un postre de frutas",
+            "Un vegetal de raíz"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el metal más ligero?",
+        "question": "La Flor de Venezuela es una estructura arquitectónica ubicada en Barquisimeto que representa el tepuy de la Gran Sabana.",
         "answers": [
-            "Aluminio",
-            "Titanio",
-            "Litio",
-            "Magnesio"
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si alguien te dice 'eres un (una) ladilla', ¿qué está expresando?",
+        "answers": [
+            "Que eres muy divertido/a",
+            "Que eres muy molesto/a o fastidioso/a",
+            "Que eres una persona con suerte",
+            "Que eres muy inteligente"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Cuevas del Guácharo, ubicada en el estado Monagas, es famosa por una especie de ave nocturna llamada guácharo.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'topocho'?",
+        "answers": [
+            "Un pequeño roedor",
+            "Un tipo de plátano verde pequeño, menos dulce que el cambur",
+            "Un gorro de lana",
+            "Un utensilio de cocina"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El béisbol es considerado el deporte nacional de Venezuela.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa la expresión 'estar como caimán en boca de caño'?",
+        "answers": [
+            "Estar en un lugar peligroso",
+            "Estar en una situación muy cómoda o ventajosa",
+            "Estar muy hambriento",
+            "Estar nadando"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Casa Natal del Libertador Simón Bolívar se encuentra en la ciudad de Caracas.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'empanada' venezolana?",
+        "answers": [
+            "Un tipo de pastel dulce",
+            "Una masa de maíz frita rellena de diversos ingredientes (queso, carne, etc.)",
+            "Un plato de verduras cocidas",
+            "Un pan de molde"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "Los Carnavales de El Callao, en el estado Bolívar, son famosos por sus 'Madamas' y 'Medios Pintos'.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si te dicen '¡qué molleja!', ¿en qué estado o región es muy común esta expresión?",
+        "answers": [
+            "Caracas",
+            "Zulia",
+            "Lara",
+            "Mérida"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Canaima es el segundo parque nacional más grande de Venezuela.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'echar una broma'?",
+        "answers": [
+            "Contar un chiste o hacer una travesura",
+            "Hacer una llamada telefónica",
+            "Enfadarse mucho",
+            "Tirar algo a la basura"
+        ],
+        "correct": 0,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El pico Bolívar es la montaña más alta de Venezuela.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'cachito'?",
+        "answers": [
+            "Un pequeño perro",
+            "Un panecillo suave relleno de jamón o queso, muy popular para el desayuno",
+            "Una parte de una canción",
+            "Un tipo de moneda antigua"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Ciudad Universitaria de Caracas, diseñada por Carlos Raúl Villanueva, es Patrimonio de la Humanidad por la UNESCO.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si una situación es 'de pinga', significa que es:",
+        "answers": [
+            "Muy mala o molesta",
+            "Excelente o muy buena",
+            "Complicada",
+            "Aburrida"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Puente General Rafael Urdaneta, sobre el Lago de Maracaibo, es uno de los puentes atirantados más largos del mundo.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'papagayo'?",
+        "answers": [
+            "Un tipo de loros",
+            "Una cometa o papalote, juguete popular",
+            "Una persona muy habladora",
+            "Un instrumento musical"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La arepa es un alimento básico que se consume en todas las regiones de Venezuela.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'raspar la olla'?",
+        "answers": [
+            "Limpiar una olla a fondo",
+            "Gastar los últimos recursos o dinero que quedan",
+            "Cocinar algo delicioso",
+            "Comer rápidamente"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "Los Llanos venezolanos son una vasta región de sabana, conocida por su fauna y cultura llanera.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es la 'chicha' venezolana?",
+        "answers": [
+            "Una sopa de pescado",
+            "Una bebida dulce hecha de arroz o maíz, leche y especias",
+            "Un tipo de dulce seco",
+            "Un baile tradicional"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Los Médanos de Coro es el único desierto en Venezuela.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 1,
+        "type": "true_false"
+    },
+    {
+        "question": "Si a una persona le dicen que es 'chévere con bolas', significa que es:",
+        "answers": [
+            "Muy aburrida",
+            "Extremadamente genial o excelente",
+            "Muy ruidosa",
+            "Algo extraña"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Monumento Natural La Teta de Niquitao es una formación montañosa con forma de seno en el estado Trujillo.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'echar una caimanera'?",
+        "answers": [
+            "Ir de pesca de caimanes",
+            "Jugar un partido informal de algún deporte, usualmente béisbol o baloncesto",
+            "Hacer una comida al aire libre",
+            "Contar historias de terror"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Archipiélago Los Roques es un importante destino para el buceo y la pesca deportiva.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Cuál de estas ciudades es conocida como la 'Ciudad Jardín' de Venezuela?",
+        "answers": [
+            "Valencia",
+            "Maracay",
+            "Barquisimeto",
+            "San Cristóbal"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Batalla de Carabobo, el 24 de junio de 1821, fue crucial para la independencia de Venezuela.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si alguien te dice 'eres un pato', ¿qué quiere decir en el contexto venezolano?",
+        "answers": [
+            "Que eres un animal de granja",
+            "Que eres una persona con mala suerte o torpe",
+            "Que eres muy guapo/a",
+            "Que te gusta nadar"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Cueva del Guácharo es la cueva más grande de Venezuela.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'caleta'?",
+        "answers": [
+            "Un tipo de calzado",
+            "Un lugar escondido para guardar algo ilícito, o algo que se hace en secreto",
+            "Una pequeña bahía",
+            "Una herramienta de jardín"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Cruz del Ávila es un símbolo icónico de Caracas que se ilumina durante la Navidad.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si algo es 'burda de bueno', significa que es:",
+        "answers": [
+            "Mediocre",
+            "Extremadamente bueno",
+            "Un poco aburrido",
+            "Difícil de entender"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Catedral Metropolitana de Caracas es una de las iglesias más antiguas de América Latina.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'ser un zamuro'?",
+        "answers": [
+            "Ser un ave rapaz",
+            "Ser una persona que se aprovecha de la desgracia ajena, o de algo que no le pertenece",
+            "Ser muy valiente",
+            "Ser muy trabajador"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Sierra Nevada alberga el pico Bolívar y es famoso por sus paisajes andinos.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'patatús'?",
+        "answers": [
+            "Un tipo de sombrero",
+            "Un ataque o desmayo súbito",
+            "Un baile tradicional",
+            "Una comida rápida"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "Los llanos venezolanos son la mayor reserva de petróleo del mundo.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 1,
+        "type": "true_false"
+    },
+    {
+        "question": "Si alguien te dice que 'está en la luna de Valencia', ¿cuál es su estado?",
+        "answers": [
+            "Está muy distraído o despistado",
+            "Está de vacaciones en Valencia",
+            "Está muy romántico",
+            "Está en la fase de la luna"
+        ],
+        "correct": 0,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La isla La Tortuga es la segunda isla más grande de Venezuela después de Margarita.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es 'bachaquear'?",
+        "answers": [
+            "Cantar como un bachaquero",
+            "Buscar y revender productos básicos a precios excesivos, aprovechando la escasez",
+            "Hacer un trabajo manual",
+            "Jugar un juego de mesa"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "Los pueblos indígenas de Venezuela mantienen vivas muchas de sus tradiciones y lenguas.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Cuál es la capital del estado Zulia?",
+        "answers": [
+            "Coro",
+            "Maracaibo",
+            "San Felipe",
+            "Puerto La Cruz"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La fiesta de San Juan Bautista es una celebración con tambores y bailes afrodescendientes, muy popular en las costas venezolanas.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si alguien es 'un tira flecha', significa que es:",
+        "answers": [
+            "Un buen arquero",
+            "Una persona ingenua o fácil de engañar",
+            "Alguien que lanza cosas",
+            "Una persona que viaja mucho"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Canaima es hogar de varias comunidades indígenas Pemón.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es 'chévere pero barato'?",
+        "answers": [
+            "Algo de muy buena calidad pero costoso",
+            "Algo de muy buena calidad y a buen precio",
+            "Algo de mala calidad y barato",
+            "Algo de buena calidad pero que no dura mucho"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Cueva del Kavac, con su impresionante cascada interior, se encuentra en el Parque Nacional Canaima.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'echar un pie'?",
+        "answers": [
+            "Lesionarse una pierna",
+            "Bailar o ir de fiesta",
+            "Poner un obstáculo",
+            "Descansar un momento"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Plaza Bolívar de Caracas es el corazón histórico de la ciudad y alberga la estatua ecuestre de Simón Bolívar.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es 'enrollarse' con alguien?",
+        "answers": [
+            "Pelearse con alguien",
+            "Involucrarse sentimentalmente o tener una relación casual",
+            "Atar a alguien",
+            "Perderse en un lugar"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional El Ávila ofrece varias rutas de senderismo y vistas panorámicas de Caracas.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'montar un show'?",
+        "answers": [
+            "Organizar un espectáculo",
+            "Hacer un escándalo o escena pública",
+            "Instalar un equipo de sonido",
+            "Vestirse de forma extravagante"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "La Isla de Coche, cerca de Margarita, es famosa por sus aguas tranquilas y actividades acuáticas como el kitesurf.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'chinchorro'?",
+        "answers": [
+            "Un tipo de pescado",
+            "Una hamaca grande y resistente, común en zonas rurales",
+            "Un utensilio de cocina",
+            "Una pequeña barca de pesca"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Festival Internacional de Teatro de Caracas es uno de los eventos culturales más importantes del país.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "Si algo es 'un rollo', significa que es:",
+        "answers": [
+            "Un objeto cilíndos",
+            "Una situación complicada o difícil",
+            "Un tipo de comida enrollada",
+            "Una película antigua"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Los Nevados, en Mérida, es el único parque en Venezuela con glaciares activos.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 1,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué significa 'cortar la torta'?",
+        "answers": [
+            "Partir un pastel",
+            "Poner fin a una relación o situación",
+            "Preparar un postre",
+            "Celebrar un cumpleaños"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Sistema Nacional de Orquestas y Coros Juveniles e Infantiles de Venezuela es conocido mundialmente como 'El Sistema'.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'chipilín'?",
+        "answers": [
+            "Un tipo de insecto",
+            "Un niño pequeño o mimado",
+            "Un dulce tradicional",
+            "Un sonido agudo"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Parque Nacional Los Haitises, en Venezuela, es famoso por sus formaciones rocosas calizas y cuevas marinas.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 1,
+        "type": "true_false"
+    },
+    {
+        "question": "Si alguien te dice 'eres un pichirre', ¿qué te está diciendo?",
+        "answers": [
+            "Que eres generoso/a",
+            "Que eres tacaño/a o agarrado/a",
+            "Que eres lento/a",
+            "Que eres muy limpio/a"
+        ],
+        "correct": 1,
+        "type": "multiple_choice"
+    },
+    {
+        "question": "El Choroní es una playa famosa en el estado Aragua, conocida por su ambiente caribeño y cercanía a la montaña.",
+        "answers": [
+            "Verdadero",
+            "Falso"
+        ],
+        "correct": 0,
+        "type": "true_false"
+    },
+    {
+        "question": "¿Qué es un 'macundales'?",
+        "answers": [
+            "Un tipo de dulce",
+            "Un juego de niños",
+            "Pertenencias o enseres personales, especialmente si son muchos o desordenados",
+            "Un animal exótico"
         ],
         "correct": 2,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Qué es un 'lustro'?",
+        "question": "La ciudad de Mérida es conocida como la 'Ciudad de los Caballeros' y es un importante centro turístico andino.",
         "answers": [
-            "Un periodo de 5 años",
-            "Un periodo de 10 años",
-            "Un periodo de 50 años",
-            "Un periodo de 100 años"
+            "Verdadero",
+            "Falso"
         ],
         "correct": 0,
-        "type": "multiple_choice"
+        "type": "true_false"
     },
     {
-        "question": "¿Cuál es el país más grande del mundo por superficie?",
+        "question": "Si una persona está 'palmada', significa que:",
         "answers": [
-            "China",
-            "Canadá",
-            "Estados Unidos",
-            "Rusia"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién dirigió la película 'Pulp Fiction'?",
-        "answers": [
-            "Martin Scorsese",
-            "Steven Spielberg",
-            "Quentin Tarantino",
-            "James Cameron"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el nombre del proceso por el cual las plantas convierten la luz solar en energía?",
-        "answers": [
-            "Respiración celular",
-            "Transpiración",
-            "Fotosíntesis",
-            "Germinación"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué famoso artista es conocido por sus 'latas de sopa Campbell'?- ",
-        "answers": [
-            "Jackson Pollock",
-            "Andy Warhol",
-            "Roy Lichtenstein",
-            "Jean-Michel Basquiat"
+            "Está aplaudiendo",
+            "Está sin dinero o en mala situación económica",
+            "Ha recibido un golpe",
+            "Está muy contenta"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es la capital de Argentina?",
+        "question": "El Parque Nacional Dinira, en el estado Lara, protege una gran variedad de especies de aves rapaces.",
         "answers": [
-            "Santiago",
-            "Bogotá",
-            "Buenos Aires",
-            "Lima"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 2,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿Qué gas de efecto invernadero es el más abundante en la atmósfera terrestre?",
+        "question": "¿Qué es un 'bachaqueo'?",
         "answers": [
-            "Dióxido de carbono",
-            "Metano",
-            "Óxido nitroso",
-            "Vapor de agua"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué deporte se utiliza un 'birdie'?",
-        "answers": [
-            "Tenis",
-            "Bádminton",
-            "Golf",
-            "Críquet"
+            "Un canto de aves",
+            "La actividad de revender productos a sobreprecio",
+            "Un tipo de baile",
+            "Una forma de cocinar"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el nombre del primer satélite artificial lanzado al espacio?",
+        "question": "La Península de Paria, en el estado Sucre, es el punto más oriental de Venezuela y ofrece playas vírgenes.",
         "answers": [
-            "Explorer 1",
-            "Vanguard 1",
-            "Sputnik 1",
-            "Luna 1"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es el autor de la saga de libros 'El Señor de los Anillos'?",
-        "answers": [
-            "C.S. Lewis",
-            "George R.R. Martin",
-            "J.K. Rowling",
-            "J.R.R. Tolkien"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el punto más bajo de la Tierra?",
-        "answers": [
-            "Fosa de las Marianas",
-            "Valle de la Muerte",
-            "Mar Muerto",
-            "Depresión de Danakil"
+            "Verdadero",
+            "Falso"
         ],
         "correct": 0,
-        "type": "multiple_choice"
+        "type": "true_false"
     },
     {
-        "question": "¿Qué instrumento tocaba Jimi Hendrix?",
+        "question": "¿Qué significa 'meter la pata'?",
         "answers": [
-            "Batería",
-            "Bajo",
-            "Guitarra",
-            "Teclado"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la moneda oficial del Reino Unido?",
-        "answers": [
-            "Euro",
-            "Dólar",
-            "Libra esterlina",
-            "Franco"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué civilización antigua es famosa por sus acueductos?",
-        "answers": [
-            "Griegos",
-            "Egipcios",
-            "Persas",
-            "Romanos"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el planeta más grande de nuestro sistema solar?",
-        "answers": [
-            "Saturno",
-            "Júpiter",
-            "Neptuno",
-            "Urano"
+            "Introducir el pie en algo",
+            "Cometer un error o equivocarse",
+            "Jugar a la pelota",
+            "Ayudar a alguien"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Quién pintó la 'Noche Estrellada'?",
+        "question": "El Museo de Arte Contemporáneo de Caracas es uno de los más importantes de América Latina.",
         "answers": [
-            "Claude Monet",
-            "Pablo Picasso",
-            "Vincent van Gogh",
-            "Salvador Dalí"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 2,
-        "type": "multiple_choice"
+        "correct": 0,
+        "type": "true_false"
     },
     {
-        "question": "¿Cuál es el animal nacional de la India?",
+        "question": "Un 'coñazo' es un tipo de:",
         "answers": [
-            "Elefante",
-            "León",
-            "Tigre de Bengala",
-            "Pavo real"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué país se encuentra el Taj Mahal?",
-        "answers": [
-            "Pakistán",
-            "India",
-            "Bangladés",
-            "Nepal"
+            "Bebida refrescante",
+            "Golpe fuerte o un problema grande",
+            "Instrumento musical",
+            "Plato típico"
         ],
         "correct": 1,
         "type": "multiple_choice"
     },
     {
-        "question": "¿Cuál es el componente principal del Sol?",
+        "question": "Los Roques es un archipiélago coralino, no un parque nacional terrestre.",
         "answers": [
-            "Oxígeno",
-            "Carbono",
-            "Hidrógeno",
-            "Helio"
+            "Verdadero",
+            "Falso"
         ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué famoso dramaturgo escribió 'Romeo y Julieta'?",
-        "answers": [
-            "Christopher Marlowe",
-            "Ben Jonson",
-            "William Shakespeare",
-            "John Webster"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el desierto más frío del mundo?",
-        "answers": [
-            "Gobi",
-            "Patagónico",
-            "Antártico",
-            "Ártico"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es un 'origami'?",
-        "answers": [
-            "Un tipo de comida japonesa",
-            "Un arte marcial",
-            "El arte de doblar papel",
-            "Un estilo de caligrafía"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Sudáfrica?",
-        "answers": [
-            "Johannesburgo",
-            "Ciudad del Cabo",
-            "Durban",
-            "Pretoria"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué banda de rock británica lanzó el álbum 'The Dark Side of the Moon'?",
-        "answers": [
-            "The Beatles",
-            "Led Zeppelin",
-            "Pink Floyd",
-            "Queen"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el órgano más grande del cuerpo humano?",
-        "answers": [
-            "Hígado",
-            "Cerebro",
-            "Intestino",
-            "Piel"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el símbolo químico del agua?",
-        "answers": [
-            "Ag",
-            "O2",
-            "H2O",
-            "Au"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué planeta es el más cercano al Sol?",
-        "answers": [
-            "Venus",
-            "Tierra",
-            "Mercurio",
-            "Marte"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la velocidad de la luz?",
-        "answers": [
-            "300,000 km/s",
-            "150,000 km/s",
-            "500,000 km/s",
-            "1,000,000 km/s"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué tipo de energía se obtiene del viento?",
-        "answers": [
-            "Solar",
-            "Hidráulica",
-            "Geotérmica",
-            "Eólica"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
-        "answers": [
-            "Hierro",
-            "Aluminio",
-            "Cobre",
-            "Plomo"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué estudia la entomología?",
-        "answers": [
-            "Peces",
-            "Aves",
-            "Insectos",
-            "Plantas"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el ácido presente en los limones?",
-        "answers": [
-            "Ácido acético",
-            "Ácido cítrico",
-            "Ácido sulfúrico",
-            "Ácido clorhídrico"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la penicilina?",
-        "answers": [
-            "Un analgésico",
-            "Un antibiótico",
-            "Una vitamina",
-            "Una hormona"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuántos huesos tiene un ser humano adulto?",
-        "answers": [
-            "206",
-            "210",
-            "200",
-            "212"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la hematología?",
-        "answers": [
-            "El estudio de la sangre",
-            "El estudio de los huesos",
-            "El estudio de los músculos",
-            "El estudio de los nervios"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué año se descubrió América?",
-        "answers": [
-            "1492",
-            "1500",
-            "1488",
-            "1512"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue el primer emperador romano?",
-        "answers": [
-            "Julio César",
-            "Augusto",
-            "Nerón",
-            "Calígula"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué guerra duró 100 años?",
-        "answers": [
-            "La Guerra de los Cien Años",
-            "La Primera Guerra Mundial",
-            "La Segunda Guerra Mundial",
-            "La Guerra de Vietnam"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Dónde se originó la civilización azteca?",
-        "answers": [
-            "Perú",
-            "México",
-            "Egipto",
-            "Grecia"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Juana de Arco?",
-        "answers": [
-            "Una reina de Inglaterra",
-            "Una santa y heroína francesa",
-            "Una escritora famosa",
-            "Una pintora renacentista"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué evento marcó el inicio de la Edad Media?",
-        "answers": [
-            "La caída del Imperio Romano",
-            "El descubrimiento de América",
-            "La invención de la imprenta",
-            "La Revolución Francesa"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue el líder de la Reforma Protestante?",
-        "answers": [
-            "Martín Lutero",
-            "Juan Calvino",
-            "Enrique VIII",
-            "Ignacio de Loyola"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué país se encuentra la ciudad de Petra?",
-        "answers": [
-            "Egipto",
-            "Jordania",
-            "Siria",
-            "Irak"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué faraón egipcio es famoso por su tumba intacta?",
-        "answers": [
-            "Ramsés II",
-            "Cleopatra",
-            "Tutankamón",
-            "Akenatón"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue el Renacimiento?",
-        "answers": [
-            "Un movimiento artístico y cultural",
-            "Una guerra religiosa",
-            "Una crisis económica",
-            "Una pandemia"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el desierto más grande del mundo?",
-        "answers": [
-            "El Sahara",
-            "El Gobi",
-            "El de Atacama",
-            "El Antártico"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué país se encuentra el Monte Fuji?",
-        "answers": [
-            "China",
-            "Corea del Sur",
-            "Japón",
-            "Vietnam"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Rusia?",
-        "answers": [
-            "San Petersburgo",
-            "Moscú",
-            "Kiev",
-            "Varsovia"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué río pasa por París?",
-        "answers": [
-            "El Támesis",
-            "El Danubio",
-            "El Sena",
-            "El Tíber"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el país más poblado de África?",
-        "answers": [
-            "Nigeria",
-            "Egipto",
-            "Sudáfrica",
-            "Etiopía"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué cordillera se encuentra el Aconcagua?",
-        "answers": [
-            "En los Alpes",
-            "En los Andes",
-            "En el Himalaya",
-            "En las Montañas Rocosas"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la isla más grande del mundo?",
-        "answers": [
-            "Groenlandia",
-            "Australia",
-            "Borneo",
-            "Madagascar"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué país es conocido como la 'Tierra del Sol Naciente'?- ",
-        "answers": [
-            "China",
-            "Japón",
-            "Corea del Sur",
-            "Tailandia"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Brasil?",
-        "answers": [
-            "Río de Janeiro",
-            "São Paulo",
-            "Brasilia",
-            "Salvador"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué continente se encuentra la Patagonia?",
-        "answers": [
-            "En América del Sur",
-            "En África",
-            "En Australia",
-            "En Asia"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién pintó 'La última cena'?",
-        "answers": [
-            "Miguel Ángel",
-            "Rafael",
-            "Leonardo da Vinci",
-            "Donatello"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué escritor es famoso por sus novelas de misterio con Hércules Poirot?",
-        "answers": [
-            "Arthur Conan Doyle",
-            "Agatha Christie",
-            "Edgar Allan Poe",
-            "Raymond Chandler"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es el autor de 'El viejo y el mar'?",
-        "answers": [
-            "Ernest Hemingway",
-            "William Faulkner",
-            "John Steinbeck",
-            "F. Scott Fitzgerald"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué movimiento artístico representa Salvador Dalí?",
-        "answers": [
-            "Cubismo",
-            "Impresionismo",
-            "Surrealismo",
-            "Expresionismo"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién escribió 'La Divina Comedia'?",
-        "answers": [
-            "Dante Alighieri",
-            "Petrarca",
-            "Boccaccio",
-            "Maquiavelo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué banda de rock es conocida como 'Sus Satánicas Majestades'?- ",
-        "answers": [
-            "The Beatles",
-            "The Rolling Stones",
-            "Led Zeppelin",
-            "Queen"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién compuso 'Las cuatro estaciones'?",
-        "answers": [
-            "Mozart",
-            "Bach",
-            "Beethoven",
-            "Vivaldi"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué película ganó el primer Óscar a la Mejor Película?",
-        "answers": [
-            "Alas",
-            "Lo que el viento se llevó",
-            "Casablanca",
-            "El mago de Oz"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es el autor de la escultura 'El Pensador'?",
-        "answers": [
-            "Miguel Ángel",
-            "Donatello",
-            "Rodin",
-            "Bernini"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué año se estrenó la primera película de Star Wars?",
-        "answers": [
-            "1977",
-            "1980",
-            "1983",
-            "1975"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién interpreta a Iron Man en el Universo Cinematográfico de Marvel?",
-        "answers": [
-            "Chris Evans",
-            "Chris Hemsworth",
-            "Mark Ruffalo",
-            "Robert Downey Jr."
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el nombre del protagonista de la serie 'Breaking Bad'?",
-        "answers": [
-            "Jesse Pinkman",
-            "Saul Goodman",
-            "Walter White",
-            "Gus Fring"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué videojuego es considerado el más vendido de la historia?",
-        "answers": [
-            "Tetris",
-            "Minecraft",
-            "Grand Theft Auto V",
-            "Super Mario Bros."
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es la cantante conocida como la 'Reina del Pop'?- ",
-        "answers": [
-            "Madonna",
-            "Beyoncé",
-            "Rihanna",
-            "Lady Gaga"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué serie de televisión tiene como lema 'Winter is Coming'?- ",
-        "answers": [
-            "The Walking Dead",
-            "Breaking Bad",
-            "Game of Thrones",
-            "Stranger Things"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué actor ha interpretado a James Bond en más películas?",
-        "answers": [
-            "Sean Connery",
-            "Roger Moore",
-            "Daniel Craig",
-            "Pierce Brosnan"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el nombre del parque de atracciones de dinosaurios en 'Jurassic Park'?- ",
-        "answers": [
-            "Isla Nublar",
-            "Isla Sorna",
-            "Parque Jurásico",
-            "Mundo Jurásico"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué director de cine es conocido por películas como 'Tiburón', 'E.T.' y 'La lista de Schindler'?- ",
-        "answers": [
-            "Martin Scorsese",
-            "Francis Ford Coppola",
-            "Steven Spielberg",
-            "Quentin Tarantino"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué personaje de dibujos animados vive en una piña debajo del mar?",
-        "answers": [
-            "Mickey Mouse",
-            "Bugs Bunny",
-            "Bob Esponja",
-            "Homer Simpson"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué país se inventó el fútbol?",
-        "answers": [
-            "Brasil",
-            "Argentina",
-            "Inglaterra",
-            "España"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuántos anillos de la NBA tiene Michael Jordan?",
-        "answers": [
-            "5",
-            "6",
-            "7",
-            "8"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué tenista ha ganado más torneos de Grand Slam?",
-        "answers": [
-            "Roger Federer",
-            "Rafael Nadal",
-            "Novak Djokovic",
-            "Pete Sampras"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué deporte destaca Usain Bolt?",
-        "answers": [
-            "Natación",
-            "Atletismo",
-            "Gimnasia",
-            "Ciclismo"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el equipo de fútbol con más Champions League?",
-        "answers": [
-            "FC Barcelona",
-            "AC Milan",
-            "Liverpool FC",
-            "Real Madrid"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cómo se llama el estadio del FC Barcelona?",
-        "answers": [
-            "Santiago Bernabéu",
-            "Camp Nou",
-            "Wanda Metropolitano",
-            "San Mamés"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué país se celebraron los primeros Juegos Olímpicos de la era moderna?",
-        "answers": [
-            "Grecia",
-            "Francia",
-            "Reino Unido",
-            "Estados Unidos"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué boxeador es conocido como 'The Greatest'?- ",
-        "answers": [
-            "Mike Tyson",
-            "Muhammad Ali",
-            "Floyd Mayweather",
-            "Manny Pacquiao"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué consiste un 'hat-trick' en el fútbol?",
-        "answers": [
-            "Marcar 2 goles en un partido",
-            "Marcar 3 goles en un partido",
-            "Marcar 4 goles en un partido",
-            "Marcar 5 goles en un partido"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué selección de fútbol ha ganado más Copas del Mundo?",
-        "answers": [
-            "Alemania",
-            "Italia",
-            "Argentina",
-            "Brasil"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el animal que tiene tres corazones?",
-        "answers": [
-            "El pulpo",
-            "La sepia",
-            "El calamar",
-            "Todos los anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿De qué color es la sangre de los insectos?",
-        "answers": [
-            "Roja",
-            "Azul",
-            "Verde",
-            "Amarillenta"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único mamífero capaz de volar?",
-        "answers": [
-            "La ardilla voladora",
-            "El murciélago",
-            "El colugo",
-            "El petauro del azúcar"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuántos dientes tiene un caracol?",
-        "answers": [
-            "Ninguno",
-            "Unos pocos",
-            "Cientos",
-            "Miles"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el animal más ruidoso del mundo?",
-        "answers": [
-            "La ballena azul",
-            "El elefante",
-            "El mono aullador",
-            "El camarón pistola"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Por qué los flamencos son rosas?",
-        "answers": [
-            "Por su genética",
-            "Por su alimentación",
-            "Porque se tiñen",
-            "Es un misterio"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el animal con la mordida más fuerte?",
-        "answers": [
-            "El tiburón blanco",
-            "El cocodrilo de agua salada",
-            "La hiena",
-            "El hipopótamo"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuánto tiempo puede vivir una medusa?",
-        "answers": [
-            "Unos días",
-            "Unos meses",
-            "Unos años",
-            "Algunas son inmortales"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el animal que duerme más horas al día?",
-        "answers": [
-            "El perezoso",
-            "El koala",
-            "El gato",
-            "El murciélago"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué animal tiene la lengua más larga en proporción a su cuerpo?",
-        "answers": [
-            "El oso hormiguero",
-            "El camaleón",
-            "El murciélago néctar",
-            "El picaflor"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Turquía?",
-        "answers": [
-            "Estambul",
-            "Ankara",
-            "Izmir",
-            "Bursa"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué famoso científico propuso las tres leyes del movimiento?",
-        "answers": [
-            "Albert Einstein",
-            "Galileo Galilei",
-            "Isaac Newton",
-            "Nikola Tesla"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué país se encuentra la Torre de Pisa?",
-        "answers": [
-            "Francia",
-            "Italia",
-            "España",
-            "Grecia"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el libro más vendido de la historia?",
-        "answers": [
-            "Don Quijote de la Mancha",
-            "La Biblia",
-            "El Señor de los Anillos",
-            "Harry Potter y la piedra filosofal"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es un archipiélago?",
-        "answers": [
-            "Una cadena de montañas",
-            "Un conjunto de islas",
-            "Un tipo de relieve",
-            "Un río subterráneo"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién pintó el techo de la Capilla Sixtina?",
-        "answers": [
-            "Leonardo da Vinci",
-            "Rafael",
-            "Miguel Ángel",
-            "Tiziano"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el idioma oficial de Brasil?",
-        "answers": [
-            "Español",
-            "Portugués",
-            "Inglés",
-            "Francés"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la aurora boreal?",
-        "answers": [
-            "Un fenómeno meteorológico",
-            "Un tipo de estrella",
-            "Un efecto óptico en la atmósfera",
-            "Una constelación"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el metal más caro del mundo?",
-        "answers": [
-            "Oro",
-            "Platino",
-            "Rodio",
-            "Paladio"
-        ],
-        "correct": 2,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue el primer ser humano en viajar al espacio?",
-        "answers": [
-            "Neil Armstrong",
-            "Yuri Gagarin",
-            "Buzz Aldrin",
-            "John Glenn"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la fisión nuclear?",
-        "answers": [
-            "La unión de dos átomos",
-            "La división de un átomo",
-            "La creación de un átomo",
-            "La destrucción de un átomo"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el planeta más caliente del sistema solar?",
-        "answers": [
-            "Mercurio",
-            "Venus",
-            "Marte",
-            "Júpiter"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es el número de Avogadro?",
-        "answers": [
-            "El número de átomos en un mol",
-            "El número de planetas en el sistema solar",
-            "La velocidad del sonido",
-            "La constante de Planck"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la clonación?",
-        "answers": [
-            "La creación de una copia genética",
-            "La modificación de un gen",
-            "La secuenciación del ADN",
-            "La terapia génica"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la materia oscura?",
-        "answers": [
-            "Una forma de materia que no emite luz",
-            "Un tipo de agujero negro",
-            "Una estrella de neutrones",
-            "Una galaxia enana"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la antimateria?",
-        "answers": [
-            "Una partícula con carga opuesta",
-            "Una partícula sin carga",
-            "Una partícula más pesada",
-            "Una partícula más ligera"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es el bosón de Higgs?",
-        "answers": [
-            "Una partícula que da masa a otras partículas",
-            "Una partícula que transmite la fuerza nuclear fuerte",
-            "Una partícula que transmite la fuerza nuclear débil",
-            "Una partícula que transmite la fuerza electromagnética"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la teoría de cuerdas?",
-        "answers": [
-            "Una teoría que unifica la relatividad y la mecánica cuántica",
-            "Una teoría que describe el origen del universo",
-            "Una teoría que explica la materia oscura",
-            "Una teoría que predice la existencia de universos paralelos"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es un exoplaneta?",
-        "answers": [
-            "Un planeta fuera de nuestro sistema solar",
-            "Un planeta enano",
-            "Un planeta gaseoso",
-            "Un planeta rocoso"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la biotecnología?",
-        "answers": [
-            "La aplicación de la tecnología a los seres vivos",
-            "El estudio de la vida en otros planetas",
-            "La creación de vida artificial",
-            "La modificación del clima"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la Ruta de la Seda?",
-        "answers": [
-            "Una red de rutas comerciales",
-            "Una campaña militar",
-            "Un movimiento religioso",
-            "Una exploración científica"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Alejandro Magno?",
-        "answers": [
-            "Un rey de Macedonia que conquistó un gran imperio",
-            "Un filósofo griego",
-            "Un emperador romano",
-            "Un faraón egipcio"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la Peste Negra?",
-        "answers": [
-            "Una pandemia que asoló Europa en el siglo XIV",
-            "Una guerra entre Inglaterra y Francia",
-            "Una crisis económica en el Imperio Romano",
-            "Una rebelión campesina en China"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la Ilustración?",
-        "answers": [
-            "Un movimiento intelectual que enfatizaba la razón",
-            "Un estilo artístico del siglo XVIII",
-            "Una reforma religiosa en el siglo XVI",
-            "Una revolución política en el siglo XVII"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la Guerra Fría?",
-        "answers": [
-            "Un enfrentamiento político e ideológico entre EEUU y la URSS",
-            "Una guerra mundial que involucró a todas las potencias",
-            "Un conflicto armado en la península de Corea",
-            "Una carrera espacial entre EEUU y la URSS"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Nelson Mandela?",
-        "answers": [
-            "Un activista contra el apartheid y presidente de Sudáfrica",
-            "Un líder de los derechos civiles en Estados Unidos",
-            "Un primer ministro de la India",
-            "Un secretario general de las Naciones Unidas"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue el Imperio Otomano?",
-        "answers": [
-            "Un imperio que controló gran parte del sudeste de Europa, Asia occidental y el norte de África",
-            "Un imperio que se extendió por toda la península ibérica",
-            "Un imperio que dominó el subcontinente indio",
-            "Un imperio que unificó China"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la Revolución Industrial?",
-        "answers": [
-            "Un proceso de profundas transformaciones económicas y sociales",
-            "Una rebelión de los trabajadores contra los dueños de las fábricas",
-            "Una guerra por el control de las colonias",
-            "Un descubrimiento científico que cambió el mundo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Gengis Kan?",
-        "answers": [
-            "El fundador del Imperio Mongol",
-            "Un emperador de China",
-            "Un sultán de Egipto",
-            "Un rey de Persia"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue el Apartheid?",
-        "answers": [
-            "Un sistema de segregación racial en Sudáfrica",
-            "Un movimiento por los derechos de las mujeres",
-            "Una política de expansión territorial",
-            "Una doctrina religiosa"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el lago más profundo del mundo?",
-        "answers": [
-            "El lago Baikal",
-            "El lago Tanganica",
-            "El lago Superior",
-            "El mar Caspio"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la cascada más alta del mundo?",
-        "answers": [
-            "El Salto Ángel",
-            "Las cataratas del Niágara",
-            "Las cataratas de Iguazú",
-            "Las cataratas Victoria"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el volcán más activo del mundo?",
-        "answers": [
-            "El Kilauea",
-            "El Etna",
-            "El Stromboli",
-            "El Monte Fuji"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el país con más volcanes?",
-        "answers": [
-            "Indonesia",
-            "Japón",
-            "Estados Unidos",
-            "Chile"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el río más caudaloso del mundo?",
-        "answers": [
-            "El Amazonas",
-            "El Congo",
-            "El Orinoco",
-            "El Paraná"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el país con más islas?",
-        "answers": [
-            "Suecia",
-            "Finlandia",
-            "Canadá",
-            "Indonesia"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la ciudad más poblada del mundo?",
-        "answers": [
-            "Tokio",
-            "Delhi",
-            "Shanghái",
-            "São Paulo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el país más pequeño del mundo?",
-        "answers": [
-            "Mónaco",
-            "Nauru",
-            "Tuvalu",
-            "Ciudad del Vaticano"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el país con más fronteras terrestres?",
-        "answers": [
-            "Rusia",
-            "China",
-            "Brasil",
-            "Alemania"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el punto más alejado del centro de la Tierra?",
-        "answers": [
-            "El Monte Everest",
-            "El Chimborazo",
-            "El K2",
-            "El Aconcagua"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién escribió 'El retrato de Dorian Gray'?",
-        "answers": [
-            "Oscar Wilde",
-            "Charles Dickens",
-            "Jane Austen",
-            "George Orwell"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué pintor es considerado el padre del cubismo junto a Georges Braque?",
-        "answers": [
-            "Pablo Picasso",
-            "Salvador Dalí",
-            "Joan Miró",
-            "Juan Gris"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué novela comienza con la frase 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme...'?- ",
-        "answers": [
-            "Don Quijote de la Mancha",
-            "La Celestina",
-            "El Lazarillo de Tormes",
-            "El Buscón"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es el autor de la famosa escultura 'David'?",
-        "answers": [
-            "Miguel Ángel",
-            "Donatello",
-            "Bernini",
-            "Cellini"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué banda británica es conocida como los 'Fab Four'?- ",
-        "answers": [
-            "The Beatles",
-            "The Rolling Stones",
-            "The Who",
-            "Queen"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién escribió la obra de teatro 'La vida es sueño'?",
-        "answers": [
-            "Lope de Vega",
-            "Calderón de la Barca",
-            "Tirso de Molina",
-            "Miguel de Cervantes"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué artista es famoso por sus 'Móviles'?- ",
-        "answers": [
-            "Alexander Calder",
-            "Jean Arp",
-            "Henry Moore",
-            "Constantin Brancusi"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué libro de J.R.R. Tolkien precede a 'El Señor de los Anillos'?- ",
-        "answers": [
-            "El Hobbit",
-            "El Silmarillion",
-            "Los hijos de Húrin",
-            "Cuentos inconclusos"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué director de cine es famoso por sus películas de 'spaghetti western'?- ",
-        "answers": [
-            "Sergio Leone",
-            "Federico Fellini",
-            "Luchino Visconti",
-            "Vittorio De Sica"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es la autora de la saga de novelas 'Los juegos del hambre'?- ",
-        "answers": [
-            "Suzanne Collins",
-            "J.K. Rowling",
-            "Stephenie Meyer",
-            "Veronica Roth"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué película de Disney fue la primera en ser lanzada en formato VHS?",
-        "answers": [
-            "Blancanieves y los siete enanitos",
-            "Pinocho",
-            "Fantasía",
-            "Dumbo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el nombre del actor que interpreta a Harry Potter?",
-        "answers": [
-            "Daniel Radcliffe",
-            "Rupert Grint",
-            "Tom Felton",
-            "Matthew Lewis"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué grupo de rock es famoso por su canción 'Bohemian Rhapsody'?- ",
-        "answers": [
-            "Queen",
-            "Led Zeppelin",
-            "Pink Floyd",
-            "The Beatles"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué videojuego aparece el personaje de Lara Croft?",
-        "answers": [
-            "Tomb Raider",
-            "Uncharted",
-            "The Last of Us",
-            "Resident Evil"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué serie de televisión trata sobre un profesor de química que se convierte en narcotraficante?",
-        "answers": [
-            "Breaking Bad",
-            "The Wire",
-            "Los Soprano",
-            "Narcos"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué actor interpretó al Joker en la película 'El Caballero Oscuro'?- ",
-        "answers": [
-            "Heath Ledger",
-            "Jack Nicholson",
-            "Jared Leto",
-            "Joaquin Phoenix"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué película de Quentin Tarantino está dividida en capítulos no cronológicos?",
-        "answers": [
-            "Pulp Fiction",
-            "Reservoir Dogs",
-            "Kill Bill",
-            "Bastardos sin gloria"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué personaje de Nintendo es un fontanero italiano?",
-        "answers": [
-            "Mario",
-            "Luigi",
-            "Wario",
-            "Waluigi"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué cantante es conocida como la 'Princesa del Pop'?- ",
-        "answers": [
-            "Britney Spears",
-            "Christina Aguilera",
-            "Jessica Simpson",
-            "Mandy Moore"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué deporte se utiliza un 'puck'?",
-        "answers": [
-            "Hockey sobre hielo",
-            "Hockey sobre hierba",
-            "Polo",
-            "Lacrosse"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuántos jugadores hay en un equipo de baloncesto en la cancha?",
-        "answers": [
-            "5",
-            "6",
-            "7",
-            "11"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué país ganó la primera Copa del Mundo de la FIFA en 1930?",
-        "answers": [
-            "Uruguay",
-            "Argentina",
-            "Brasil",
-            "Italia"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué ciudad se celebran los torneos de tenis de Wimbledon?",
-        "answers": [
-            "Londres",
-            "París",
-            "Nueva York",
-            "Melbourne"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué ciclista ha ganado más Tours de Francia?",
-        "answers": [
-            "Lance Armstrong",
-            "Miguel Induráin",
-            "Eddy Merckx",
-            "Bernard Hinault"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el récord mundial de los 100 metros lisos masculinos?",
-        "answers": [
-            "9.58 segundos",
-            "9.69 segundos",
-            "9.72 segundos",
-            "9.79 segundos"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué deporte se conoce a Babe Ruth como una leyenda?",
-        "answers": [
-            "Béisbol",
-            "Fútbol americano",
-            "Baloncesto",
-            "Hockey sobre hielo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué arte marcial es originario de Corea?",
-        "answers": [
-            "Taekwondo",
-            "Karate",
-            "Judo",
-            "Kung Fu"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el evento principal del Super Bowl?",
-        "answers": [
-            "El partido de fútbol americano",
-            "El espectáculo de medio tiempo",
-            "Los anuncios publicitarios",
-            "La ceremonia de premiación"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué nadador ha ganado más medallas de oro olímpicas?",
-        "answers": [
-            "Michael Phelps",
-            "Mark Spitz",
-            "Ian Thorpe",
-            "Ryan Lochte"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único mamífero que no tiene cuerdas vocales?",
-        "answers": [
-            "La jirafa",
-            "El perezoso",
-            "El armadillo",
-            "El topo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único planeta del sistema solar que no lleva el nombre de un dios romano o griego?",
-        "answers": [
-            "La Tierra",
-            "Urano",
-            "Neptuno",
-            "Plutón"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único hueso del cuerpo humano que no está conectado a ningún otro?",
-        "answers": [
-            "El hioides",
-            "El coxis",
-            "El esternón",
-            "La rótula"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único continente que se encuentra en los cuatro hemisferios?",
-        "answers": [
-            "África",
-            "Asia",
-            "Australia",
-            "América del Sur"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único animal que no puede enfermar?",
-        "answers": [
-            "El tiburón",
-            "La langosta",
-            "La medusa inmortal",
-            "El tardígrado"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único metal que es líquido a temperatura ambiente?",
-        "answers": [
-            "El mercurio",
-            "El galio",
-            "El cesio",
-            "El francio"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único país del mundo que empieza por la letra 'Z' en español?",
-        "answers": [
-            "Zambia",
-            "Zimbabue",
-            "Zaire",
-            "No hay"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único mamífero que puede ver el color rojo?",
-        "answers": [
-            "Los humanos",
-            "Los primates",
-            "Algunos marsupiales",
-            "Ninguno"
-        ],
-        "correct": 1,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único órgano del cuerpo humano que puede regenerarse?",
-        "answers": [
-            "El hígado",
-            "La piel",
-            "El corazón",
-            "El cerebro"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el único número que tiene el mismo número de letras que su valor?",
-        "answers": [
-            "Cinco",
-            "Cuatro",
-            "Tres",
-            "Seis"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la caligrafía?",
-        "answers": [
-            "El arte de escribir a mano de forma bella",
-            "Un estilo de pintura",
-            "Una técnica de grabado",
-            "Un tipo de escultura"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Escocia?",
-        "answers": [
-            "Edimburgo",
-            "Glasgow",
-            "Aberdeen",
-            "Dundee"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién escribió 'El diario de Ana Frank'?",
-        "answers": [
-            "Ana Frank",
-            "Otto Frank",
-            "Miep Gies",
-            "Un autor anónimo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es un haiku?",
-        "answers": [
-            "Un poema japonés de tres versos",
-            "Una novela corta",
-            "Una obra de teatro de un solo acto",
-            "Una canción popular"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el instrumento nacional de Irlanda?",
-        "answers": [
-            "El arpa",
-            "La gaita",
-            "El violín",
-            "La flauta"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué ciudad se encuentra el Partenón?",
-        "answers": [
-            "Atenas",
-            "Roma",
-            "Estambul",
-            "El Cairo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién pintó 'El nacimiento de Venus'?",
-        "answers": [
-            "Sandro Botticelli",
-            "Leonardo da Vinci",
-            "Miguel Ángel",
-            "Rafael"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el género literario de 'La Odisea'?",
-        "answers": [
-            "Epopeya",
-            "Tragedia",
-            "Comedia",
-            "Lírica"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es el flamenco?",
-        "answers": [
-            "Un género musical y de baile originario de Andalucía",
-            "Un tipo de cante jondo",
-            "Un estilo de guitarra",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién es el autor de la famosa cita 'Pienso, luego existo'?- ",
-        "answers": [
-            "René Descartes",
-            "Platón",
-            "Aristóteles",
-            "Sócrates"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la astrofísica?",
-        "answers": [
-            "La rama de la astronomía que estudia las propiedades físicas de los astros",
-            "La búsqueda de vida extraterrestre",
-            "La exploración de otros planetas",
-            "La predicción del futuro a través de las estrellas"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la partícula subatómica con carga negativa?",
-        "answers": [
-            "El electrón",
-            "El protón",
-            "El neutrón",
-            "El fotón"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la genética?",
-        "answers": [
-            "El estudio de la herencia y los genes",
-            "La manipulación del ADN",
-            "La creación de organismos transgénicos",
-            "La prevención de enfermedades hereditarias"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la fórmula química del dióxido de carbono?",
-        "answers": [
-            "CO2",
-            "H2O",
-            "O2",
-            "NaCl"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la paleontología?",
-        "answers": [
-            "El estudio de los fósiles",
-            "La búsqueda de dinosaurios",
-            "La reconstrucción de ecosistemas antiguos",
-            "La datación de rocas"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la unidad básica de la vida?",
-        "answers": [
-            "La célula",
-            "El átomo",
-            "La molécula",
-            "El tejido"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la sismología?",
-        "answers": [
-            "El estudio de los terremotos",
-            "La predicción de erupciones volcánicas",
-            "La medición de la intensidad de los tsunamis",
-            "La prevención de desastres naturales"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el planeta más alejado del Sol?",
-        "answers": [
-            "Neptuno",
-            "Urano",
-            "Saturno",
-            "Júpiter"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué es la botánica?",
-        "answers": [
-            "El estudio de las plantas",
-            "El cultivo de flores",
-            "El diseño de jardines",
-            "La clasificación de árboles"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la estrella más cercana a la Tierra?",
-        "answers": [
-            "El Sol",
-            "Próxima Centauri",
-            "Alfa Centauri A",
-            "Sirio"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la batalla de Stalingrado?",
-        "answers": [
-            "Una batalla decisiva en el frente oriental de la Segunda Guerra Mundial",
-            "Un punto de inflexión que detuvo el avance alemán en la Unión Soviética",
-            "Una de las batallas más sangrientas de la historia",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Cleopatra?",
-        "answers": [
-            "La última reina del Antiguo Egipto",
-            "Una amante de Julio César y Marco Antonio",
-            "Una figura histórica famosa por su belleza e inteligencia",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la Inquisición española?",
-        "answers": [
-            "Un tribunal eclesiástico que perseguía la herejía",
-            "Una institución que utilizó la tortura y la quema en la hoguera",
-            "Un instrumento de control social y político de la monarquía",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Marco Polo?",
-        "answers": [
-            "Un mercader y explorador veneciano que viajó a China",
-            "El autor de 'Los viajes de Marco Polo'",
-            "Una fuente de inspiración para futuros exploradores como Cristóbal Colón",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue el Imperio Inca?",
-        "answers": [
-            "El imperio más grande de la América precolombina",
-            "Una civilización que construyó una red de caminos y ciudades en los Andes",
-            "Un pueblo que adoraba al dios Sol",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Leonardo da Vinci?",
-        "answers": [
-            "Un polímata del Renacimiento italiano: pintor, escultor, arquitecto, músico, científico, inventor...",
-            "El autor de 'La Gioconda' y 'La última cena'",
-            "Un genio que se adelantó a su tiempo con sus ideas y diseños",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la batalla de Waterloo?",
-        "answers": [
-            "La batalla que supuso la derrota final de Napoleón Bonaparte",
-            "El fin de las Guerras Napoleónicas y del Primer Imperio Francés",
-            "Un enfrentamiento entre el ejército francés y una coalición liderada por el Duque de Wellington",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Juana la Loca?",
-        "answers": [
-            "Una reina de Castilla y Aragón que fue encerrada por su supuesta locura",
-            "La madre del emperador Carlos V",
-            "Una figura trágica marcada por los celos y las intrigas políticas",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Qué fue la toma de la Bastilla?",
-        "answers": [
-            "Un evento simbólico que marcó el inicio de la Revolución Francesa",
-            "La caída de una prisión que representaba el absolutismo monárquico",
-            "Una revuelta popular que inspiró a otros países a luchar por la libertad",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Quién fue Simón Bolívar?",
-        "answers": [
-            "Un líder militar y político que luchó por la independencia de varios países de América del Sur",
-            "El fundador de la Gran Colombia",
-            "Conocido como 'El Libertador'",
-            "Todas las anteriores"
-        ],
-        "correct": 3,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Marruecos?",
-        "answers": [
-            "Rabat",
-            "Casablanca",
-            "Marrakech",
-            "Fez"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué país se encuentra el desierto de Sonora?",
-        "answers": [
-            "México y Estados Unidos",
-            "Chile y Argentina",
-            "Perú y Bolivia",
-            "Brasil y Colombia"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Noruega?",
-        "answers": [
-            "Oslo",
-            "Bergen",
-            "Trondheim",
-            "Stavanger"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el río más largo de Europa?",
-        "answers": [
-            "El Volga",
-            "El Danubio",
-            "El Rin",
-            "El Dniéper"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Irán?",
-        "answers": [
-            "Teherán",
-            "Isfahán",
-            "Shiraz",
-            "Tabriz"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿En qué continente se encuentra Madagascar?",
-        "answers": [
-            "África",
-            "Asia",
-            "Oceanía",
-            "América del Sur"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Perú?",
-        "answers": [
-            "Lima",
-            "Cuzco",
-            "Arequipa",
-            "Trujillo"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es el mar que separa Europa de África?",
-        "answers": [
-            "El mar Mediterráneo",
-            "El mar Rojo",
-            "El mar Negro",
-            "El mar Caspio"
-        ],
-        "correct": 0,
-        "type": "multiple_choice"
-    },
-    {
-        "question": "¿Cuál es la capital de Filipinas?",
-        "answers": [
-            "Manila",
-            "Cebú",
-            "Dávao",
-            "Quezon City"
-        ],
         "correct": 0,
-        "type": "multiple_choice"
+        "type": "true_false"
     }
 ]
