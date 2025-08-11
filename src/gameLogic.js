@@ -2,6 +2,10 @@ const MASTER_QUESTIONS = require('../Quiz Venezuela.json');
 let availableQuestions = [...MASTER_QUESTIONS];
 
 let games = {};
+let disconnectedPlayers = {};
+
+// Constants for AFK logic
+const PLAYER_DISCONNECT_TIMEOUT = 30 * 1000; // 30 seconds
 
 // Constants for game logic
 const TIME_LIMIT_SHORT = 6; // Time limit for questions 19-24
@@ -57,10 +61,57 @@ function createGame(socket) {
     }
 }
 
-function addPlayer(pin, socket, name, avatar) {
+function addPlayer(pin, socket, name, avatar, playerId) {
     const game = games[pin];
-    if (game && game.state === 'waiting') {
+    if (!game) {
+        return { error: 'PIN no válido.' };
+    }
+
+    // Check if player is reconnecting
+    let player = null;
+    if (playerId) {
+        for (const oldSocketId in disconnectedPlayers) {
+            if (disconnectedPlayers[oldSocketId].playerId === playerId) {
+                player = disconnectedPlayers[oldSocketId];
+                clearTimeout(player.disconnectionTimeout); // Clear the pending removal
+                delete disconnectedPlayers[oldSocketId]; // Remove from disconnected list
+                break;
+            }
+        }
+    }
+
+    if (player) {
+        // Reconnecting player
+        player.socketId = socket.id; // Update with new socket ID
+        player.disconnected = false;
+        game.players[socket.id] = player; // Add back to active players with new socket.id
+        console.log(`Player ${player.name} reconnected to game ${pin}.`);
+
+        // Send current game state to reconnected player
+        let currentQuestionData = null;
+        let timeLeft = 0;
+        if (game.state === 'question' && game.currentQuestion >= 0) {
+            const question = game.questions[game.currentQuestion];
+            const isLightningRound = game.currentQuestion >= (SPECIAL_QUESTION_START - 1) && game.currentQuestion <= (SPECIAL_QUESTION_END - 1);
+            currentQuestionData = {
+                question: question.question,
+                answers: question.answers,
+                questionIndex: game.currentQuestion,
+                totalQuestions: game.questions.length,
+                image: question.image || null,
+                type: question.type || 'multiple_choice',
+                isLightningRound: isLightningRound,
+                powerups: player.powerups // Send player's powerups
+            };
+            timeLeft = Math.max(0, game.timeLimit - game.timeElapsed);
+        }
+
+        return { game, player, reconnected: true, currentQuestionData, timeLeft };
+    } else if (game.state === 'waiting') {
+        // New player joining
+        const newPlayerId = playerId || `player_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`; // Generate if not provided
         game.players[socket.id] = {
+            playerId: newPlayerId,
             name,
             avatar,
             score: 0,
@@ -68,11 +119,13 @@ function addPlayer(pin, socket, name, avatar) {
             powerups: { fiftyFifty: true, doublePoints: true, skipQuestion: true },
             extraTimeActive: false,
             doublePointsActive: false,
-            lastAnswerIndex: undefined // Initialize lastAnswerIndex for new players
+            lastAnswerIndex: undefined,
+            disconnected: false
         };
-        return { game };
+        console.log(`New player ${name} joined game ${pin}. Player ID: ${newPlayerId}`);
+        return { game, player: game.players[socket.id] };
     } else {
-        return { error: 'PIN no válido o el juego ya empezó.' };
+        return { error: 'El juego ya empezó.' };
     }
 }
 
@@ -166,14 +219,40 @@ function usePowerup(pin, socket, powerupType) {
 
 function removePlayer(socket) {
     for (const pin in games) {
-        if (games[pin].players[socket.id]) {
-            delete games[pin].players[socket.id];
-            return games[pin];
+        const game = games[pin];
+        if (game.players[socket.id]) {
+            const player = game.players[socket.id];
+            player.disconnected = true;
+            player.socketId = socket.id; // Store the last socket ID
+            player.gamePin = pin; // Store the game PIN
+            disconnectedPlayers[socket.id] = player; // Store in disconnected players
+            delete game.players[socket.id]; // Remove from active players
+
+            player.disconnectionTimeout = setTimeout(() => {
+                // If player doesn't reconnect within timeout, remove them permanently
+                if (disconnectedPlayers[socket.id] && disconnectedPlayers[socket.id].playerId === player.playerId) {
+                    console.log(`Player ${player.name} (ID: ${player.playerId}) permanently removed due to timeout.`);
+                    delete disconnectedPlayers[socket.id];
+                    // Optionally, notify host that player has left permanently
+                    // io.to(game.hostId).emit('player-permanently-removed', player.playerId);
+                }
+            }, PLAYER_DISCONNECT_TIMEOUT);
+
+            console.log(`Player ${player.name} disconnected from game ${pin}. Timeout set.`);
+            return game;
         }
-        if (games[pin].hostId === socket.id) {
-            clearTimeout(games[pin].timer);
-            const gameToDelete = games[pin];
+        if (game.hostId === socket.id) {
+            clearTimeout(game.timer);
+            const gameToDelete = game;
             delete games[pin];
+            // Also clear any disconnected players for this game
+            for (const oldSocketId in disconnectedPlayers) {
+                if (disconnectedPlayers[oldSocketId].gamePin === pin) {
+                    clearTimeout(disconnectedPlayers[oldSocketId].disconnectionTimeout);
+                    delete disconnectedPlayers[oldSocketId];
+                }
+            }
+            console.log(`Host disconnected. Game ${pin} cancelled.`);
             return gameToDelete;
         }
     }

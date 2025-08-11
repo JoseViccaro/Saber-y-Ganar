@@ -29,15 +29,19 @@ function initializeSocket(io) {
         socket.on('host-next-question', handleRequestQuestion);
 
         socket.on('player-join-game', (data) => {
-            const { pin, name, avatar } = data;
+            const { pin, name, avatar, playerId } = data;
             const sanitizedName = sanitize(name);
-            const { game, error } = addPlayer(pin, socket, sanitizedName, avatar);
+            const { game, player, error, reconnected, currentQuestionData, timeLeft } = addPlayer(pin, socket, sanitizedName, avatar, playerId);
             if (error) {
                 socket.emit('join-error', error);
                 return;
             }
             socket.join(pin);
-            socket.emit('join-success');
+            if (reconnected) {
+                socket.emit('reconnect-success', { currentQuestionData, timeLeft, score: player.score, powerups: player.powerups });
+            } else {
+                socket.emit('join-success', { playerId: player.playerId });
+            }
             io.to(game.hostId).emit('update-player-list', game.players);
         });
 

@@ -80,8 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
         gamePin = document.getElementById('pin-input').value;
         const name = document.getElementById('name-input').value.trim();
         if (gamePin && name && selectedAvatar) {
-            console.log(`Intentando unirse al juego con PIN: ${gamePin}, nombre: ${name} y avatar: ${selectedAvatar}`);
-            socket.emit('player-join-game', { pin: gamePin, name: name, avatar: selectedAvatar });
+            const playerId = sessionStorage.getItem('playerId');
+            console.log(`Intentando unirse al juego con PIN: ${gamePin}, nombre: ${name}, avatar: ${selectedAvatar}, y playerId: ${playerId}`);
+            socket.emit('player-join-game', { pin: gamePin, name: name, avatar: selectedAvatar, playerId: playerId });
         } else {
             document.getElementById('error-message').textContent = 'Debes introducir un PIN, un nombre y seleccionar un avatar.';
         }
