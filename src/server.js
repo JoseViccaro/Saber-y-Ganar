@@ -16,9 +16,9 @@ const HOST = '0.0.0.0'; // Escuchar en todas las interfaces de red
 // --- MIDDLEWARE ---
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Ruta principal para servir la página del anfitrión
+// Ruta principal para servir la página de inicio
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'host.html'));
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
 // Ruta para servir la página del jugador
