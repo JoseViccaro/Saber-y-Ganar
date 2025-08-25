@@ -17,7 +17,7 @@ Este es un juego de preguntas y respuestas en tiempo real, similar a Kahoot!, co
 
 ### Frontend (Flutter)
 
-1.  Navega al directorio `kahoot_flutter_app`.
+1.  Navega al directorio `saber_y_ganar_app`.
 2.  Asegúrate de tener Flutter instalado.
 3.  Instala las dependencias: `flutter pub get`
 4.  Ejecuta la aplicación: `flutter run`

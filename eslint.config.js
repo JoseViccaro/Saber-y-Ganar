@@ -17,6 +17,6 @@ module.exports = [
       'no-unused-vars': 'warn',
       'no-console': 'off',
     },
-    ignores: ["kahoot_flutter_app/build/**", "node_modules/**"],
+    ignores: ["saber_y_ganar_app/build/**", "node_modules/**"],
   },
 ];
