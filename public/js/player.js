@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 avatarImg.classList.add('avatar-option');
                 avatarImg.dataset.avatarId = i;
                 avatarImg.addEventListener('click', function () {
-                    document.querySelectorAll('.avatar-option').forEach(function(img) { img.classList.remove('selected'); });
+                    Array.prototype.forEach.call(document.querySelectorAll('.avatar-option'), function(img) { img.classList.remove('selected'); });
                     avatarImg.classList.add('selected');
                     selectedAvatar = '/avatars/avatar' + i + '.svg';
                 });
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var answerGrid = document.getElementById('answer-grid');
         answerGrid.innerHTML = '';
 
-        document.querySelectorAll('.answer-btn').forEach(function(btn) { btn.remove(); });
+        Array.prototype.forEach.call(document.querySelectorAll('.answer-btn'), function(btn) { btn.remove(); });
 
         if (data.type === 'true_false') {
             var trueButton = document.createElement('button');
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
             trueButton.textContent = data.answers[0];
             trueButton.addEventListener('click', function () {
                 lastAnswerIndex = 0;
-                document.querySelectorAll('.answer-btn').forEach(function(btn) { btn.disabled = true; });
+                Array.prototype.forEach.call(document.querySelectorAll('.answer-btn'), function(btn) { btn.disabled = true; });
                 socket.emit('player-answer', { pin: gamePin, answerIndex: 0 });
             });
             answerGrid.appendChild(trueButton);
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
             falseButton.textContent = data.answers[1];
             falseButton.addEventListener('click', function () {
                 lastAnswerIndex = 1;
-                document.querySelectorAll('.answer-btn').forEach(function(btn) { btn.disabled = true; });
+                Array.prototype.forEach.call(document.querySelectorAll('.answer-btn'), function(btn) { btn.disabled = true; });
                 socket.emit('player-answer', { pin: gamePin, answerIndex: 1 });
             });
             answerGrid.appendChild(falseButton);
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 button.textContent = answer;
                 button.addEventListener('click', function () {
                     lastAnswerIndex = index;
-                    document.querySelectorAll('.answer-btn').forEach(function(btn) { btn.disabled = true; });
+                    Array.prototype.forEach.call(document.querySelectorAll('.answer-btn'), function(btn) { btn.disabled = true; });
                     socket.emit('player-answer', { pin: gamePin, answerIndex: index });
                 });
                 answerGrid.appendChild(button);
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     socket.on('powerup-skip-question-result', function () {
         powerupSkipQuestionBtn.disabled = true;
-        document.querySelectorAll('.answer-btn').forEach(function(btn) { btn.disabled = true; });
+        Array.prototype.forEach.call(document.querySelectorAll('.answer-btn'), function(btn) { btn.disabled = true; });
         feedbackText.textContent = '¡Pregunta Saltada!';
         pointsGainedElement.classList.add('hidden');
         screens.feedback.classList.remove('correct', 'incorrect');
