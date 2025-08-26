@@ -47,9 +47,9 @@ function createGame(socket) {
     console.log("createGame function called.");
     try {
         const gameQuestions = getGameQuestions();
-        if (gameQuestions.length === 0) {
+        if (!gameQuestions || gameQuestions.length === 0) {
             console.error("No questions available to create a game.");
-            return { error: 'No hay preguntas disponibles para crear un juego. Por favor, verifica el archivo questions.js' };
+            return { error: 'No hay preguntas disponibles para crear un juego. Por favor, verifica el archivo saber_y_ganar.json' };
         }
         let pin = Math.floor(100000 + Math.random() * 900000).toString();
         games[pin] = { pin, hostId: socket.id, players: {}, state: 'waiting', currentQuestion: -1, questions: gameQuestions, timer: null };
@@ -155,20 +155,27 @@ function handleAnswer(pin, socket, answerIndex) {
 
     let pointsGained = 0;
     if (isCorrect) {
+        // --- SCORING LOGIC ---
+        // 500 base points for a correct answer
+        // Time bonus: up to 500 points based on how quickly the answer is submitted
         const timeBonus = Math.max(0, Math.round((game.timeLimit - game.timeElapsed) / game.timeLimit * 500));
+        // Streak bonus: 50 points for each consecutive correct answer
         const streakBonus = player.streak * 50;
         pointsGained = 500 + timeBonus + streakBonus;
+        // Double points powerup
         if (player.doublePointsActive) {
             pointsGained *= 2;
             player.doublePointsActive = false; // Reset after use
         }
         player.score += pointsGained;
         player.streak++;
+        // Streak milestone bonus: 300 points for every 3 consecutive correct answers
         if (player.streak > 0 && player.streak % 3 === 0) {
             player.score += 300;
         }
     }
     else {
+        // Penalty for incorrect answer
         if (player.score > 0) {
             const pointsLost = - (250 + Math.round((game.timeElapsed / game.timeLimit) * 250));
             pointsGained = pointsLost;

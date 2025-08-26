@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
+import 'package:saber_y_ganar/config.dart';
 
 class PlayerApp extends StatefulWidget {
   const PlayerApp({super.key});
@@ -12,7 +13,7 @@ class _PlayerAppState extends State<PlayerApp> {
   late IO.Socket socket;
   final TextEditingController _pinController = TextEditingController();
   final TextEditingController _nameController = TextEditingController();
-  final String _errorMessage = '';
+  String _errorMessage = '';
   final String _currentScreen = 'join'; // 'join', 'waiting', 'readyGo', 'question', 'feedback', 'end'
 
   // Question Screen State
@@ -27,7 +28,7 @@ class _PlayerAppState extends State<PlayerApp> {
   final String _questionType = 'multiple_choice';
   final bool _fiftyFiftyAvailable = false;
   final bool _doublePointsAvailable = false;
-  final bool _answered = false;
+  bool _answered = false;
 
   // Feedback Screen State
   final bool _isCorrect = false;
@@ -43,56 +44,11 @@ class _PlayerAppState extends State<PlayerApp> {
   }
 
   void _connectSocket() {
-    import 'package:flutter/material.dart';
-import 'package:socket_io_client/socket_io_client.dart' as IO;
-import 'package:saber_y_ganar/config.dart';
-
-class PlayerApp extends StatefulWidget {
-  const PlayerApp({super.key});
-
-  @override
-  State<PlayerApp> createState() => _PlayerAppState();
-}
-
-class _PlayerAppState extends State<PlayerApp> {
-  late IO.Socket socket;
-  final TextEditingController _pinController = TextEditingController();
-  final TextEditingController _nameController = TextEditingController();
-  String _errorMessage = '';
-  String _currentScreen = 'join'; // 'join', 'waiting', 'readyGo', 'question', 'feedback', 'end'
-
-  // Question Screen State
-  String _questionText = '';
-  List<dynamic> _answers = [];
-  int _questionIndex = 0;
-  int _totalQuestions = 0;
-  double _timeLeft = 0.0;
-  double _totalTime = 0.0;
-  int _currentScore = 0;
-  int _answerStreak = 0;
-  String _questionType = 'multiple_choice';
-  bool _fiftyFiftyAvailable = false;
-  bool _doublePointsAvailable = false;
-  bool _answered = false;
-
-  // Feedback Screen State
-  bool _isCorrect = false;
-  int _pointsGained = 0;
-
-  // Ready Go Screen State
-  String _readyGoText = '';
-
-  @override
-  void initState() {
-    super.initState();
-    _connectSocket();
-  }
-
-  void _connectSocket() {
     socket = IO.io(AppConfig.serverUrl, <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': false,
     });
+  }
 
   void _joinGame() {
     final pin = _pinController.text.trim();
@@ -183,7 +139,7 @@ class _PlayerAppState extends State<PlayerApp> {
         CircularProgressIndicator(),
         SizedBox(height: 20),
         Text(
-          'Espera a que el anfitrión comience el juego...',
+          'Espera a que el anfitrión comience el juego...', 
           style: TextStyle(fontSize: 18),
         ),
       ],
@@ -360,8 +316,6 @@ class _PlayerAppState extends State<PlayerApp> {
     );
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -387,7 +341,7 @@ class _PlayerAppState extends State<PlayerApp> {
                   return _buildFeedbackScreen();
                 case 'end':
                   return _buildEndScreen();
-                
+
                 default:
                   return const Text('Pantalla no implementada aún');
               }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
+import 'package:saber_y_ganar/config.dart';
 
 class HostApp extends StatefulWidget {
   const HostApp({super.key});
@@ -150,7 +151,7 @@ class _HostAppState extends State<HostApp> {
       );
     });
 
-    socket.on('error-creating-game', (message) {
+        socket.on('create-game-error', (message) {
       showDialog(
         context: context,
         builder: (BuildContext context) {
