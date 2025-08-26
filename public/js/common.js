@@ -57,13 +57,16 @@ function showEpicRondaRelampagoAnnouncement() {
 }
 
 function unlockAudio() {
-  for (var _len = arguments.length, audioElements = new Array(_len), _key = 0; _key < _len; _key++) {
-    audioElements[_key] = arguments[_key];
+  for (var i = 0; i < arguments.length; i++) {
+    var audio = arguments[i];
+    var promise = audio.play();
+    if (promise !== undefined) {
+      promise.then(function() {
+        audio.pause();
+        audio.currentTime = 0;
+      }).catch(function(error) {
+        // Ignore errors, this is just to unlock audio.
+      });
+    }
   }
-
-  audioElements.forEach(function (audio) {
-    audio.play().then(function () {
-      return audio.pause();
-    })["catch"](function () {});
-  });
 }
