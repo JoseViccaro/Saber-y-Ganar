@@ -1,13 +1,14 @@
+'use strict';
 
-const incorrectContainer = document.createElement('canvas');
+var incorrectContainer = document.createElement('canvas');
 incorrectContainer.id = 'incorrect-canvas';
 document.body.appendChild(incorrectContainer);
 
-const incorrectCtx = incorrectContainer.getContext('2d');
-let incorrectParticles = [];
+var incorrectCtx = incorrectContainer.getContext('2d');
+var incorrectParticles = [];
 
-const INCORRECT_PARTICLE_COUNT = 100;
-const INCORRECT_ANIMATION_DURATION = 2000; // 2 seconds
+var INCORRECT_PARTICLE_COUNT = 100;
+var INCORRECT_ANIMATION_DURATION = 2000; // 2 seconds
 
 function resizeIncorrectCanvas() {
     incorrectContainer.width = window.innerWidth;
@@ -15,10 +16,10 @@ function resizeIncorrectCanvas() {
 }
 
 function createIncorrectAnimation() {
-    const count = INCORRECT_PARTICLE_COUNT;
-    const duration = INCORRECT_ANIMATION_DURATION;
+    var count = INCORRECT_PARTICLE_COUNT;
+    var duration = INCORRECT_ANIMATION_DURATION;
 
-    for (let i = 0; i < count; i++) {
+    for (var i = 0; i < count; i++) {
         incorrectParticles.push({
             x: Math.random() * window.innerWidth,
             y: -20,
@@ -34,10 +35,10 @@ function createIncorrectAnimation() {
 }
 
 function animateIncorrectAnimation(duration) {
-    const startTime = Date.now();
+    var startTime = Date.now();
 
     function loop() {
-        const elapsedTime = Date.now() - startTime;
+        var elapsedTime = Date.now() - startTime;
         if (elapsedTime > duration) {
             incorrectParticles = [];
             incorrectCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
@@ -47,8 +48,8 @@ function animateIncorrectAnimation(duration) {
         requestAnimationFrame(loop);
         incorrectCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-        for (let i = 0; i < incorrectParticles.length; i++) {
-            const p = incorrectParticles[i];
+        for (var i = 0; i < incorrectParticles.length; i++) {
+            var p = incorrectParticles[i];
             p.x += p.vx;
             p.y += p.vy;
             p.angle += p.angularVelocity;
@@ -56,7 +57,7 @@ function animateIncorrectAnimation(duration) {
             incorrectCtx.save();
             incorrectCtx.translate(p.x, p.y);
             incorrectCtx.rotate(p.angle);
-            incorrectCtx.font = `${p.size}px Arial`;
+            incorrectCtx.font = p.size + 'px Arial';
             incorrectCtx.fillStyle = 'red';
             incorrectCtx.textAlign = 'center';
             incorrectCtx.textBaseline = 'middle';
